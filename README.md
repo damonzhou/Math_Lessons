@@ -26,8 +26,7 @@
 - [七年级课程](./grade-07/README.md)
   - [七年级上册 · 36讲路线图](./grade-07/semester-1/README.md)
   - [第1讲：从“3−5”到负数——数系为什么必须继续扩展](./grade-07/semester-1/01-number-system/01-positive-negative-numbers.md)
-  - [第1讲题源审计](./grade-07/semester-1/01-number-system/sources/01-positive-negative-numbers-provenance.md)
-  - [第1讲做题习惯诊断](./grade-07/semester-1/01-number-system/diagnostics/01-positive-negative-numbers-habits.md)
+  - [第2讲：有理数的分类——同一个数为什么可以属于多个集合？](./grade-07/semester-1/01-number-system/02-rational-number-classification.md)
   - [七年级下册](./grade-07/semester-2/README.md)
 - [八年级课程](./grade-08/README.md)
 - [九年级课程](./grade-09/README.md)
@@ -166,7 +165,8 @@ module/
 当前已完成：
 
 - 七上36讲路线图；
-- Lesson 1 完整重构；
+- Lesson 1：正数、负数、参照标准与偏差；
+- **Lesson 2：有理数分类、等价表示、分类标准、奇偶/余数分类与程序分支迁移；**
 - AMC / Gauss 等真实题源与题源审计机制；
 - Po-Shen Loh 式问题设计原则；
 - 每讲 Final Challenge 规范；
@@ -177,7 +177,7 @@ module/
 
 下一阶段：
 
-> 有理数分类 → 数轴 → 相反数 → 绝对值 → 有理数运算
+> 集合/包含进一步整理 → 数轴 → 相反数 → 绝对值 → 有理数运算
 
 并持续训练：
 
