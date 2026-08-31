@@ -44,6 +44,7 @@ $$
 - [七年级上册 · 36讲路线图](./grade-07/semester-1/README.md)
 - [Lesson 1：正数、负数、基准与偏差](./grade-07/semester-1/01-number-system/01-positive-negative-numbers.md)
 - [Lesson 2：有理数的分类——写法与身份](./grade-07/semester-1/01-number-system/02-rational-number-classification.md)
+- [Lesson 3：分类是一种数学方法——集合、包含与“不重不漏”](./grade-07/semester-1/01-number-system/03-classification-sets-partitions.md)
 
 ---
 
@@ -160,10 +161,15 @@ $$
 已完成并通过 v1.4 Release Review：
 
 - **Lesson 1**：负数的产生、正/负/0、相反意义、状态/位置/变化量/偏差、基准与真实应用；
-- **Lesson 2**：整数/分数/有理数、表示形式 vs 数学对象、等价表示、有限小数、精确值 vs 近似值、表示选择。
+- **Lesson 2**：整数/分数/有理数、表示形式 vs 数学对象、等价表示、有限小数、精确值 vs 近似值、表示选择；
+- **Lesson 3**：分类标准、不重不漏、集合关系直觉、奇偶/余数分类、性质相交、周期与筛选、抽屉原理、程序分支。
 
-Lesson 3 将集中处理：
+下一讲：
 
-> 集合/包含 → 分类不重不漏 → 奇偶 → 余数分类 → 多条件筛选 → 程序分支
+> **Lesson 4：数轴——把数放到直线上**
 
-并承接原 Lesson 2 的模6综合挑战。
+开始系统建立：
+
+$$
+\boxed{\text{数}\longleftrightarrow\text{位置}}
+$$
