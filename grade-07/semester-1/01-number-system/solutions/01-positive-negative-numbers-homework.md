@@ -10,7 +10,7 @@
 
 ## A 组：基础巩固
 
-### 1｜DESIGNED
+### 1｜TEXTBOOK-MODEL · PEP
 
 示例：
 
@@ -28,7 +28,7 @@ $$
 
 0 既不大于 0，也不小于 0，因此既不是正数，也不是负数。
 
-### 2｜DESIGNED
+### 2｜TEXTBOOK-MODEL · PEP
 
 分别记录为：
 
@@ -36,7 +36,7 @@ $$
 \boxed{+6.5,\quad -2.8,\quad 0}
 $$
 
-### 3｜DESIGNED
+### 3｜TEXTBOOK-MODEL · PEP
 
 标准质量为 100 g，因此偏差为“实际质量减标准质量”：
 
@@ -62,7 +62,7 @@ $$
 \boxed{+3,\quad -2,\quad 0,\quad -0.5\text{ g}}
 $$
 
-### 4｜DESIGNED
+### 4｜TEXTBOOK-MODEL · PEP
 
 利用：
 
@@ -124,7 +124,7 @@ $$
 
 **题源结构**：CEMC 2023 Gauss Grade 7 Q4 的负温度跨越 0 模型，本题增加了多步变化。
 
-### 6｜DESIGNED
+### 6｜TEXTBOOK-MODEL · PEP
 
 目标成绩为 60 秒，规定“比目标慢”为正、比目标快为负。
 
@@ -152,7 +152,7 @@ $$
 \boxed{-1.3,\quad +1.2,\quad 0}
 $$
 
-### 7｜DESIGNED
+### 7｜TEXTBOOK-MODEL · PEP + 轻度拓展
 
 实际温度始终为 $12^\circ\mathrm C$。
 
@@ -182,7 +182,7 @@ $$
 
 记录改变了，但实际温度没有改变。改变的是参照标准。
 
-### 8｜DESIGNED
+### 8｜TEXTBOOK-MODEL · PEP
 
 “负数就是比没有还少”不严谨，因为负数可以表示真实状态、位置或相对差值。
 
