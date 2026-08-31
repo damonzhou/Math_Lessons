@@ -17,7 +17,7 @@ $$
 
 1. **正数和负数：为什么数学需要扩展数系**
 2. **有理数的分类：同一个数为什么可以属于多个集合**
-3. 数的表示与分类：集合、包含与“不重不漏”
+3. **分类是一种数学方法：集合、包含与“不重不漏”**
 
 ## 模块二：数轴、相反数与绝对值
 
@@ -76,12 +76,20 @@ $$
 ## 已完成
 
 - [第1讲：从“3−5”到负数——数系为什么必须继续扩展](./01-number-system/01-positive-negative-numbers.md)
-- [第2讲：有理数的分类——同一个数为什么可以属于多个集合？](./01-number-system/02-rational-number-classification.md)
+- [第2讲：有理数的分类——一个数的“写法”和“身份”为什么不是一回事？](./01-number-system/02-rational-number-classification.md)
   - [当堂训练答案](./01-number-system/solutions/02-rational-number-classification-classroom.md)
   - [课后练习](./01-number-system/exercises/02-rational-number-classification-homework.md)
   - [课后练习答案](./01-number-system/solutions/02-rational-number-classification-homework.md)
   - [题源审计](./01-number-system/sources/02-rational-number-classification-provenance.md)
   - [做题习惯诊断](./01-number-system/diagnostics/02-rational-number-classification-habits.md)
+  - [Release Review](./01-number-system/reviews/02-rational-number-classification-release-review-v1.4.md)
+- [第3讲：分类是一种数学方法——集合、包含与“不重不漏”](./01-number-system/03-classification-sets-partitions.md)
+  - [当堂训练答案](./01-number-system/solutions/03-classification-sets-partitions-classroom.md)
+  - [课后练习](./01-number-system/exercises/03-classification-sets-partitions-homework.md)
+  - [课后练习答案](./01-number-system/solutions/03-classification-sets-partitions-homework.md)
+  - [题源审计](./01-number-system/sources/03-classification-sets-partitions-provenance.md)
+  - [做题习惯诊断](./01-number-system/diagnostics/03-classification-sets-partitions-habits.md)
+  - [Release Review](./01-number-system/reviews/03-classification-sets-partitions-release-review-v1.4.md)
 
 ## 后续建设原则
 
