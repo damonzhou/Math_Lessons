@@ -1,13 +1,22 @@
 # 七年级上册 · 自学进阶课程
 
-目标：以人教版七年级上册为主线，完成“课本掌握 → 典型变式 → 数学方法 → 综合进阶”的四层学习。
+目标：以当前人教版七年级上册与《义务教育数学课程标准（2022年版）》为主线，完成：
 
-建议节奏：每周 2 讲新课 + 1 次复盘/测试，自学进度领先学校约 1～2 周即可。
+$$
+\text{课内掌握}\rightarrow\text{概念理解}\rightarrow\text{校内拔高}\rightarrow\text{奥赛思维}\rightarrow\text{信息学迁移}
+$$
+
+所有课程编写先读取：
+
+- [当前课程标准](../../docs/standards/CURRENT.md)
+- [课程标准总入口](../../COURSE_STANDARD.md)
+
+建议节奏：每周2讲新课 + 1次复盘/测试，自学进度领先学校约1～2周即可，不机械追求超前速度。
 
 ## 模块一：从小学算术进入初中数学
 
 1. **正数和负数：为什么数学需要扩展数系**
-2. 有理数的分类：数到底有多少种
+2. **有理数的分类：同一个数为什么可以属于多个集合**
 3. 数的表示与分类：集合、包含与“不重不漏”
 
 ## 模块二：数轴、相反数与绝对值
@@ -66,8 +75,14 @@
 
 ## 已完成
 
-- [第1讲：正数和负数——为什么数学需要扩展数系](./01-number-system/01-positive-negative-numbers.md)
+- [第1讲：从“3−5”到负数——数系为什么必须继续扩展](./01-number-system/01-positive-negative-numbers.md)
+- [第2讲：有理数的分类——同一个数为什么可以属于多个集合？](./01-number-system/02-rational-number-classification.md)
+  - [当堂训练答案](./01-number-system/solutions/02-rational-number-classification-classroom.md)
+  - [课后练习](./01-number-system/exercises/02-rational-number-classification-homework.md)
+  - [课后练习答案](./01-number-system/solutions/02-rational-number-classification-homework.md)
+  - [题源审计](./01-number-system/sources/02-rational-number-classification-provenance.md)
+  - [做题习惯诊断](./01-number-system/diagnostics/02-rational-number-classification-habits.md)
 
 ## 后续建设原则
 
-每讲使用统一课程模板，但允许根据知识特点增加专题，例如数轴动点、绝对值分类讨论、几何推理等。阶段测试与专题训练后续可在本目录下增加 `assessments/` 与 `topics/`。
+每讲遵循 `docs/standards/CURRENT.md` 指向的当前课程标准。若未来改变全局课程原则，新增标准版本；单讲内容迭代不自动升级课程标准。
