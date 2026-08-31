@@ -2,6 +2,9 @@
 
 面向初中数学（七至九年级）的系统自学、进阶、奥数与信息学数学课程仓库。
 
+> **课程标准入口**：开始任何 Lesson 编写、修改或扩展前，先读取 [COURSE_STANDARD.md](./COURSE_STANDARD.md)。  
+> 当前生效版本由 [docs/standards/CURRENT.md](./docs/standards/CURRENT.md) 唯一指定。不得仅依赖聊天记录或会话记忆决定课程标准。
+
 课程以**义务教育数学课程标准 + 人教版教材**为主线，但不把教材目录当作能力上限。每一讲都形成完整学习闭环：从真实问题和概念来源开始，经过定义、反例、例题链、数学思想、分层训练，再延伸到奥数、信息学和真实应用。
 
 课程同时关注两件事：
@@ -13,6 +16,8 @@
 
 ## 快速导航
 
+- [当前课程标准](./docs/standards/CURRENT.md)
+- [课程标准版本库](./docs/standards/README.md)
 - [课程统一编写与质量审核标准](./docs/course-authoring-standard.md)
 - [课程设计原则](./docs/course-design.md)
 - [题源与原创命题规范](./docs/problem-source-policy.md)
@@ -167,6 +172,7 @@ module/
 - 每讲 Final Challenge 规范；
 - Core / Advanced / Olympiad / Informatics 四轨体系；
 - C/H 双重错因与做题习惯诊断机制；
+- **课程标准 v1.0 版本化归档与防漂移入口**；
 - 七至九年级可扩展目录结构。
 
 下一阶段：
