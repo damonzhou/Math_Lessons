@@ -5,6 +5,8 @@
 > **模块**：XXX  
 > **定位**：Mainline / Extension  
 > **课程标准**：读取 `docs/standards/CURRENT.md`  
+> **教材映射**：当前人教版 · <章/知识群> · <知识节点>  
+> **映射类型**：DIRECT / SPLIT / INTEGRATED / BRIDGE  
 > **建议用时**：Core XX分钟；Advanced XX分钟；Olympiad + Informatics XX分钟  
 > **前置知识**：XXX  
 > **关键词**：XXX
@@ -31,6 +33,27 @@ $$
 $$
 
 若主要属于方法论、竞赛或信息学，应优先放入 `extensions/`。
+
+---
+
+# R0.5. 教材映射｜v1.7
+
+Mainline 发布前读取对应教材映射表。
+
+七上：
+
+`docs/textbook-mapping-grade-07-semester-1.md`
+
+检查：
+
+1. 当前章/知识群是什么？
+2. 对应哪个教材知识节点？
+3. DIRECT / SPLIT / INTEGRATED / BRIDGE 哪一种？
+4. Core 是否严格服务教材节点？
+5. 哪些 Advanced/Olympiad 内容必须明确标为深化？
+6. 是否错误猜测了官方未公开的新版细小节编号？
+
+无法权威核实新版小节编号时，只写章名/知识节点。
 
 ---
 
@@ -137,6 +160,7 @@ sources/XX-lesson-provenance.md
 
 - 标题中不写 `$...$`；
 - 简单数值/单位用普通文本：`−5`、`0 ℃`、`3 cm`、`20%`；
+- 纯数字行内 LaTeX 属于发布错误；
 - 不写 `$0^\circ\mathrm C$` 一类不必要的单位 LaTeX；
 - 分数、根式、变量、方程、不等式等继续使用 LaTeX；
 - 完整数学答案不放 `<details>`。
@@ -259,9 +283,10 @@ Informatics 说明数学模型与程序变量/算法的对应。
 
 # 第十一部分：Release Review｜发布前强制
 
-必须从十二个维度整体审查：
+必须审查：
 
 - **R0 主线定位**
+- **R0.5 教材映射**
 - R1 课程逻辑
 - R2 课标/教材覆盖
 - R3 概念深度
@@ -274,17 +299,10 @@ Informatics 说明数学模型与程序变量/算法的对应。
 - R10 前后衔接
 - **R11 Markdown / LaTeX 渲染稳健性**
 
-R11 至少检查：
-
-- 标题无 `$...$`；
-- 简单数值/单位优先普通文本；
-- 没有 `^\circ\mathrm C` 一类高风险单位 LaTeX；
-- 自动渲染检查通过。
-
 Review 文件：
 
 ```text
 reviews/XX-lesson-release-review-vX.Y.md
 ```
 
-只有 R0 正确、R11 通过且最终结论达到 `PASS`（或完成 minor fixes 后 PASS），才把课程标记为完成。
+只有 R0、R0.5 正确，R11 通过，且最终结论达到 `PASS`（或完成 minor fixes 后 PASS），才把课程标记为完成。
