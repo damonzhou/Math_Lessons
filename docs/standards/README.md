@@ -6,9 +6,10 @@
 
 先读取：[CURRENT.md](./CURRENT.md)
 
-当前规范由 **v1.3 + v1.4 + v1.5** 共同组成：
+当前规范由 **v1.3 + v1.4 + v1.5 + v1.6** 共同组成：
 
-- [v1.5｜2026-09-01](./course-standard-v1.5.md) — **当前增量标准**；Mainline / Extension 分层、需要时提示学习机制、R0 主线定位审查
+- [v1.6｜2026-09-01](./course-standard-v1.6.md) — **当前增量标准**；Markdown / LaTeX 渲染稳健性、简单数值/单位文本化、R11 自动检查
+- [v1.5｜2026-09-01](./course-standard-v1.5.md) — Mainline / Extension 分层、需要时提示学习机制、R0 主线定位审查
 - [v1.4｜2026-08-31](./course-standard-v1.4.md) — AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选规则
 - [v1.3｜2026-08-31](./course-standard-v1.3.md) — 当前完整基础标准；权威一手来源门槛 + 每讲 Release Review 强制门禁
 - **v1.2｜2026-08-31** — 过渡版本：引入“每讲发布前整体 Review”；当时未单独保留版本快照，相关规则已完整继承并固化于 v1.3
@@ -40,6 +41,17 @@ Advanced / Olympiad / Informatics 内容可以加深课程，但不能只因为�
 
 Release Review 从 v1.5 起新增 **R0 主线定位**。
 
+## Markdown / LaTeX 稳健性｜v1.6
+
+课程以 GitHub Web / Mobile 稳定显示为优先：
+
+- 标题禁止 `$...$`；
+- 简单数值/单位优先普通文本，如 `−5`、`0 ℃`、`3 cm`、`20%`；
+- LaTeX 留给分数、变量、方程、不等式、根式等真正需要数学结构的内容；
+- 发布前运行 `tools/lint_markdown_rendering.py`；
+- GitHub Actions 自动检查本次变更的 Markdown；
+- Release Review 从 v1.6 起新增 **R11 Markdown / LaTeX 渲染稳健性**。
+
 ## 权威来源原则
 
 课程设计依据必须回到权威一手资料：
@@ -65,7 +77,8 @@ Release Review 从 v1.5 起新增 **R0 主线定位**。
 - R7 题源；
 - R8 错误习惯；
 - R9 Final Challenge；
-- R10 前后衔接。
+- R10 前后衔接；
+- R11 Markdown / LaTeX 渲染稳健性。
 
 正式 Review 存入：
 
