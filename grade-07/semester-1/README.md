@@ -60,9 +60,9 @@ v1.7 要求每个正式 Mainline Lesson 在发布前完成 **R0.5 教材映射**
 18. **整数指数幂与科学记数法：怎样压缩表示大数**
 19. **代数式综合：规律、图形、公式与建模**
 
-教材映射：新版新增 **“代数式”** 章。
+教材映射：新版新增 **“代数式”** 章/知识群。
 
-> 原路线图的“规律表达（一）（二）”已调整，避免遗漏新版正式要求的整数指数幂与科学记数法。
+> 当前人教社公开资料可确认新版新增“代数式”章，但没有完整公开七上所有细小节编号；Lesson 18 的最终细目位置在正式发布前仍需按最新官方教材细目再次核对，不凭非官方目录猜编号。
 
 ---
 
@@ -103,7 +103,7 @@ v1.7 要求每个正式 Mainline Lesson 在发布前完成 **R0.5 教材映射**
 
 教材映射：当前人教版 **“几何图形初步”** 知识群。
 
-> 原 Lesson 35“几何推理入门”已调整为明确教材节点；“说清理由”作为全模块能力目标持续训练。
+“说清理由”作为全模块能力目标持续训练，不脱离教材节点单独抽象化。
 
 ---
 
@@ -140,7 +140,7 @@ v1.7 要求每个正式 Mainline Lesson 在发布前完成 **R0.5 教材映射**
 
 ---
 
-# 已完成并通过当前标准 Review
+# 已完成 / 已准备
 
 ## Lesson 1
 
@@ -159,6 +159,16 @@ v1.7 要求每个正式 Mainline Lesson 在发布前完成 **R0.5 教材映射**
   - [题源审计](./01-number-system/sources/03-number-line-provenance.md)
   - [做题习惯诊断](./01-number-system/diagnostics/03-number-line-habits.md)
   - [v1.6 Release Review](./01-number-system/reviews/03-number-line-release-review-v1.6.md)
+
+## Lesson 4
+
+- [第4讲：相反数——为什么数轴上的对称位置代表一对特殊的数](./01-number-system/04-opposite-numbers.md)
+  - [当堂训练答案](./01-number-system/solutions/04-opposite-numbers-classroom.md)
+  - [课后练习](./01-number-system/exercises/04-opposite-numbers-homework.md)
+  - [课后练习答案](./01-number-system/solutions/04-opposite-numbers-homework.md)
+  - [题源审计](./01-number-system/sources/04-opposite-numbers-provenance.md)
+  - [做题习惯诊断](./01-number-system/diagnostics/04-opposite-numbers-habits.md)
+  - [v1.7 Release Review](./01-number-system/reviews/04-opposite-numbers-release-review-v1.7.md)
 
 ## Extension E1
 
