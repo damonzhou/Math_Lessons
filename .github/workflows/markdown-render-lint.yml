@@ -1,0 +1,52 @@
+name: Markdown Render Lint
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "tools/lint_markdown_rendering.py"
+      - ".github/workflows/markdown-render-lint.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - "tools/lint_markdown_rendering.py"
+      - ".github/workflows/markdown-render-lint.yml"
+
+jobs:
+  lint-markdown-rendering:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Collect changed Markdown files
+        id: changed
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+          else
+            BASE="${{ github.event.before }}"
+          fi
+
+          if [[ -z "$BASE" || "$BASE" == "0000000000000000000000000000000000000000" ]]; then
+            git ls-files '*.md' > /tmp/changed-md.txt
+          else
+            git diff --name-only "$BASE" "${{ github.sha }}" -- '*.md' > /tmp/changed-md.txt
+          fi
+
+          cat /tmp/changed-md.txt
+
+      - name: Check Markdown rendering risks
+        shell: bash
+        run: |
+          mapfile -t FILES < /tmp/changed-md.txt
+          if (( ${#FILES[@]} == 0 )); then
+            echo "No changed Markdown files."
+            exit 0
+          fi
+          python3 tools/lint_markdown_rendering.py "${FILES[@]}"
