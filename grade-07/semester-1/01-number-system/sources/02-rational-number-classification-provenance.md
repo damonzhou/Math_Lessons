@@ -1,8 +1,8 @@
-# 第2讲题源与命题依据｜v1.4
+# 第2讲题源与命题依据｜v1.5
 
 > 对应主课：[第2讲《有理数的分类——一个数的“写法”和“身份”为什么不是一回事？》](../02-rational-number-classification.md)
 >
-> 发布 Review：[Lesson 2 v1.4 Review](../reviews/02-rational-number-classification-release-review-v1.4.md)
+> 发布 Review：[Lesson 2 v1.5 Review](../reviews/02-rational-number-classification-release-review-v1.5.md)
 
 ---
 
@@ -34,6 +34,10 @@ $$
 
 用于等价表示、分数/百分数同一数学对象。
 
+主课改变图形份数和问法，因此标记：
+
+> `ADAPTED · CEMC 2019 Gauss Grade 7 Q3 structure`
+
 ## C2｜CEMC 2025 Gauss Grade 7 Q8
 
 官方历年题入口同上。
@@ -44,11 +48,11 @@ $$
 
 # 2. 本讲关键概念修订依据
 
-Review 发现旧版存在逻辑风险：
+旧版曾存在逻辑风险：
 
 > “能写成两个整数之比”不能作为教材分类中“分数类”的判定条件，因为整数也能写成 $p/q$。
 
-v1.4 明确：
+现行课程明确：
 
 $$
 \boxed{\text{能写成 }\frac pq\text{ 是有理数的统一特征}}
@@ -82,18 +86,34 @@ $$
 
 ---
 
-# 4. 移出本讲的内容
+# 4. v1.5 主线定位调整
 
-以下原有内容移交 Lesson 3：
+旧规划曾把以下内容安排为正式 Lesson 3：
 
 - 集合/包含系统化；
 - 奇偶分类；
 - 余数分类；
 - 模6；
 - 多条件筛选；
-- 原模6 Final Challenge。
+- 抽屉原理。
 
-理由：这些主要训练“分类是一种数学方法”，不是“有理数是什么”。
+v1.5 Review 后确认：这些内容数学上正确且对竞赛/信息学有价值，但**不应打断**更强的教材知识链：
+
+$$
+\text{有理数}\rightarrow\text{数轴}\rightarrow\text{相反数}\rightarrow\text{绝对值}
+$$
+
+因此这些内容改为：
+
+[Extension E1｜分类是一种数学方法](../../extensions/classification-as-a-method.md)
+
+并采用“后续需要时提示学习”的机制。
+
+正式下一讲为：
+
+[Lesson 3｜数轴](../03-number-line.md)
+
+Lesson 2 Core、Homework、Final Challenge 都**不依赖** E1。
 
 ---
 
@@ -121,14 +141,21 @@ $$
 - [x] 有真正概念突破口
 - [x] 有三级提示
 - [x] 可推广到不同显示精度
+- [x] 不依赖集合/余数 Extension
 
 ---
 
-# 6. v1.4 奥赛题源池
+# 6. 权威奥赛题源池
 
 后续 Olympiad 可从 AMC、CEMC、UKMT、IMO、CMO 等权威官方来源筛选。
 
-本讲没有机械加入 IMO/CMO 高难题，因为“适龄和概念匹配”优先于赛事等级。
+本讲没有机械加入 IMO/CMO 高难题，因为：
+
+$$
+\text{适龄}+\text{概念匹配}+\text{当前可解}
+$$
+
+优先于赛事等级。
 
 ---
 
