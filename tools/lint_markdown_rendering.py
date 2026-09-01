@@ -18,6 +18,10 @@ HEADING = re.compile(r"^\s{0,3}#{1,6}\s+")
 INLINE_CODE = re.compile(r"`[^`]*`")
 INLINE_MATH = re.compile(r"\$([^$\n]+)\$")
 SIMPLE_NUMBER = re.compile(r"^[+-]?\d+(?:\.\d+)?$")
+SIMPLE_VARIABLE = re.compile(r"^[+-]?[A-Za-z]$")
+SIMPLE_COMPARISON = re.compile(
+    r"^[+-]?[A-Za-z]\s*(?:<=|>=|=|<|>)\s*[+-]?\d+(?:\.\d+)?$"
+)
 TEMP_LATEX = re.compile(
     r"\$[^$\n]*(?:\^\s*\\circ|\\degree)[^$\n]*(?:\\mathrm\s*\{?C\}?|C)[^$\n]*\$"
 )
@@ -70,6 +74,14 @@ def check_file(path: Path) -> tuple[list[str], list[str]]:
             if SIMPLE_NUMBER.fullmatch(expr):
                 errors.append(
                     f"{path}:{lineno}: simple numeric inline math '${expr}$'; use plain text/Unicode"
+                )
+            elif SIMPLE_VARIABLE.fullmatch(expr):
+                errors.append(
+                    f"{path}:{lineno}: simple variable inline math '${expr}$'; use plain text/Unicode"
+                )
+            elif SIMPLE_COMPARISON.fullmatch(expr):
+                errors.append(
+                    f"{path}:{lineno}: simple comparison inline math '${expr}$'; use plain text/Unicode"
                 )
 
     return errors, warnings
