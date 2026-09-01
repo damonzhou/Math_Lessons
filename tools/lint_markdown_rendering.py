@@ -30,6 +30,11 @@ def markdown_files(args: list[str]) -> list[Path]:
     return [p for p in Path(".").rglob("*.md") if ".git" not in p.parts]
 
 
+def rendered_text(raw: str) -> str:
+    """Remove inline-code examples so documentation of bad syntax is not linted as content."""
+    return INLINE_CODE.sub("", raw)
+
+
 def check_file(path: Path) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
@@ -43,30 +48,28 @@ def check_file(path: Path) -> tuple[list[str], list[str]]:
         if in_fence:
             continue
 
-        # Inline code is documentation, not rendered math. Remove it before
-        # checking Markdown/LaTeX risks so examples of bad syntax are allowed.
-        rendered = INLINE_CODE.sub("", raw)
+        visible = rendered_text(raw)
 
-        if HEADING.match(rendered) and "$" in rendered:
+        if HEADING.match(visible) and "$" in visible:
             errors.append(
                 f"{path}:{lineno}: heading contains '$...$'; use plain text/Unicode in headings"
             )
 
-        if TEMP_LATEX.search(rendered):
+        if TEMP_LATEX.search(visible):
             errors.append(
                 f"{path}:{lineno}: temperature uses inline LaTeX; write e.g. '0 ℃' instead"
             )
 
-        if DETAILS_OPEN.search(rendered):
+        if DETAILS_OPEN.search(visible):
             warnings.append(
                 f"{path}:{lineno}: <details> detected; do not place full math answers inside raw HTML"
             )
 
-        for match in INLINE_MATH.finditer(rendered):
+        for match in INLINE_MATH.finditer(visible):
             expr = match.group(1).strip()
             if SIMPLE_NUMBER.fullmatch(expr):
-                warnings.append(
-                    f"{path}:{lineno}: simple numeric inline math '${expr}$'; plain text is more robust"
+                errors.append(
+                    f"{path}:{lineno}: simple numeric inline math '${expr}$'; use plain text/Unicode"
                 )
 
     return errors, warnings
