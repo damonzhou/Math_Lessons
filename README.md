@@ -4,10 +4,11 @@
 
 > **课程标准入口**：开始任何 Lesson 编写、修改或扩展前，先读取 [COURSE_STANDARD.md](./COURSE_STANDARD.md) 和 [docs/standards/CURRENT.md](./docs/standards/CURRENT.md)。不得仅依赖聊天记录或会话记忆决定课程标准。
 
-当前规范：**v1.3 + v1.4**。
+当前规范：**v1.3 + v1.4 + v1.5**。
 
 - v1.3：权威一手来源 + 每讲发布前整体 Release Review；
-- v1.4：明确 AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选规则。
+- v1.4：AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选；
+- v1.5：Mainline / Extension 分层、需要时提示学习、R0 主线定位审查。
 
 ---
 
@@ -44,7 +45,49 @@ $$
 - [七年级上册 · 36讲路线图](./grade-07/semester-1/README.md)
 - [Lesson 1：正数、负数、基准与偏差](./grade-07/semester-1/01-number-system/01-positive-negative-numbers.md)
 - [Lesson 2：有理数的分类——写法与身份](./grade-07/semester-1/01-number-system/02-rational-number-classification.md)
-- [Lesson 3：分类是一种数学方法——集合、包含与“不重不漏”](./grade-07/semester-1/01-number-system/03-classification-sets-partitions.md)
+- [Lesson 3：数轴——怎样把“数”变成直线上的位置](./grade-07/semester-1/01-number-system/03-number-line.md)
+- [Extensions](./grade-07/semester-1/extensions/README.md)
+  - [E1：分类是一种数学方法——集合直觉、余数与抽屉原理](./grade-07/semester-1/extensions/classification-as-a-method.md)
+
+---
+
+## Mainline 与 Extension｜v1.5
+
+正式编号 Lesson 优先保持：
+
+$$
+\boxed{\text{课标要求}+\text{人教版顺序}+\text{知识依赖}+\text{认知连续性}}
+$$
+
+课程仍然会深入讲 Advanced / Olympiad / Informatics，但：
+
+> **理解更深，不等于更早引入更抽象的术语。**
+
+主要属于竞赛方法、抽象语言或信息学的专题优先保存在 `extensions/`。后续真正需要时，Mainline 会显式提示：
+
+- `OPTIONAL`
+- `RECOMMENDED`
+- `REQUIRED-FOR-EXTENSION`
+
+未提示的 Extension 不得成为 Core 或 Final Challenge 的隐藏前置。
+
+当前七上数系正式主线：
+
+$$
+\boxed{
+\text{正负数}
+\rightarrow
+\text{有理数}
+\rightarrow
+\text{数轴}
+\rightarrow
+\text{相反数}
+\rightarrow
+\text{绝对值}
+\rightarrow
+\text{大小比较}
+}
+$$
 
 ---
 
@@ -110,18 +153,19 @@ $$
 
 ## 每讲发布前必须整体 Review
 
-正式发布或重大更新前检查十个维度：
+从 v1.5 开始，Review 从 **R0 主线定位**开始：
 
-1. 课程逻辑；
-2. 课标/教材覆盖；
-3. 概念理解深度；
-4. 知识边界/是否超前；
-5. 应用场景；
-6. 例题与训练梯度；
-7. 题源质量；
-8. 错误与做题习惯；
-9. Final Challenge；
-10. 与前后 Lesson 的纵向衔接。
+- R0：Mainline 还是 Extension，当前位置是否必要；
+- R1：课程逻辑；
+- R2：课标/教材覆盖；
+- R3：概念理解深度；
+- R4：知识边界/是否超前；
+- R5：应用场景；
+- R6：例题与训练梯度；
+- R7：题源质量；
+- R8：错误与做题习惯；
+- R9：Final Challenge；
+- R10：前后 Lesson 纵向衔接。
 
 Review 结论存入 `reviews/`，达到 PASS 后才标记完成。
 
@@ -136,7 +180,8 @@ Review 结论存入 `reviews/`，达到 PASS 后才标记完成。
 - 有真正突破口；
 - 优先有权威题源/明确结构依据；
 - Hint 1 → Hint 2 → Hint 3；
-- 解后一般化/第二解法/条件变化。
+- 解后一般化/第二解法/条件变化；
+- 不依赖未提示的 Extension。
 
 $$
 \text{一道题}\rightarrow\text{一种方法}\rightarrow\text{一类结构}
@@ -158,18 +203,16 @@ $$
 
 ## 当前进度
 
-已完成并通过 v1.4 Release Review：
+正式 Mainline 已完成：
 
 - **Lesson 1**：负数的产生、正/负/0、相反意义、状态/位置/变化量/偏差、基准与真实应用；
 - **Lesson 2**：整数/分数/有理数、表示形式 vs 数学对象、等价表示、有限小数、精确值 vs 近似值、表示选择；
-- **Lesson 3**：分类标准、不重不漏、集合关系直觉、奇偶/余数分类、性质相交、周期与筛选、抽屉原理、程序分支。
+- **Lesson 3**：数轴三要素、数↔点、左右与大小、位置/距离、非单位刻度、损坏刻度恢复、一维坐标。
 
-下一讲：
+扩展专题：
 
-> **Lesson 4：数轴——把数放到直线上**
+- **E1 分类是一种数学方法**：集合直觉、互斥/包含/相交、余数分类、周期筛选、抽屉原理、程序分支。以后按需要提示学习。
 
-开始系统建立：
+下一正式主线：
 
-$$
-\boxed{\text{数}\longleftrightarrow\text{位置}}
-$$
+> **Lesson 4：相反数——数轴上的对称位置。**
