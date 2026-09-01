@@ -4,11 +4,12 @@
 
 > **课程标准入口**：开始任何 Lesson 编写、修改或扩展前，先读取 [COURSE_STANDARD.md](./COURSE_STANDARD.md) 和 [docs/standards/CURRENT.md](./docs/standards/CURRENT.md)。不得仅依赖聊天记录或会话记忆决定课程标准。
 
-当前规范：**v1.3 + v1.4 + v1.5**。
+当前规范：**v1.3 + v1.4 + v1.5 + v1.6**。
 
 - v1.3：权威一手来源 + 每讲发布前整体 Release Review；
 - v1.4：AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选；
-- v1.5：Mainline / Extension 分层、需要时提示学习、R0 主线定位审查。
+- v1.5：Mainline / Extension 分层、需要时提示学习、R0 主线定位审查；
+- v1.6：Markdown / LaTeX 渲染稳健性、简单数值/单位文本化、R11 自动检查。
 
 ---
 
@@ -42,6 +43,7 @@ $$
 - [题源与原创命题规范](./docs/problem-source-policy.md)
 - [学习诊断与做题习惯纠偏](./docs/student-learning-diagnostics.md)
 - [统一课程模板](./templates/lesson-template.md)
+- [Markdown 渲染检查工具](./tools/lint_markdown_rendering.py)
 - [七年级上册 · 36讲路线图](./grade-07/semester-1/README.md)
 - [Lesson 1：正数、负数、基准与偏差](./grade-07/semester-1/01-number-system/01-positive-negative-numbers.md)
 - [Lesson 2：有理数的分类——写法与身份](./grade-07/semester-1/01-number-system/02-rational-number-classification.md)
@@ -88,6 +90,19 @@ $$
 \text{大小比较}
 }
 $$
+
+---
+
+## Markdown / LaTeX 渲染规则｜v1.6
+
+课程主要在 GitHub Web / Mobile 阅读，优先保证稳定显示：
+
+- 标题中禁止 `$...$`；
+- 简单数值和单位使用普通文本，例如 `−5`、`0 ℃`、`3 cm`、`20%`；
+- LaTeX 只用于真正需要数学结构的分数、根式、变量、方程、不等式等；
+- 发布前运行 `python3 tools/lint_markdown_rendering.py ...`；
+- GitHub Actions 自动检查发生变化的 Markdown 文件；
+- Release Review 增加 R11 渲染稳健性。
 
 ---
 
@@ -153,7 +168,7 @@ $$
 
 ## 每讲发布前必须整体 Review
 
-从 v1.5 开始，Review 从 **R0 主线定位**开始：
+从 v1.6 开始，Review 包含：
 
 - R0：Mainline 还是 Extension，当前位置是否必要；
 - R1：课程逻辑；
@@ -165,7 +180,8 @@ $$
 - R7：题源质量；
 - R8：错误与做题习惯；
 - R9：Final Challenge；
-- R10：前后 Lesson 纵向衔接。
+- R10：前后 Lesson 纵向衔接；
+- R11：Markdown / LaTeX 渲染稳健性。
 
 Review 结论存入 `reviews/`，达到 PASS 后才标记完成。
 
