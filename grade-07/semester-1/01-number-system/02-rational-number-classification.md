@@ -2,13 +2,14 @@
 
 > **年级**：七年级上学期  
 > **模块**：数系与有理数  
-> **课程标准**：v1.3  
+> **定位**：Mainline  
+> **课程标准**：v1.5  
 > **对应主线**：人教版“有理数”中的概念、分类与表示  
 > **建议用时**：Core 50～60分钟；Advanced 20～25分钟；Olympiad + Informatics 20～25分钟  
 > **前置知识**：正数、负数、0；小学整数、分数、小数、百分数、四舍五入  
 > **关键词**：整数、分数、有理数、等价表示、精确值、近似值、分类
 
-> **发布 Review**：[Lesson 2 v1.3 Release Review](./reviews/02-rational-number-classification-release-review-v1.3.md)
+> **发布 Review**：[Lesson 2 v1.5 Release Review](./reviews/02-rational-number-classification-release-review-v1.5.md)
 
 ---
 
@@ -38,7 +39,11 @@
 - 系统的循环小数化分数；
 - 无理数理论。
 
-这些内容分别留到后续更合适的 Lesson。
+其中“集合/分类/余数”方法已经整理为可按需学习的：
+
+[Extension E1｜分类是一种数学方法](../extensions/classification-as-a-method.md)
+
+它不是本讲 Core，也不是下一讲的隐藏前置。正式下一讲按教材主线进入**数轴**。
 
 ---
 
@@ -393,7 +398,7 @@ $$
 
 ---
 
-## 14. 真实竞赛连接｜SOURCE-MODEL · CEMC 2019 Gauss Grade 7 Q3
+## 14. 真实竞赛连接｜ADAPTED · CEMC 2019 Gauss Grade 7 Q3 structure
 
 CEMC 官方 2019 Gauss Grade 7 第3题用一个四等分图形考查：
 
@@ -510,7 +515,11 @@ $$
 \boxed{\text{同一层级使用同一个分类标准}}
 $$
 
-“集合、属于、包含、不重不漏”在 Lesson 3 系统展开。
+如果以后 Advanced/Olympiad 需要更系统地研究“属于、包含、相交、不重不漏、余数分类”，按 v1.5 再学习：
+
+[Extension E1｜分类是一种数学方法](../extensions/classification-as-a-method.md)
+
+当前不要求先学。
 
 ---
 
@@ -1065,18 +1074,23 @@ $$
 
 # 第二十一部分：下一讲
 
-第3讲《分类是一种数学方法——集合、包含与“不重不漏”》
+正式第3讲：
 
-将正式整理：
+# [《数轴——怎样把“数”变成直线上的位置》](./03-number-line.md)
 
-- 元素与集合的直觉；
-- 属于与包含；
-- 分类树；
-- 平级分类为什么必须不重不漏；
-- 奇偶分类；
-- 按余数分类；
-- 多条件筛选；
-- 程序条件分支；
-- Olympiad：AMC / CMO / IMO 等权威题源中适龄的分类、整除与不变量结构。
+将研究：
 
-原 Lesson 2 的“模6分类”挑战会移动到这里，使挑战题真正服务于分类方法本身。
+- 数轴的原点、正方向、单位长度；
+- 有理数与数轴上的点；
+- 数→点、点→数；
+- 数轴上的左右顺序与大小；
+- 非单位刻度与刻度恢复；
+- 为相反数、绝对值建立位置和距离直觉。
+
+## 可选扩展，不是下一讲前置
+
+如果想提前理解更一般的分类方法，可学习：
+
+[Extension E1｜分类是一种数学方法——集合直觉、余数与抽屉原理](../extensions/classification-as-a-method.md)
+
+但 Lesson 3 数轴的 Core 和 Final Challenge **不依赖**该专题。
