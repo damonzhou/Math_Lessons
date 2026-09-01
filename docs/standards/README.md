@@ -6,9 +6,10 @@
 
 先读取：[CURRENT.md](./CURRENT.md)
 
-当前规范由 **v1.3 + v1.4** 共同组成：
+当前规范由 **v1.3 + v1.4 + v1.5** 共同组成：
 
-- [v1.4｜2026-08-31](./course-standard-v1.4.md) — **当前增量标准**；明确 AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选规则
+- [v1.5｜2026-09-01](./course-standard-v1.5.md) — **当前增量标准**；Mainline / Extension 分层、需要时提示学习机制、R0 主线定位审查
+- [v1.4｜2026-08-31](./course-standard-v1.4.md) — AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选规则
 - [v1.3｜2026-08-31](./course-standard-v1.3.md) — 当前完整基础标准；权威一手来源门槛 + 每讲 Release Review 强制门禁
 - [v1.2｜2026-08-31](./course-standard-v1.2.md) — 新增每讲发布前整体 Review
 - [v1.1｜2026-08-31](./course-standard-v1.1.md) — 扩展国内权威竞赛/奥赛与历年真实考试题源
@@ -21,6 +22,20 @@
 3. 课程理念、难度体系、主线或诊断体系实质变化时升级主版本；
 4. `CURRENT.md` 唯一指定当前生效规范；
 5. 跨会话继续课程时，以本目录为准，不依赖聊天记忆。
+
+## Mainline / Extension 原则｜v1.5
+
+正式编号 Lesson 优先保持：
+
+$$
+\boxed{\text{课标要求}+\text{人教版顺序}+\text{知识依赖}+\text{认知连续性}}
+$$
+
+Advanced / Olympiad / Informatics 内容可以加深课程，但不能只因为“数学上有关联”就打断更强的主线依赖。
+
+主要属于方法论、竞赛或信息学的专题优先放入 `extensions/`，后续真正需要时由 Mainline 显式提示学习。
+
+Release Review 从 v1.5 起新增 **R0 主线定位**。
 
 ## 权威来源原则
 
@@ -35,9 +50,21 @@
 
 ## Release Review
 
-从 v1.3 起，每个 Lesson 首次发布或重大更新前都必须整体 Review：课程逻辑、知识覆盖、概念深度、知识边界、应用场景、例题梯度、题源、错误习惯、Final Challenge 和前后衔接。
+每个 Mainline Lesson 首次发布或重大更新前必须整体 Review：
 
-正式 Review 建议存入：
+- R0 主线定位；
+- R1 课程逻辑；
+- R2 知识覆盖；
+- R3 概念深度；
+- R4 知识边界；
+- R5 应用场景；
+- R6 例题梯度；
+- R7 题源；
+- R8 错误习惯；
+- R9 Final Challenge；
+- R10 前后衔接。
+
+正式 Review 存入：
 
 ```text
 reviews/XX-lesson-release-review-vX.Y.md
