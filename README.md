@@ -4,12 +4,13 @@
 
 > **课程标准入口**：开始任何 Lesson 编写、修改或扩展前，先读取 [COURSE_STANDARD.md](./COURSE_STANDARD.md) 和 [docs/standards/CURRENT.md](./docs/standards/CURRENT.md)。不得仅依赖聊天记录或会话记忆决定课程标准。
 
-当前规范：**v1.3 + v1.4 + v1.5 + v1.6**。
+当前规范：**v1.3 + v1.4 + v1.5 + v1.6 + v1.7**。
 
 - v1.3：权威一手来源 + 每讲发布前整体 Release Review；
 - v1.4：AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选；
 - v1.5：Mainline / Extension 分层、需要时提示学习、R0 主线定位审查；
-- v1.6：Markdown / LaTeX 渲染稳健性、简单数值/单位文本化、R11 自动检查。
+- v1.6：Markdown / LaTeX 渲染稳健性、简单数值/单位文本化、R11 自动检查；
+- v1.7：36讲 ↔ 当前人教版教材映射、R0.5 教材映射门禁。
 
 ---
 
@@ -39,6 +40,7 @@ $$
 
 - [当前课程标准](./docs/standards/CURRENT.md)
 - [课程标准版本库](./docs/standards/README.md)
+- [七上36讲 ↔ 当前人教版教材映射](./docs/textbook-mapping-grade-07-semester-1.md)
 - [课程统一编写与质量审核标准](./docs/course-authoring-standard.md)
 - [题源与原创命题规范](./docs/problem-source-policy.md)
 - [学习诊断与做题习惯纠偏](./docs/student-learning-diagnostics.md)
@@ -48,12 +50,13 @@ $$
 - [Lesson 1：正数、负数、基准与偏差](./grade-07/semester-1/01-number-system/01-positive-negative-numbers.md)
 - [Lesson 2：有理数的分类——写法与身份](./grade-07/semester-1/01-number-system/02-rational-number-classification.md)
 - [Lesson 3：数轴——怎样把“数”变成直线上的位置](./grade-07/semester-1/01-number-system/03-number-line.md)
+- [Lesson 4：相反数——数轴上的对称位置](./grade-07/semester-1/01-number-system/04-opposite-numbers.md)
 - [Extensions](./grade-07/semester-1/extensions/README.md)
   - [E1：分类是一种数学方法——集合直觉、余数与抽屉原理](./grade-07/semester-1/extensions/classification-as-a-method.md)
 
 ---
 
-## Mainline 与 Extension｜v1.5
+## Mainline、Extension 与教材映射
 
 正式编号 Lesson 优先保持：
 
@@ -72,6 +75,13 @@ $$
 - `REQUIRED-FOR-EXTENSION`
 
 未提示的 Extension 不得成为 Core 或 Final Challenge 的隐藏前置。
+
+从 v1.7 起，每个 Mainline Lesson 还必须通过 **R0.5 教材映射**：
+
+- 对应当前人教版章/知识节点；
+- 标明 `DIRECT / SPLIT / INTEGRATED / BRIDGE`；
+- Core 与 Advanced/Olympiad 边界清楚；
+- 人教社未公开新版细小节编号时不猜编号。
 
 当前七上数系正式主线：
 
@@ -99,10 +109,10 @@ $$
 
 - 标题中禁止 `$...$`；
 - 简单数值和单位使用普通文本，例如 `−5`、`0 ℃`、`3 cm`、`20%`；
+- 纯数字行内 LaTeX 直接作为 lint error；
 - LaTeX 只用于真正需要数学结构的分数、根式、变量、方程、不等式等；
-- 发布前运行 `python3 tools/lint_markdown_rendering.py ...`；
 - GitHub Actions 自动检查发生变化的 Markdown 文件；
-- Release Review 增加 R11 渲染稳健性。
+- Release Review 包含 R11 渲染稳健性。
 
 ---
 
@@ -168,9 +178,10 @@ $$
 
 ## 每讲发布前必须整体 Review
 
-从 v1.6 开始，Review 包含：
+当前 Release Review 顺序：
 
-- R0：Mainline 还是 Extension，当前位置是否必要；
+- R0：Mainline / Extension 定位；
+- R0.5：教材映射；
 - R1：课程逻辑；
 - R2：课标/教材覆盖；
 - R3：概念理解深度；
@@ -219,11 +230,12 @@ $$
 
 ## 当前进度
 
-正式 Mainline 已完成：
+正式 Mainline：
 
-- **Lesson 1**：负数的产生、正/负/0、相反意义、状态/位置/变化量/偏差、基准与真实应用；
-- **Lesson 2**：整数/分数/有理数、表示形式 vs 数学对象、等价表示、有限小数、精确值 vs 近似值、表示选择；
-- **Lesson 3**：数轴三要素、数↔点、左右与大小、位置/距离、非单位刻度、损坏刻度恢复、一维坐标。
+- **Lesson 1**：正数和负数、基准与偏差；
+- **Lesson 2**：有理数的意义、分类、表示与精确/近似；
+- **Lesson 3**：数轴三要素、数↔点、刻度与距离直觉；
+- **Lesson 4**：相反数、原点对称、$a$ 与 $-a$、双重负号、隐藏原点结构。
 
 扩展专题：
 
@@ -231,4 +243,4 @@ $$
 
 下一正式主线：
 
-> **Lesson 4：相反数——数轴上的对称位置。**
+> **Lesson 5：绝对值（一）——距离的定义与几何意义。**
