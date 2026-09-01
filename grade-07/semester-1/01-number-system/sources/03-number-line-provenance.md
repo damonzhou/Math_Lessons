@@ -1,8 +1,8 @@
-# 第3讲题源与命题依据｜数轴｜v1.5
+# 第3讲题源与命题依据｜数轴｜v1.6
 
 > 对应主课：[第3讲《数轴——怎样把“数”变成直线上的位置》](../03-number-line.md)
 >
-> 课程标准：[CURRENT v1.5](../../../../docs/standards/CURRENT.md)
+> 课程标准：[CURRENT v1.6](../../../../docs/standards/CURRENT.md)
 >
 > 本文件只采用课程标准允许的权威一手来源。搜索工具只用于定位资料，不作为题源认证依据。
 
@@ -78,7 +78,7 @@ https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026GaussSolution.h
 
 官方解答明确解释：
 
-- $-10$ 在0左侧10个单位；
+- −10 在0左侧10个单位；
 - 9在0右侧9个单位；
 - 比较的是“离0多远”。
 
@@ -126,7 +126,7 @@ https://cemc.uwaterloo.ca/sites/default/files/documents/2018/2018GaussSolution.h
 
 官方原题：
 
-https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2016Gauss7Contest.html
+https://cemc.uwaterloo.ca/sites/default/files/documents/2016/2016Gauss7Contest.html
 
 原题核心：数轴上 P、Q、R 三点，Q位于P、R中间；给P、Q坐标求R。
 
@@ -268,11 +268,23 @@ Final Challenge 不是该题原题，标记为：
 - 两集合重叠；
 - 程序分支分类；
 
-时再按 v1.5 显式提示学习 Extension E1。
+时再按当前标准显式提示学习 Extension E1。
 
 ---
 
-# 7. 来源限制
+# 7. v1.6 Markdown / LaTeX 渲染检查
+
+本讲发布时执行 v1.6 的 R11：
+
+- 标题中不使用 `$...$`；
+- 温度写作 `0 ℃`，不使用 `$0^\circ\mathrm C$`；
+- 简单标题数值如 `−2 > −5`、`1/2` 使用普通文本；
+- 分数、变量、方程等真正需要结构的表达继续使用 LaTeX；
+- 自动检查脚本：`tools/lint_markdown_rendering.py`。
+
+---
+
+# 8. 来源限制
 
 本讲不使用：
 
