@@ -6,9 +6,10 @@
 
 先读取：[CURRENT.md](./CURRENT.md)
 
-当前规范由 **v1.3 + v1.4 + v1.5 + v1.6** 共同组成：
+当前规范由 **v1.3 + v1.4 + v1.5 + v1.6 + v1.7** 共同组成：
 
-- [v1.6｜2026-09-01](./course-standard-v1.6.md) — **当前增量标准**；Markdown / LaTeX 渲染稳健性、简单数值/单位文本化、R11 自动检查
+- [v1.7｜2026-09-01](./course-standard-v1.7.md) — **当前增量标准**；36讲教材映射、R0.5 教材映射门禁
+- [v1.6｜2026-09-01](./course-standard-v1.6.md) — Markdown / LaTeX 渲染稳健性、简单数值/单位文本化、R11 自动检查
 - [v1.5｜2026-09-01](./course-standard-v1.5.md) — Mainline / Extension 分层、需要时提示学习机制、R0 主线定位审查
 - [v1.4｜2026-08-31](./course-standard-v1.4.md) — AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选规则
 - [v1.3｜2026-08-31](./course-standard-v1.3.md) — 当前完整基础标准；权威一手来源门槛 + 每讲 Release Review 强制门禁
@@ -27,6 +28,22 @@
 5. 跨会话继续课程时，以本目录为准，不依赖聊天记忆；
 6. 不为补齐编号而事后伪造历史标准快照。
 
+## 教材映射门禁｜v1.7
+
+七上 Mainline 必须同时读取：
+
+- [36讲 ↔ 当前人教版教材映射](../textbook-mapping-grade-07-semester-1.md)
+
+每个正式 Lesson 必须记录：
+
+- 当前教材章/知识节点；
+- DIRECT / SPLIT / INTEGRATED / BRIDGE 映射类型；
+- Core 与 Advanced/Olympiad 的边界。
+
+人教社未公开完整新版细小节编号时，只写可权威核实的章名/知识节点，不猜编号。
+
+Release Review 从 v1.7 起新增 **R0.5 教材映射**。
+
 ## Mainline / Extension 原则｜v1.5
 
 正式编号 Lesson 优先保持：
@@ -39,8 +56,6 @@ Advanced / Olympiad / Informatics 内容可以加深课程，但不能只因为�
 
 主要属于方法论、竞赛或信息学的专题优先放入 `extensions/`，后续真正需要时由 Mainline 显式提示学习。
 
-Release Review 从 v1.5 起新增 **R0 主线定位**。
-
 ## Markdown / LaTeX 稳健性｜v1.6
 
 课程以 GitHub Web / Mobile 稳定显示为优先：
@@ -50,7 +65,7 @@ Release Review 从 v1.5 起新增 **R0 主线定位**。
 - LaTeX 留给分数、变量、方程、不等式、根式等真正需要数学结构的内容；
 - 发布前运行 `tools/lint_markdown_rendering.py`；
 - GitHub Actions 自动检查本次变更的 Markdown；
-- Release Review 从 v1.6 起新增 **R11 Markdown / LaTeX 渲染稳健性**。
+- Release Review 包含 **R11 Markdown / LaTeX 渲染稳健性**。
 
 ## 权威来源原则
 
@@ -68,6 +83,7 @@ Release Review 从 v1.5 起新增 **R0 主线定位**。
 每个 Mainline Lesson 首次发布或重大更新前必须整体 Review：
 
 - R0 主线定位；
+- **R0.5 教材映射**；
 - R1 课程逻辑；
 - R2 知识覆盖；
 - R3 概念深度；
