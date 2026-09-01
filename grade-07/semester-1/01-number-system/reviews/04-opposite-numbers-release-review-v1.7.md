@@ -261,11 +261,23 @@ Lesson 4 相反数
 - 不使用 `<details>` 包裹数学答案；
 - 纯数字行内 LaTeX 不允许通过 lint。
 
-本讲主课和配套文件均按 v1.6 规则编写。
+自动检查实际发现并修复了两处答案文件标题中的 LaTeX：
 
-最终发布以 GitHub Actions `Markdown Render Lint` 成功为门槛。
+- 当堂答案参数分类标题；
+- 课后答案参数分类标题。
 
-**PASS（以自动检查成功为发布条件）**。
+修复后重新执行 GitHub Actions `Markdown Render Lint`：
+
+- 主课：success；
+- 当堂答案：success；
+- 课后练习：success；
+- 课后答案：success；
+- 题源审计：success；
+- 诊断与 Release Review：success。
+
+这次自动门禁不是形式检查，而是实际阻止了不符合 v1.6 规则的发布内容。
+
+**PASS**。
 
 ---
 
@@ -274,15 +286,13 @@ Lesson 4 相反数
 - [x] R0 Mainline 定位正确；
 - [x] R0.5 教材映射 DIRECT；
 - [x] R1～R10 内容 Review 通过；
-- [x] R11 人工预检完成；
+- [x] R11 自动渲染检查通过；
 - [x] 权威一手来源；
 - [x] 题源标签透明；
 - [x] 无隐藏 Extension 前置；
 - [x] 主课/答案/作业/题源/诊断全部建立。
 
 # 最终结论
-
-自动 Markdown lint 成功后：
 
 $$
 \boxed{\text{PASS}}
