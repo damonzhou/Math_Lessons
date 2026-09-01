@@ -3,12 +3,34 @@
 > **年级**：X年级  
 > **学期**：上/下  
 > **模块**：XXX  
+> **定位**：Mainline / Extension  
 > **课程标准**：读取 `docs/standards/CURRENT.md`  
 > **建议用时**：Core XX分钟；Advanced XX分钟；Olympiad + Informatics XX分钟  
 > **前置知识**：XXX  
 > **关键词**：XXX
 
 > **Release Review**：`./reviews/XX-lesson-release-review-vX.Y.md`
+
+---
+
+# R0. 主线定位｜写课前先完成
+
+先回答：
+
+1. 本主题是 Mainline 还是 Extension？
+2. 如果是 Mainline，它为什么必须在当前位置学习？
+3. 后续哪些主线知识直接依赖它？
+4. 如果教材没有独立章节，是否仍有足够强的知识依赖理由？
+5. 是否存在更重要、更直接的教材主线应该先学？
+6. Advanced/Olympiad 是否正在反客为主改变 Core 顺序？
+
+Mainline 优先满足：
+
+$$
+\boxed{\text{课标要求}+\text{人教版顺序}+\text{知识依赖}+\text{认知连续性}}
+$$
+
+若主要属于方法论、竞赛或信息学，应优先放入 `extensions/`。
 
 ---
 
@@ -22,6 +44,14 @@
 4. 依据是否来自权威一手资料。
 
 新闻、自媒体、商业题库转载、论坛和搜索摘要不能作为课程事实依据或真题认证依据。
+
+## 前置扩展提示｜如适用
+
+如果本讲某个 Advanced/Olympiad 部分第一次明显依赖 `extensions/` 中的专题，必须显式写：
+
+> **前置扩展提示（OPTIONAL / RECOMMENDED / REQUIRED-FOR-EXTENSION）**：本节会使用 ______ 思想。建议先学习：[专题链接]。
+
+未提示的 Extension 不得成为 Core 或 Final Challenge 的隐藏前置。
 
 ---
 
@@ -193,7 +223,8 @@ Informatics 说明数学模型与程序变量/算法的对应。
 4. 优先有权威题源/结构；
 5. Hint 1 → Hint 2 → Hint 3；
 6. 解后一般化/第二解法/条件变化；
-7. 真正服务本讲核心。
+7. 真正服务本讲核心；
+8. 不依赖未提示 Extension。
 
 ---
 
@@ -210,8 +241,9 @@ Informatics 说明数学模型与程序变量/算法的对应。
 
 # 第十一部分：Release Review｜发布前强制
 
-必须从十个维度整体审查：
+必须从十一个维度整体审查：
 
+- **R0 主线定位**
 - R1 课程逻辑
 - R2 课标/教材覆盖
 - R3 概念深度
@@ -229,4 +261,4 @@ Review 文件：
 reviews/XX-lesson-release-review-vX.Y.md
 ```
 
-只有结论达到 `PASS`（或完成 minor fixes 后 PASS），才把课程标记为完成。
+只有 R0 正确且最终结论达到 `PASS`（或完成 minor fixes 后 PASS），才把课程标记为完成。
