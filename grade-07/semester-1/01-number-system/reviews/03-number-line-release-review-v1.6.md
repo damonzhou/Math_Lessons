@@ -222,6 +222,7 @@ $$
 - 简单数值/单位优先普通文本；
 - 分数、变量、方程等真正需要结构的内容继续使用 LaTeX；
 - 自动检查脚本为 `tools/lint_markdown_rendering.py`；
+- 自动检查会忽略反引号包裹的代码示例，避免把“错误写法示例”误判为真实渲染问题；
 - GitHub Actions 对变更 Markdown 自动执行渲染检查。
 
 **PASS**。
