@@ -6,9 +6,10 @@
 
 先读取：[CURRENT.md](./CURRENT.md)
 
-当前规范由 **v1.3 + v1.4 + v1.5 + v1.6 + v1.7** 共同组成：
+当前规范由 **v1.3 + v1.4 + v1.5 + v1.6 + v1.7 + v1.8** 共同组成：
 
-- [v1.7｜2026-09-01](./course-standard-v1.7.md) — **当前增量标准**；36讲教材映射、R0.5 教材映射门禁
+- [v1.8｜2026-09-01](./course-standard-v1.8.md) — **当前增量标准**；provenance 候选权威题源池审查可见性、简单变量/符号表达文本化
+- [v1.7｜2026-09-01](./course-standard-v1.7.md) — 36讲教材映射、R0.5 教材映射门禁
 - [v1.6｜2026-09-01](./course-standard-v1.6.md) — Markdown / LaTeX 渲染稳健性、简单数值/单位文本化、R11 自动检查
 - [v1.5｜2026-09-01](./course-standard-v1.5.md) — Mainline / Extension 分层、需要时提示学习机制、R0 主线定位审查
 - [v1.4｜2026-08-31](./course-standard-v1.4.md) — AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选规则
@@ -27,6 +28,23 @@
 4. `CURRENT.md` 唯一指定当前生效规范；
 5. 跨会话继续课程时，以本目录为准，不依赖聊天记忆；
 6. 不为补齐编号而事后伪造历史标准快照。
+
+## 题源候选池可见性｜v1.8
+
+每个 Lesson 的 provenance 必须明确分成：
+
+- **实际采用来源**；
+- **候选权威题源池审查**。
+
+即使某讲没有实际使用 AMC / IMO / CMO，也要写明已经进入候选审查，以及为什么没有选用。
+
+这不意味着每讲必须机械使用高等级赛事题。仍按：
+
+$$
+\boxed{\text{教学匹配度}+\text{权威性}+\text{当前可解性}+\text{思维价值}}
+$$
+
+择优。
 
 ## 教材映射门禁｜v1.7
 
@@ -56,13 +74,14 @@ Advanced / Olympiad / Informatics 内容可以加深课程，但不能只因为�
 
 主要属于方法论、竞赛或信息学的专题优先放入 `extensions/`，后续真正需要时由 Mainline 显式提示学习。
 
-## Markdown / LaTeX 稳健性｜v1.6
+## Markdown / LaTeX 稳健性｜v1.6 + v1.8
 
 课程以 GitHub Web / Mobile 稳定显示为优先：
 
 - 标题禁止 `$...$`；
 - 简单数值/单位优先普通文本，如 `−5`、`0 ℃`、`3 cm`、`20%`；
-- LaTeX 留给分数、变量、方程、不等式、根式等真正需要数学结构的内容；
+- 简单变量/带符号变量/与0的简单比较也优先普通文本，如 `a`、`−a`、`a > 0`；
+- LaTeX 留给分数、根式、复合公式、方程等真正需要数学结构的内容；
 - 发布前运行 `tools/lint_markdown_rendering.py`；
 - GitHub Actions 自动检查本次变更的 Markdown；
 - Release Review 包含 **R11 Markdown / LaTeX 渲染稳健性**。
@@ -90,7 +109,7 @@ Advanced / Olympiad / Informatics 内容可以加深课程，但不能只因为�
 - R4 知识边界；
 - R5 应用场景；
 - R6 例题梯度；
-- R7 题源；
+- R7 题源（含候选权威题源池审查）；
 - R8 错误习惯；
 - R9 Final Challenge；
 - R10 前后衔接；
