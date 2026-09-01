@@ -15,6 +15,7 @@ import sys
 from pathlib import Path
 
 HEADING = re.compile(r"^\s{0,3}#{1,6}\s+")
+INLINE_CODE = re.compile(r"`[^`]*`")
 INLINE_MATH = re.compile(r"\$([^$\n]+)\$")
 SIMPLE_NUMBER = re.compile(r"^[+-]?\d+(?:\.\d+)?$")
 TEMP_LATEX = re.compile(
@@ -42,22 +43,26 @@ def check_file(path: Path) -> tuple[list[str], list[str]]:
         if in_fence:
             continue
 
-        if HEADING.match(raw) and "$" in raw:
+        # Inline code is documentation, not rendered math. Remove it before
+        # checking Markdown/LaTeX risks so examples of bad syntax are allowed.
+        rendered = INLINE_CODE.sub("", raw)
+
+        if HEADING.match(rendered) and "$" in rendered:
             errors.append(
                 f"{path}:{lineno}: heading contains '$...$'; use plain text/Unicode in headings"
             )
 
-        if TEMP_LATEX.search(raw):
+        if TEMP_LATEX.search(rendered):
             errors.append(
                 f"{path}:{lineno}: temperature uses inline LaTeX; write e.g. '0 ℃' instead"
             )
 
-        if DETAILS_OPEN.search(raw):
+        if DETAILS_OPEN.search(rendered):
             warnings.append(
                 f"{path}:{lineno}: <details> detected; do not place full math answers inside raw HTML"
             )
 
-        for match in INLINE_MATH.finditer(raw):
+        for match in INLINE_MATH.finditer(rendered):
             expr = match.group(1).strip()
             if SIMPLE_NUMBER.fullmatch(expr):
                 warnings.append(
