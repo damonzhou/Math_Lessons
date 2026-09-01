@@ -43,7 +43,7 @@ $$
 
 因此本讲是正式 Mainline，而原“集合/分类/余数”内容已迁入：
 
-[Extension E1｜分类是一种数学方法](../../extensions/classification-as-a-method.md)
+[Extension E1｜分类是一种数学方法](../extensions/classification-as-a-method.md)
 
 本讲 Core **不依赖**该 Extension。
 
@@ -396,9 +396,9 @@ $$
 
 ---
 
-## 15. 在两个整数之间判断一个数｜ADAPTED · CEMC 2018 Gauss Grade 7 Q6 structure
+## 15. 在两个整数之间判断数｜ADAPTED · CEMC 2018 Gauss Grade 7 Q6 structure
 
-判断下面哪个数位于3和4之间：
+判断下面哪些数位于3和4之间：
 
 $$
 \frac{14}{5},\quad\frac{13}{4},\quad\frac{17}{5},\quad\frac{9}{2}
@@ -418,7 +418,7 @@ $$
 
 两者都在3和4之间。
 
-如果题目要求唯一答案，就要继续检查条件，而不能看到第一个满足者就停止。
+必须继续检查全部候选，而不能看到第一个满足者就停止。
 
 > 这一改编同时训练 H10：找到一个候选不代表已经完成全部核对。
 
@@ -798,7 +798,7 @@ $$
 \frac{14}{5},\quad\frac{13}{4},\quad\frac{17}{5},\quad\frac92
 $$
 
-### 8｜SOURCE-STRUCTURE · CEMC 2026 Q3
+### 8｜ADAPTED · CEMC 2026 Q3 structure
 
 在：
 
