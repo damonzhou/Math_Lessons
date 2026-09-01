@@ -131,6 +131,24 @@ sources/XX-lesson-provenance.md
 
 ---
 
+# 5. Markdown / LaTeX 渲染预检｜v1.6
+
+写课过程中遵守：
+
+- 标题中不写 `$...$`；
+- 简单数值/单位用普通文本：`−5`、`0 ℃`、`3 cm`、`20%`；
+- 不写 `$0^\circ\mathrm C$` 一类不必要的单位 LaTeX；
+- 分数、根式、变量、方程、不等式等继续使用 LaTeX；
+- 完整数学答案不放 `<details>`。
+
+发布前运行：
+
+```bash
+python3 tools/lint_markdown_rendering.py <本次修改的 Markdown 文件>
+```
+
+---
+
 # 第一部分：情境导入
 
 用真正服务于概念的场景暴露旧知识不足、产生问题或建立共同结构。
@@ -241,7 +259,7 @@ Informatics 说明数学模型与程序变量/算法的对应。
 
 # 第十一部分：Release Review｜发布前强制
 
-必须从十一个维度整体审查：
+必须从十二个维度整体审查：
 
 - **R0 主线定位**
 - R1 课程逻辑
@@ -254,6 +272,14 @@ Informatics 说明数学模型与程序变量/算法的对应。
 - R8 错误/习惯
 - R9 Final Challenge
 - R10 前后衔接
+- **R11 Markdown / LaTeX 渲染稳健性**
+
+R11 至少检查：
+
+- 标题无 `$...$`；
+- 简单数值/单位优先普通文本；
+- 没有 `^\circ\mathrm C` 一类高风险单位 LaTeX；
+- 自动渲染检查通过。
 
 Review 文件：
 
@@ -261,4 +287,4 @@ Review 文件：
 reviews/XX-lesson-release-review-vX.Y.md
 ```
 
-只有 R0 正确且最终结论达到 `PASS`（或完成 minor fixes 后 PASS），才把课程标记为完成。
+只有 R0 正确、R11 通过且最终结论达到 `PASS`（或完成 minor fixes 后 PASS），才把课程标记为完成。
