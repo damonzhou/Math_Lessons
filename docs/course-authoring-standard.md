@@ -1,4 +1,4 @@
-# 课程统一编写与质量审核标准｜v1.5 工作版
+# 课程统一编写与质量审核标准｜v1.6 工作版
 
 > 当前规范以 `docs/standards/CURRENT.md` 为最高版本入口。
 
@@ -189,7 +189,31 @@ $$
 
 ---
 
-# 十二、文档结构
+# 十二、Markdown / LaTeX 渲染规则｜v1.6
+
+课程主要在 GitHub Web / Mobile 阅读，排版必须优先保证稳定显示。
+
+## 强制规则
+
+1. Markdown 标题中禁止 `$...$`；
+2. 简单数值和单位在正文中优先普通文本：`−5`、`0 ℃`、`3 cm`、`20%`；
+3. 不使用 `$0^\circ\mathrm C$` 一类可直接文本化的单位表达；
+4. LaTeX 留给分数、根式、变量、方程、不等式、乘方等真正需要数学结构的内容；
+5. 数学答案不放进 `<details>` 等原生 HTML 折叠块。
+
+## 自动检查
+
+发布前运行：
+
+```bash
+python3 tools/lint_markdown_rendering.py <本次修改的 Markdown 文件>
+```
+
+GitHub Actions 也会自动检查提交中发生变化的 Markdown 文件。
+
+---
+
+# 十三、文档结构
 
 Mainline：
 
@@ -219,7 +243,7 @@ semester/
 
 ---
 
-# 十三、强制 Release Review
+# 十四、强制 Release Review
 
 新 Lesson 首次发布、重大修改或迁移新标准时，必须 Review：
 
@@ -233,15 +257,16 @@ semester/
 - R7 题源质量；
 - R8 错误/习惯；
 - R9 Final Challenge；
-- R10 前后衔接。
+- R10 前后衔接；
+- **R11 Markdown / LaTeX 渲染稳健性**。
 
 结论：`PASS / PASS WITH MINOR FIXES / REVISE / BLOCK`。
 
-R0 定位错误时最高只能 `REVISE`。
+R0 定位错误时最高只能 `REVISE`；R11 存在高风险渲染错误时不得 `PASS`。
 
 ---
 
-# 十四、发布前硬检查
+# 十五、发布前硬检查
 
 - [ ] 当前标准已读取；
 - [ ] R0 已确认 Mainline / Extension 定位；
@@ -256,4 +281,6 @@ R0 定位错误时最高只能 `REVISE`。
 - [ ] H 标签明确；
 - [ ] Final Challenge 贴本讲核心且无隐藏 Extension 前置；
 - [ ] 前后课程不重复/断层；
+- [ ] 标题无 `$...$`，简单数值/单位未滥用 LaTeX；
+- [ ] Markdown 渲染自动检查通过；
 - [ ] Release Review 已 PASS。
