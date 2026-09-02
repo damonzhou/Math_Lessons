@@ -199,7 +199,7 @@ Core 完整覆盖：
 
 # 第五部分：Core 当堂训练
 
-> 原课堂答案：[当堂训练答案](./solutions/03-number-line-classroom.md)
+> 对应答案：[当堂训练答案](./solutions/03-number-line-classroom.md)
 
 ## A. Core
 
@@ -369,25 +369,29 @@ int offset = position - origin;
 
 ---
 
-# 第十一部分：Mastery Challenge｜损坏的数轴
+# 第十一部分：Mastery Challenge｜脱落的标签
 
-一条等距数轴的若干数字标签损坏，只保留若干点的左右顺序和两个可靠数值。
+数轴上从左到右有7个等距点 A、B、C、D、E、F、G，正方向向右。
 
-要求：
+B、E 原来的数字标签脱落，只找到两张标签：
 
-1. 先恢复左右顺序；
-2. 再确定每个间隔代表的数值变化；
-3. 恢复其余点和原点；
-4. 说明哪些条件保证答案唯一；
-5. 如果删除其中一个条件，构造一个不同解。
+```text
+−5 和 4
+```
 
-> 原“损坏数轴”Final Challenge 继续保留为 **Mastery Challenge**。它检验教学后的综合迁移，不再承担唯一 T0 角色。
+但不知道分别属于哪个点。
 
-完整原训练与答案仍见：
+回答：
 
-- [当堂训练答案](./solutions/03-number-line-classroom.md)
-- [课后练习](./exercises/03-number-line-homework.md)
-- [课后答案](./solutions/03-number-line-homework.md)
+1. 哪张标签属于 B，哪张属于 E？为什么？
+2. 相邻两个点的坐标相差多少？
+3. 恢复 A～G 的全部坐标。
+4. 原点0在哪里？是否是某个已标点？
+5. 如果删除“7个点等距”条件，哪些结论仍然能确定，哪些不能？请说明理由或给出反例。
+
+> 这道题作为**教学后的 Mastery Challenge**。它综合检查左右顺序、尺度恢复、隐藏原点和条件充分性，不承担 T0 角色。
+
+对应答案：[当堂训练答案](./solutions/03-number-line-classroom.md)
 
 ---
 
@@ -401,9 +405,10 @@ int offset = position - origin;
 
 Mastery Challenge 中观察：
 
-- 是否先顺序后尺度；
-- 是否主动识别关键条件；
-- 是否能构造删条件后的反例。
+- 是否先利用左右顺序确定标签归属；
+- 是否再恢复尺度；
+- 是否主动识别等距条件；
+- 是否能处理删条件后的不唯一性。
 
 ## T2｜约7天后陌生迁移
 
