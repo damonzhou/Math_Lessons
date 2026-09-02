@@ -1,38 +1,36 @@
-# Lesson 1～4 能力上限提升审计｜v2.0
+# Lesson 1～4 能力上限提升与全课程包审计｜v2.0
 
 > **审计标准**：课程标准 v2.0  
 > **审计日期**：2026-09-02  
-> **范围**：Lesson 1～4 当前 Mainline  
-> **状态**：MIGRATION COMPLETE
+> **范围**：Lesson 1～4 Mainline 全课程包  
+> **状态**：COMPLETE / PASS
 
 ---
 
 # 1. 总结论
 
-Lesson 1～4 已完成 v2.0 迁移。
+Lesson 1～4 已完成**完整 v2.0 迁移**，不是只更新主课。
 
-现在每讲都同时具备：
+每讲现在均包括并已对齐：
 
-1. L1 教材完整；
-2. L2 概念深度；
-3. L3 校内高阶；
-4. L4 竞赛 / 信息学迁移；
-5. L5 Ceiling Diagnostic；
-6. L6 Ceiling Builder；
-7. T0 → T1 → T2 能力变化观察；
-8. Diagnostic / Builder / Mastery 三种任务分离；
-9. v2.0 provenance 补充；
-10. v2.0 Release Review。
+- 主课；
+- 当堂训练答案；
+- 课后练习；
+- 课后练习答案；
+- Ceiling Diagnostic 答案与 C5 / T0-T1-T2 记录；
+- diagnostics 做题习惯诊断；
+- 原 provenance + v2.0 provenance addendum；
+- v2.0 Release Review。
 
-因此四讲当前统一状态：
+因此当前统一状态：
 
-> **教学内容 PASS；最高深度 + 能力上限提升体系 PASS。**
+> **Lesson 1～4：教材完整、最高深度、能力上限诊断、能力上限提升和配套文档一致性均 PASS。**
 
 ---
 
-# 2. 六层覆盖总表
+# 2. 六层覆盖
 
-| Lesson | L1 | L2 | L3 | L4 | L5 Diagnostic | L6 Builder | v2.0状态 |
+| Lesson | L1 教材完整 | L2 概念深度 | L3 校内高阶 | L4 竞赛/信息学 | L5 Diagnostic | L6 Builder | 状态 |
 |---|---:|---:|---:|---:|---:|---:|---|
 | 1 正数和负数 | PASS | PASS | PASS | PASS | PASS | PASS | COMPLETE |
 | 2 有理数 | PASS | PASS | PASS | PASS | PASS | PASS | COMPLETE |
@@ -41,137 +39,159 @@ Lesson 1～4 已完成 v2.0 迁移。
 
 ---
 
-# 3. Lesson 1｜正数和负数
+# 3. Lesson 1
 
-## T0
+### Diagnostic
 
-“基准50→52，偏差总和 +18→−6”冷启动。
+基准50→52、总偏差 +18→−6，冷启动检查学生能否自行发现“每个记录统一变化 → 整体变化”。
 
-诊断：
+### Builder
 
-- 基准识别；
-- 个体统一变化 → 整体变化；
-- 整体信息与个体信息区别；
-- 不唯一时构造反例。
+训练：
 
-## Builder
-
-- 共同基准 + 偏差的表示转换；
-- 不同基准的方法选择；
-- 删除条件后的反例；
-- 逆向构造数据；
+- 基准/表示转换；
+- 条件充分性；
+- 反例；
+- 逆向构造；
 - n 个数据、基准移动 k 的一般化。
 
-## Mastery
+### Mastery / T2
 
-原整体偏差 Final Challenge 保留为教学后综合迁移。
+原整体偏差挑战作为教学后 Mastery；约7天后用评分系统换基准题迁移。
+
+### 配套一致性
+
+homework 与答案已经同步 v2.0，旧 `$-2^\circ\mathrm C$` 等温度 LaTeX 已清除；diagnostics 已加入 C5 / T0-T1-T2 行为观察。
 
 ---
 
-# 4. Lesson 2｜有理数的意义与分类
+# 4. Lesson 2
 
-## T0
+### Diagnostic
 
-设备四舍五入显示2.4，判断精确值是否唯一、构造反例、寻找完整边界，并比较截断规则。
+设备四舍五入显示2.4，要求判断不唯一、构造反例、找完整边界并比较截断规则。
 
-## Builder
+### Builder
+
+训练：
 
 - 一数多表示；
-- 表示选择；
-- 反例推翻全称断言；
-- 四舍五入 / 截断条件变化；
-- 从1位小数推广到一般保留位数。
+- 写法 vs 数学对象；
+- 反例；
+- 显示规则变化；
+- 从具体边界推广到一般保留位数。
 
-## Mastery
+### Mastery / T2
 
-0.38显示值综合题用于教学后边界、规则变化和精确/近似迁移。
+0.38显示综合题作为 Mastery；T2 用正温度传感器显示3 ℃，避免引入与本讲无关的负数舍入端点干扰。
+
+### 配套一致性
+
+homework、answers、diagnostics 已重写，旧简单行内 LaTeX 写法已清理。
 
 ---
 
-# 5. Lesson 3｜数轴
+# 5. Lesson 3
 
-## T0
+### Diagnostic
 
-6个等距点，B = −1、E = 5：独立恢复尺度、全部坐标和隐藏原点；删除等距条件后构造两个不同模型。
+A～F 等距，B = −1、E = 5，冷启动恢复尺度、坐标和隐藏原点；删除等距后构造反例。
 
-## Builder
+### Builder
+
+训练：
 
 - 两锚点恢复尺度；
-- 删除等距条件；
+- 删除条件；
 - 逆向设计非单位刻度数轴；
-- 从具体刻度推广到一维线性结构。
+- “起点 + 间隔数 × 每格变化”的一般结构。
 
-## Mastery
+### Mastery / T2
 
-损坏数轴综合继续用于教学后“顺序 → 尺度 → 整体恢复”。
+Mastery 已具体化为“脱落标签”问题，避免抽象任务不可作答；T2 用机器人等距检测点迁移。
 
----
+### 配套一致性
 
-# 6. Lesson 4｜相反数
-
-## T0
-
-5个等距点 P～T，Q 与 T 互为相反数、P = −8：发现对称中心、隐藏原点和尺度；删除等距条件后构造反例。
-
-## Builder
-
-- “−a 一定为负”的正/0/负三类反例与边界；
-- 区分对称结构条件与尺度条件；
-- 逆向构造隐藏原点；
-- 把求相反数抽象成操作 R 并研究奇偶次复合。
-
-## Mastery
-
-最终挑战改成“相反变换机器”，与 T0 的数轴恢复结构保持明显差异。
+课堂答案已与具体 Mastery 对齐；homework、homework answers、diagnostics 均迁移 v2.0。
 
 ---
 
-# 7. T0 / T1 / T2
+# 6. Lesson 4
 
-四讲均新增独立 Ceiling 答案与记录文件，记录：
+### Diagnostic
 
-- C5-A～F；
-- Hint 等级；
-- 首个卡点；
-- 是否主动构造反例；
-- 是否能一般化；
-- 对应 H 标签；
-- T0 冷启动、T1 教学后迁移、T2 约7天后陌生表面迁移。
+P～T 等距，Q/T 互为相反数、P = −8，冷启动发现对称中心、隐藏原点、尺度及条件不足。
+
+### Builder
+
+训练：
+
+- “−a 一定为负”的正/0/负三类检查；
+- 对称结构与尺度条件分离；
+- 逆向构造；
+- 相反变换 R 的奇偶次复合。
+
+### Mastery / T2
+
+Mastery 使用“相反变换机器”，与 T0 数轴恢复保持结构差异；T2 使用 `flip` 校准系统。
+
+### 配套一致性
+
+课堂答案、homework、homework answers、diagnostics 均已同步 v2.0；简单变量/符号表达继续执行普通文本规则。
 
 ---
 
-# 8. 题源与角色透明度
+# 7. 题源体系
 
-四讲均新增 v2.0 provenance addendum。
+四讲均保留原权威 provenance，并增加 v2.0 addendum，明确区分：
 
-每讲明确区分：
+- `Diagnostic`：测上限；
+- `Builder`：提上限；
+- `Mastery`：验迁移。
 
-- `Diagnostic`：测当前上限；
-- `Builder`：训练上限；
-- `Mastery`：教学后验迁移。
+AMC、IMO、CMO、CEMC、UKMT、国内正式考试等均继续进入候选权威题源池审查；不因赛事等级机械超纲。
 
-AMC、IMO、CMO、CEMC、UKMT、国内正式考试等候选权威题源池继续进入审查；未采用高阶赛事时必须说明原因，不为赛事标签强行超纲。
+---
+
+# 8. 做题习惯与长期能力
+
+四讲 diagnostics 已同步 v2.0，重点追踪：
+
+- 是否主动确认基准、对象、尺度；
+- 是否质疑条件是否足够；
+- 是否会构造反例；
+- 是否能从具体推广到一般；
+- H3/H7/H9/H10 等真实长期习惯是否下降；
+- C5-A～F 与 T0/T1/T2 是否改善。
 
 ---
 
 # 9. Markdown / LaTeX
 
-四个主课 v2.0 更新提交的 `Markdown Render Lint` 均已实际运行并 `success`。
+本次全课程包迁移重点清理：
 
-重点规则继续有效：
+- 温度的 `^\circ\mathrm C` 不必要 LaTeX；
+- `$-4$`、`$-a$` 等简单数值/变量行内 LaTeX；
+- 标题中的数学标记；
+- 旧 homework 中遗留的简单表达。
 
-- 简单数值、单位、单变量、−a 等使用普通文本；
-- 标题不使用 `$...$`；
-- 复杂数学结构再使用 LaTeX。
+所有新提交必须继续经过 `Markdown Render Lint`。历史旧失败运行不代表当前文件状态；发布判断以当前版本提交的检查结果为准。
 
 ---
 
-# 10. 最终判断
+# 10. 最终状态
 
-Lesson 1～4 已不再处于“待补 Ceiling”状态。
+> **Lesson 1～4：v2.0 全课程包迁移完成，当前可正式标记 COMPLETE / PASS。**
 
-当前可以正式标记：
+Lesson 5 起必须从首次建设就原生执行最新 `CURRENT.md` 标准，包括：
 
-> **Lesson 1～4：v2.0 最高深度 + 能力上限提升体系完成。**
+```text
+Core
+→ Ceiling Diagnostic (T0)
+→ Ceiling Builder
+→ Advanced / Olympiad / Informatics
+→ Mastery (T1)
+→ 延迟陌生迁移 (T2)
+```
 
-Lesson 5 起必须从首次建设就原生采用 v2.0，不再事后迁移。
+以及完整的主课、答案、homework、provenance、diagnostics 和 Release Review 一致性检查。
