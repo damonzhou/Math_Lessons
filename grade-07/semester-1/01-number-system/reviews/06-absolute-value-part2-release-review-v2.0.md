@@ -3,7 +3,7 @@
 > **课程**：第6讲《绝对值（二）——当字母的正负未知时，为什么必须分类？》  
 > **审查标准**：CURRENT v2.0 + v1.3～v1.9  
 > **日期**：2026-09-02  
-> **发布状态**：PENDING R11 CI
+> **发布状态**：PASS
 
 ---
 
@@ -324,9 +324,11 @@ Lesson 7 有理数大小比较
 
 # R11｜Markdown / LaTeX 渲染稳健性
 
-**状态：PENDING CI**
+**结论：PASS**
 
-人工预检：
+人工预检与 GitHub `Markdown Render Lint` 均通过。
+
+已确认：
 
 - 标题无 `$...$`；
 - 简单数值、变量、百分数、温度均未使用不必要 LaTeX；
@@ -335,13 +337,27 @@ Lesson 7 有理数大小比较
 - 没有 `<details>` 包裹数学答案；
 - 复杂内容优先用稳定代码块表达分类关系。
 
-最终结论以 GitHub `Markdown Render Lint` 实际成功为准。
+实际机器门禁已分别成功覆盖：
+
+- 主课；
+- 当堂训练答案；
+- Ceiling / Builder / Mastery 解答；
+- Homework；
+- Homework Solutions；
+- provenance；
+- diagnostics；
+- Review 初稿；
+- 七上 README；
+- 根 README；
+- `CURRENT.md`。
+
+因此 R11 正式通过。
 
 ---
 
 # 文档包一致性
 
-已建设：
+已建设并同步：
 
 - [x] 主课 `06-absolute-value-part2.md`
 - [x] 当堂训练答案
@@ -351,18 +367,19 @@ Lesson 7 有理数大小比较
 - [x] provenance
 - [x] diagnostics
 - [x] v2.0 Release Review
-
-发布前剩余：
-
-- [ ] 所有新增 Markdown GitHub Actions 均成功；
-- [ ] 七上 README / 根 README / CURRENT 状态同步。
+- [x] 所有新增 Markdown GitHub Actions 成功
+- [x] 七上 README / 根 README / CURRENT 状态同步
 
 ---
 
-# 当前结论
+# 最终结论
 
-> **R0～R10 PASS；R11 等待实际 CI。**
+> **R0、R0.5、R1～R3、R3.5、R3.6、R4～R11 全部 PASS。**
 
-CI 与索引同步完成后，才正式标记：
+正式发布状态：
 
 > **PASS｜最高深度 + 能力上限提升体系完成。**
+
+下一正式主线：
+
+> **Lesson 7《有理数大小比较——为什么两个负数“离0越远反而越小”？》**
