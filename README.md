@@ -4,36 +4,27 @@
 
 > **课程标准入口**：开始任何 Lesson 编写、修改或扩展前，先读取 [COURSE_STANDARD.md](./COURSE_STANDARD.md) 和 [docs/standards/CURRENT.md](./docs/standards/CURRENT.md)。不得仅依赖聊天记录或会话记忆决定课程标准。
 
-当前规范：**v1.3 + v1.4 + v1.5 + v1.6 + v1.7 + v1.8**。
+当前规范：**v1.3 + v1.4 + v1.5 + v1.6 + v1.7 + v1.8 + v1.9**。
 
 - v1.3：权威一手来源 + 每讲发布前整体 Release Review；
 - v1.4：AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选；
 - v1.5：Mainline / Extension 分层、需要时提示学习、R0 主线定位审查；
-- v1.6：Markdown / LaTeX 渲染稳健性、简单数值/单位文本化、R11 自动检查；
+- v1.6：Markdown / LaTeX 渲染稳健性、R11 自动检查；
 - v1.7：36讲 ↔ 当前人教版教材映射、R0.5 教材映射门禁；
-- v1.8：provenance 候选权威题源池审查可见性、简单变量/符号表达文本化。
+- v1.8：provenance 候选权威题源池审查可见性、简单变量/符号表达文本化；
+- v1.9：**课标不再作为深度上限；五层深度覆盖 + Ceiling Diagnostic 能力上限诊断 + R3.5 门禁。**
 
 ---
 
 ## 课程总目标
 
 $$
-\boxed{\text{会认}\rightarrow\text{会用}\rightarrow\text{会解释}\rightarrow\text{会迁移}}
+\boxed{\text{会认}\rightarrow\text{会用}\rightarrow\text{会解释}\rightarrow\text{会迁移}\rightarrow\text{能独立发现结构}}
 $$
 
-主线：
+课程不是以“达到最低要求”为目标，而是：
 
-$$
-\text{课标/人教版}
-\rightarrow
-\text{概念完全理解}
-\rightarrow
-\text{校内拔高}
-\rightarrow
-\text{奥赛/竞赛思维}
-\rightarrow
-\text{真实应用与信息学迁移}
-$$
+> **完整覆盖当前教材节点，并在不依赖后续知识的前提下，把概念理解、校内高阶、竞赛迁移和独立发现能力推到当前知识边界内的上限。**
 
 ---
 
@@ -42,6 +33,7 @@ $$
 - [当前课程标准](./docs/standards/CURRENT.md)
 - [课程标准版本库](./docs/standards/README.md)
 - [七上36讲 ↔ 当前人教版教材映射](./docs/textbook-mapping-grade-07-semester-1.md)
+- [Lesson 1～4 最高深度/上限诊断审计](./docs/audits/lessons-01-04-depth-ceiling-audit-v1.9.md)
 - [课程统一编写与质量审核标准](./docs/course-authoring-standard.md)
 - [题源与原创命题规范](./docs/problem-source-policy.md)
 - [学习诊断与做题习惯纠偏](./docs/student-learning-diagnostics.md)
@@ -53,7 +45,6 @@ $$
 - [Lesson 3：数轴——怎样把“数”变成直线上的位置](./grade-07/semester-1/01-number-system/03-number-line.md)
 - [Lesson 4：相反数——数轴上的对称位置](./grade-07/semester-1/01-number-system/04-opposite-numbers.md)
 - [Extensions](./grade-07/semester-1/extensions/README.md)
-  - [E1：分类是一种数学方法——集合直觉、余数与抽屉原理](./grade-07/semester-1/extensions/classification-as-a-method.md)
 
 ---
 
@@ -65,56 +56,30 @@ $$
 \boxed{\text{课标要求}+\text{人教版顺序}+\text{知识依赖}+\text{认知连续性}}
 $$
 
-课程仍然会深入讲 Advanced / Olympiad / Informatics，但：
+课标/教材决定“学什么”和顺序，但不限制课程深度。
 
-> **理解更深，不等于更早引入更抽象的术语。**
-
-主要属于竞赛方法、抽象语言或信息学的专题优先保存在 `extensions/`。后续真正需要时，Mainline 会显式提示：
-
-- `OPTIONAL`
-- `RECOMMENDED`
-- `REQUIRED-FOR-EXTENSION`
-
-未提示的 Extension 不得成为 Core 或 Final Challenge 的隐藏前置。
-
-从 v1.7 起，每个 Mainline Lesson 还必须通过 **R0.5 教材映射**：
-
-- 对应当前人教版章/知识节点；
-- 标明 `DIRECT / SPLIT / INTEGRATED / BRIDGE`；
-- Core 与 Advanced/Olympiad 边界清楚；
-- 人教社未公开新版细小节编号时不猜编号。
-
-当前七上数系正式主线：
-
-$$
-\boxed{
-\text{正负数}
-\rightarrow
-\text{有理数}
-\rightarrow
-\text{数轴}
-\rightarrow
-\text{相反数}
-\rightarrow
-\text{绝对值}
-\rightarrow
-\text{大小比较}
-}
-$$
+主要属于竞赛方法、抽象语言或信息学的专题优先保存在 `extensions/`；后续真正需要时 Mainline 显式提示 `OPTIONAL / RECOMMENDED / REQUIRED-FOR-EXTENSION`。
 
 ---
 
-## Markdown / LaTeX 渲染规则｜v1.6 + v1.8
+## 五层深度体系｜v1.9
 
-课程主要在 GitHub Web / Mobile 阅读，优先保证稳定显示：
+每个 Mainline Lesson 必须同时检查：
 
-- 标题中禁止 `$...$`；
-- 简单数值和单位使用普通文本，例如 `−5`、`0 ℃`、`3 cm`、`20%`；
-- 单个变量、带正负号变量、简单与0比较也使用普通文本，例如 `a`、`−a`、`a > 0`；
-- 上述简单表达如果写成行内 LaTeX，直接作为 lint error；
-- LaTeX 只用于真正需要数学结构的分数、根式、复合公式、方程等；
-- GitHub Actions 自动检查发生变化的 Markdown 文件；
-- Release Review 包含 R11 渲染稳健性。
+1. **L1 教材完整层**：定义、性质、表示、正反例、边界、规范表达、典型应用；
+2. **L2 概念深度层**：为什么、相近概念、反例、多表示、条件变化、特殊值；
+3. **L3 校内高阶层**：逆向、参数、隐藏条件、分类、综合、压轴结构；
+4. **L4 竞赛/信息学迁移层**：权威竞赛陌生结构、一般化、算法化；
+5. **L5 Ceiling Diagnostic**：高阶方法尚未直接教学时，冷启动测学生独立发现能力。
+
+### Ceiling Diagnostic 与 Final Challenge 不再混淆
+
+- **Ceiling Diagnostic**：Core 学完后、Advanced/Olympiad 方法完整讲解前先独立尝试；
+- **Mastery / Final Challenge**：教学后检查真正掌握和迁移。
+
+如果 Final Challenge 的方法前文已经完整教过，它不能同时冒充唯一的能力上限诊断。
+
+上限诊断采用 C5-A～F 分级，而不是只看对错。
 
 ---
 
@@ -122,7 +87,7 @@ $$
 
 ### Core
 
-教育部课标和人教版官方教材/教师用书决定知识顺序、概念边界和最低掌握深度。
+教育部课标和人教版决定知识顺序、概念边界和不可遗漏内容；**不再把最低掌握要求当成课程完成上限。**
 
 ### Advanced
 
@@ -130,126 +95,74 @@ $$
 
 ### Olympiad
 
-权威题源池包括但不限于：
+权威题源池包括：
 
-- MAA：AMC 8 / AMC 10 / AMC 12、AIME、USAJMO、USAMO；
-- IMO 官方历年题/公开 Shortlist；
-- University of Waterloo CEMC：Gauss 等；
-- UKMT：JMC / JMO 等；
-- 中国数学会：CMO（中国数学奥林匹克）、全国高中数学联赛、中国女子数学奥林匹克等正式赛事；
-- 其他具有明确主办方和可核验原题的国内外权威赛事。
+- MAA AMC 8 / 10 / 12、AIME、USAJMO、USAMO；
+- IMO 官方历年题 / Shortlist；
+- CEMC Gauss 等；
+- UKMT JMC / JMO；
+- 中国数学会 CMO、全国高中数学联赛、中国女子数学奥林匹克等；
+- 其他可核验官方赛事。
 
-题源不按赛事名气机械排序，而按：
+题源选择按：
 
 $$
-\boxed{\text{教学匹配度}+\text{权威性}+\text{当前可解性}+\text{思维价值}}
+\boxed{\text{当前可解性}+\text{结构新颖度}+\text{诊断区分度}+\text{权威性}+\text{一般化价值}}
 $$
 
-七年级最常直接采用 AMC 8、Gauss 等适龄题；IMO/CMO 等高阶来源只选择当前知识可解的题或进行透明适龄改编。
+不是赛事名气。
 
-从 v1.8 起，每讲 provenance 必须同时记录：
-
-- **实际采用来源**；
-- **候选权威题源池审查**。
-
-如果某讲没有实际使用 AMC / IMO / CMO，也必须写明“已审查、为什么未选”，不能静默缺失；但也不能为了让赛事名出现而强行使用超纲题。
+每讲 provenance 必须同时记录：实际采用来源、候选权威题源池审查、Ceiling Diagnostic 来源与区分度。
 
 ### Informatics
 
-把数学概念连接到程序和算法：signed/unsigned、offset、进制、模运算、gcd/lcm、递推、组合、图论和算法证明。
+把数学概念连接到 signed/unsigned、offset、进制、模运算、gcd/lcm、递推、组合、图论和算法证明等。
 
 ---
 
 ## 权威来源硬规则
 
-课程设计与题源认证必须尽量回到一手来源：
+课程设计与题源认证必须回到一手来源：教育部、人教社、赛事主办方官方题目/解答、正式考试原卷、可核验正式出版物。
 
-- 教育部、人教社官方资料；
-- 赛事主办方官方题目和官方解答；
-- 教育主管部门/考试机构/学校正式试卷；
-- 可核验正式出版物。
-
-**新闻报道、自媒体、商业题库转载、论坛、搜索摘要不能作为课程设计事实依据或真题认证依据。**
-
-搜索工具只用于找到一手来源。
-
-题源标记：
-
-- `TEXTBOOK-MODEL`
-- `SOURCE`
-- `ADAPTED`
-- `SYNTHESIS`
-- `DESIGNED`
-
-每讲维护独立 provenance。
+新闻、自媒体、商业题库转载、论坛、搜索摘要不能作为课程设计事实依据或真题认证依据。
 
 ---
 
-## 每讲发布前必须整体 Review
+## Release Review
 
-当前 Release Review 顺序：
+当前必须检查：
 
-- R0：Mainline / Extension 定位；
-- R0.5：教材映射；
-- R1：课程逻辑；
-- R2：课标/教材覆盖；
-- R3：概念理解深度；
-- R4：知识边界/是否超前；
-- R5：应用场景；
-- R6：例题与训练梯度；
-- R7：题源质量（含实际采用来源 + 候选权威题源池审查）；
-- R8：错误与做题习惯；
-- R9：Final Challenge；
-- R10：前后 Lesson 纵向衔接；
-- R11：Markdown / LaTeX 渲染稳健性。
+- R0 Mainline / Extension；
+- R0.5 教材映射；
+- R1 课程逻辑；
+- R2 课标/教材完整覆盖；
+- R3 概念深度；
+- **R3.5 最高深度与能力上限诊断**；
+- R4 知识边界；
+- R5 应用场景；
+- R6 例题与训练梯度；
+- R7 题源质量与候选池；
+- R8 错误与做题习惯；
+- R9 Mastery / Final Challenge；
+- R10 前后衔接；
+- R11 Markdown / LaTeX。
 
-Review 结论存入 `reviews/`，达到 PASS 后才标记完成。
-
----
-
-## Final Challenge
-
-每讲至少一道高水平综合挑战：
-
-- 当前知识可解；
-- 不直接泄露方法；
-- 有真正突破口；
-- 优先有权威题源/明确结构依据；
-- Hint 1 → Hint 2 → Hint 3；
-- 解后一般化/第二解法/条件变化；
-- 不依赖未提示的 Extension。
-
-$$
-\text{一道题}\rightarrow\text{一种方法}\rightarrow\text{一类结构}
-$$
+只有 R3.5 也通过，才能标记“最高深度覆盖完成”。
 
 ---
 
-## 做题习惯
+## Markdown / LaTeX
 
-统一流程：
-
-$$
-\boxed{\text{提取条件}\rightarrow\text{明确所求}\rightarrow\text{建立关系}\rightarrow\text{执行检查}\rightarrow\text{回代核对}}
-$$
-
-长期跟踪 H1～H10，结合真实做题错误持续纠偏。
+课程主要在 GitHub Web / Mobile 阅读：标题不写 `$...$`；简单数值、单位和简单变量表达用普通文本；复杂数学结构再用 LaTeX；所有变更通过自动 lint。
 
 ---
 
 ## 当前进度
 
-正式 Mainline：
+正式 Mainline：Lesson 1～4 已完成原有教学 Review。
 
-- **Lesson 1**：正数和负数、基准与偏差；
-- **Lesson 2**：有理数的意义、分类、表示与精确/近似；
-- **Lesson 3**：数轴三要素、数↔点、刻度与距离直觉；
-- **Lesson 4**：相反数、原点对称、a 与 −a、双重负号、隐藏原点结构。
+v1.9 重新审计结果：
 
-扩展专题：
+> **Lesson 1～4 教学内容仍 PASS；独立 Ceiling Diagnostic 层需要补齐，因此暂不标记“最高深度覆盖完成”。**
 
-- **E1 分类是一种数学方法**：集合直觉、互斥/包含/相交、余数分类、周期筛选、抽屉原理、程序分支。以后按需要提示学习。
-
-下一正式主线：
-
-> **Lesson 5：绝对值（一）——距离的定义与几何意义。**
+下一正式主线：Lesson 5《绝对值（一）》；从首次建设开始直接执行 v1.9。
