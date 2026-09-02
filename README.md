@@ -46,6 +46,7 @@ $$
 - [Lesson 3：数轴](./grade-07/semester-1/01-number-system/03-number-line.md)
 - [Lesson 4：相反数](./grade-07/semester-1/01-number-system/04-opposite-numbers.md)
 - [Lesson 5：绝对值（一）](./grade-07/semester-1/01-number-system/05-absolute-value-part1.md)
+- [Lesson 6：绝对值（二）](./grade-07/semester-1/01-number-system/06-absolute-value-part2.md)
 - [Extensions](./grade-07/semester-1/extensions/README.md)
 
 ---
@@ -177,7 +178,7 @@ R0 主线定位
 
 ## 当前进度
 
-**Lesson 1～5 均已按 v2.0 完成完整课程包。**
+**Lesson 1～6 均已按 v2.0 完成完整课程包。**
 
 每讲包含或对应：
 
@@ -189,8 +190,8 @@ R0 主线定位
 - diagnostics；
 - Release Review。
 
-Lesson 5 是首个从首次建设起即原生执行完整 v2.0 流程的新 Lesson，并已通过 R0～R11 Review。
+Lesson 5～6 均从首次建设起原生执行完整 v2.0 流程，并通过 R0～R11 Review。
 
 下一正式主线：
 
-> **Lesson 6《绝对值（二）——含字母、分类讨论与边界理解》**。
+> **Lesson 7《有理数大小比较——为什么两个负数“离0越远反而越小”？》**。
