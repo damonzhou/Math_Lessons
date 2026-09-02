@@ -3,7 +3,7 @@
 > **课程**：第5讲《绝对值（一）——如果只问“离0多远”，方向还重要吗？》  
 > **审查标准**：CURRENT v2.0 + v1.3～v1.9  
 > **日期**：2026-09-02  
-> **发布状态**：PENDING R11 CI
+> **发布状态**：PASS
 
 ---
 
@@ -320,24 +320,36 @@ Mastery：“绝对值集合 1，2，2，4，4 + 五点有序 + C在0右侧”�
 
 # R11｜Markdown / LaTeX 渲染稳健性
 
-**状态：PENDING CI**
+**结论：PASS**
 
 人工预检：
 
 - 标题无 `$...$`；
 - 简单数值、温度、百分数均普通文本；
-- 没有 `\\%` LaTeX 百分号；
+- 没有 LaTeX 百分号转义；
 - 大量简单绝对值表达使用稳定普通文本/代码格式；
 - 无 `<details>` 包裹数学答案；
 - 未使用高风险温度 LaTeX。
 
-最终 PASS 必须以 GitHub `Markdown Render Lint` 实际成功为准。
+GitHub `Markdown Render Lint` 已逐一实际验证成功：
+
+- 主课：success；
+- 当堂训练答案：success；
+- Ceiling Diagnostic / Builder / Mastery 解答：success；
+- Homework：success；
+- Homework Solutions：success；
+- provenance：success；
+- diagnostics：success；
+- Release Review 初稿：success；
+- 七上 README 导航更新：success。
+
+因此 R11 正式通过。
 
 ---
 
 # 文档包一致性检查
 
-已建设：
+已建设并核对：
 
 - [x] 主课 `05-absolute-value-part1.md`
 - [x] 当堂答案
@@ -347,20 +359,13 @@ Mastery：“绝对值集合 1，2，2，4，4 + 五点有序 + C在0右侧”�
 - [x] provenance
 - [x] diagnostics
 - [x] v2.0 Release Review
-
-需要在最终发布前确认：
-
-- [ ] 所有新增 Markdown 的 GitHub Actions 均无新 lint failure；
-- [ ] 七上 README 已加入 Lesson 5 导航和状态。
+- [x] 七上 README 已加入 Lesson 5 导航和状态
+- [x] 所有新增/更新 Markdown 的 GitHub Actions 均无新 lint failure
 
 ---
 
 # 最终结论
 
-当前内容审计：
-
-> **R0～R10 PASS；R11 等待实际 CI。**
-
-CI 成功并更新导航后，才可正式标记：
-
 > **PASS｜最高深度 + 能力上限提升体系完成。**
+
+Lesson 5 可以作为正式 Mainline 使用，并进入 Lesson 6《绝对值（二）》的前置知识。
