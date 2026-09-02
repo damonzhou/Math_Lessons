@@ -7,7 +7,7 @@
 > **课程标准**：读取 `docs/standards/CURRENT.md`  
 > **教材映射**：当前人教版 · <章/知识群> · <知识节点>  
 > **映射类型**：DIRECT / SPLIT / INTEGRATED / BRIDGE  
-> **建议用时**：Core XX分钟；Ceiling Diagnostic 10～20分钟；Advanced XX分钟；Olympiad + Informatics XX分钟  
+> **建议用时**：Core XX分钟；Ceiling Diagnostic 10～20分钟；Ceiling Builder XX分钟；Advanced/Olympiad/Informatics XX分钟  
 > **前置知识**：XXX  
 > **关键词**：XXX
 
@@ -22,9 +22,8 @@
 1. 本主题是 Mainline 还是 Extension？
 2. 如果是 Mainline，它为什么必须在当前位置学习？
 3. 后续哪些主线知识直接依赖它？
-4. 如果教材没有独立章节，是否仍有足够强的知识依赖理由？
-5. 是否存在更重要、更直接的教材主线应该先学？
-6. Advanced/Olympiad 是否正在反客为主改变 Core 顺序？
+4. 是否存在更重要、更直接的教材主线应该先学？
+5. Advanced/Olympiad 是否正在反客为主改变 Core 顺序？
 
 Mainline 优先满足：
 
@@ -32,51 +31,30 @@ $$
 \boxed{\text{课标要求}+\text{人教版顺序}+\text{知识依赖}+\text{认知连续性}}
 $$
 
-若主要属于方法论、竞赛或信息学，应优先放入 `extensions/`。
-
 ---
 
-# R0.5. 教材映射｜v1.7+
+# R0.5. 教材映射
 
 Mainline 发布前读取对应教材映射表。
 
-七上：
+七上：`docs/textbook-mapping-grade-07-semester-1.md`
 
-`docs/textbook-mapping-grade-07-semester-1.md`
-
-检查：
-
-1. 当前章/知识群是什么？
-2. 对应哪个教材知识节点？
-3. DIRECT / SPLIT / INTEGRATED / BRIDGE 哪一种？
-4. Core 是否严格服务教材节点？
-5. 哪些 Advanced/Olympiad 内容必须明确标为深化？
-6. 是否错误猜测了官方未公开的新版细小节编号？
-
-无法权威核实新版小节编号时，只写章名/知识节点。
+确认章/知识节点、映射类型、Core 边界和前后依赖；无法权威核实新版小节编号时，不猜编号。
 
 ---
 
 # 0. 课程依据与知识边界
 
-发布前必须确认：
+发布前确认：
 
 1. 教育部课标要求；
 2. 人教版教材/教师用书安排；
 3. 学生此前已正式学过哪些工具；
 4. 依据是否来自权威一手资料。
 
-> **课标是底线和边界，不是课程深度上限。**
+> **课标是底线和知识边界，不是课程深度上限。**
 
-新闻、自媒体、商业题库转载、论坛和搜索摘要不能作为课程事实依据或真题认证依据。
-
-## 前置扩展提示｜如适用
-
-如果本讲某个 Advanced/Olympiad 部分第一次明显依赖 `extensions/` 中的专题，必须显式写：
-
-> **前置扩展提示（OPTIONAL / RECOMMENDED / REQUIRED-FOR-EXTENSION）**：本节会使用 ______ 思想。建议先学习：[专题链接]。
-
-未提示的 Extension 不得成为 Core、Ceiling Diagnostic 或 Final Challenge 的隐藏前置。
+未提示 Extension 不得成为 Core、Ceiling Diagnostic、Ceiling Builder 或 Final Challenge 的隐藏前置。
 
 ---
 
@@ -96,7 +74,7 @@ Mainline 发布前读取对应教材映射表。
 
 ---
 
-# 2. 五层深度目标｜v1.9
+# 2. 六层深度目标｜v2.0
 
 | 层级 | 目标 |
 |---|---|
@@ -104,7 +82,8 @@ Mainline 发布前读取对应教材映射表。
 | L2 概念深度 | 为什么、相近概念、反例、边界、表示转换、条件变化 |
 | L3 校内高阶 | 逆向、参数、隐藏条件、分类、综合、校内压轴结构 |
 | L4 竞赛/信息学迁移 | 权威竞赛陌生结构、一般化、算法化、真实迁移 |
-| L5 上限诊断 | 方法未完整教学前冷启动，测学生独立发现能力 |
+| L5 Ceiling Diagnostic | 方法未完整教学前冷启动，测学生当前独立发现上限 |
+| L6 Ceiling Builder | 针对真实卡点训练表示、反例、构造、一般化和陌生迁移，提升上限 |
 
 ---
 
@@ -120,7 +99,7 @@ $$
 
 ---
 
-# 4. 权威题源与标签｜v1.8+
+# 4. 权威题源与标签
 
 标签：
 
@@ -130,60 +109,37 @@ $$
 - `SYNTHESIS`
 - `DESIGNED`
 
-正式权威题源池包括：
+正式权威题源池包括教育部/人教社、国内正式考试、MAA AMC/AIME/USAJMO/USAMO、IMO、CEMC、UKMT、中国数学会 CMO/全国高中数学联赛/女子奥赛、CSP-J/NOI 等。
 
-- 教育部/人教社官方教材与资源；
-- 可追溯校内/区市统考/中考原卷；
-- MAA AMC 8/10/12、AIME、USAJMO/USAMO；
-- IMO 官方题目/公开 Shortlist；
-- CEMC Gauss 等官方竞赛；
-- UKMT JMC/JMO；
-- 中国数学会 CMO、全国高中数学联赛、中国女子数学奥林匹克等正式赛事；
-- CSP-J/NOI 等信息学官方题目结构。
-
-使用规则：
-
-$$
-\text{教学匹配度}+\text{权威性}+\text{当前可解性}+\text{思维价值}
-$$
-
-赛事越高级不代表越适合当前 Lesson。IMO/CMO 等高阶题必须通过适龄筛选。
-
-每讲维护：
-
-```text
-sources/XX-lesson-provenance.md
-```
-
-provenance 必须分成：
+provenance 必须记录：
 
 ## 4.1 实际采用来源
 
-记录真正进入本讲的教材依据、真题、改编题和结构来源。
+真正进入本讲的来源。
 
 ## 4.2 候选权威题源池审查
 
-至少显式记录 AMC / IMO / CMO / CEMC / UKMT / 国内正式考试等与本讲相关来源的审查结果。
+至少显式记录 AMC / IMO / CMO / CEMC / UKMT / 国内正式考试等相关来源的审查结果和未选原因。
 
-## 4.3 Ceiling Diagnostic 来源与区分度
+## 4.3 Ceiling Diagnostic
 
-明确：
+说明来源、当前可解性、结构新颖度和诊断区分度。
 
-- 哪一道题承担上限诊断；
-- 为什么当前知识可解；
-- 为什么它不是前文已教模板的简单换皮；
-- 为什么能区分独立发现、提示后完成和教学后掌握。
+## 4.4 Ceiling Builder
+
+说明训练目标、来源/设计依据，以及为什么不是机械重复。
+
+## 4.5 Mastery / Final Challenge
+
+说明与 Diagnostic / Builder 的结构差异和一般化价值。
 
 ---
 
-# 5. Markdown / LaTeX 渲染预检｜v1.6 + v1.8
-
-写课过程中遵守：
+# 5. Markdown / LaTeX 渲染预检
 
 - 标题中不写 `$...$`；
 - 简单数值/单位用普通文本：`−5`、`0 ℃`、`3 cm`、`20%`；
-- 单个变量、带正负号的变量、简单与0比较也用普通文本：`a`、`−a`、`a > 0`、`a = 0`、`a < 0`；
-- 纯数字或上述简单变量表达的行内 LaTeX 属于发布错误；
+- 单个变量、带正负号变量、简单与0比较用普通文本：`a`、`−a`、`a > 0`；
 - 分数、根式、多层括号、复合公式、方程等真正需要数学结构的内容继续使用 LaTeX；
 - 完整数学答案不放 `<details>`。
 
@@ -209,7 +165,7 @@ python3 tools/lint_markdown_rendering.py <本次修改的 Markdown 文件>
 
 # 第三部分：核心定义、正反例与边界
 
-核心概念尽量包含：正式定义、通俗解释、数学表达、正例、反例、边界、相近概念区别、表示形式与数学对象区别（如适用）。
+包含：正式定义、通俗解释、数学表达、正例、反例、边界、相近概念区别、多表示（如适用）。
 
 ---
 
@@ -219,7 +175,7 @@ python3 tools/lint_markdown_rendering.py <本次修改的 Markdown 文件>
 
 ---
 
-# 第五部分：Ceiling Diagnostic｜v1.9
+# 第五部分：Ceiling Diagnostic｜测上限
 
 > **首次尝试时不要打开 Hint 或答案。**
 
@@ -227,60 +183,92 @@ python3 tools/lint_markdown_rendering.py <本次修改的 Markdown 文件>
 
 1. Core 已学完，但 Advanced/Olympiad 方法尚未完整讲解；
 2. 当前及此前知识足够；
-3. 前文没有出现高度同构完整模板；
+3. 前文没有高度同构完整模板；
 4. 至少一个真实突破口；
-5. 建议独立 10～20 分钟；
+5. 独立 10～20 分钟；
 6. 记录首次卡点与 H1～H10；
 7. 独立尝试后才开放 Hint 1 → Hint 2 → Hint 3 → Full Solution。
 
-记录等级：
-
-- C5-A：独立完成并能一般化；
-- C5-B：独立找到核心结构，有次要错误；
-- C5-C：Hint 1 后完成；
-- C5-D：Hint 2 后完成；
-- C5-E：Hint 3 后完成；
-- C5-F：看完整解答后才能理解。
+记录 C5-A～F。
 
 ---
 
-# 第六部分：应用场景
+# 第六部分：Ceiling Builder｜提上限
 
-不要只换故事。检查不同数学语义和真实迁移。
+先写清本讲希望提升的能力，例如：
+
+> **目标能力**：从条件中主动寻找不变量 / 不擅自补条件 / 能构造反例 / 能从具体走向一般 / 能换表示寻找突破口。
+
+至少使用一种训练：
+
+- **表示转换**：数字 ↔ 数轴/图形 ↔ 表格 ↔ 语言 ↔ 程序模型；
+- **条件变化**：删条件、加条件、必要性/充分性；
+- **反例构造**：证明“不能确定”或找边界；
+- **逆向构造**：由结果反推条件，自己设计例子；
+- **多方法比较**：比较共同结构和适用条件；
+- **特殊到一般**：具体数字 → 参数 → 一般条件；
+- **陌生表面迁移**：同结构换不同真实/竞赛/信息学情境。
+
+Builder 必须针对 Ceiling Diagnostic 或已知 H 习惯的真实卡点，不允许只堆同模板题。
 
 ---
 
-# 第七部分：Advanced / Olympiad / Informatics
+# 第七部分：应用场景
 
-在 Ceiling Diagnostic 完成后再系统教学相关高阶方法。
-
-Advanced 不机械超前；Olympiad 强调陌生结构、分层 hints 和一般化；Informatics 说明数学模型与程序/算法对应。
+检查不同数学语义和真实迁移，不只是换故事。
 
 ---
 
-# 第八部分：错误实验室
+# 第八部分：Advanced / Olympiad / Informatics
+
+在 Ceiling Diagnostic 和针对性 Ceiling Builder 后，再系统教学高阶结构、方法比较、一般化和算法连接。
+
+---
+
+# 第九部分：错误实验室
 
 展示真实/高频错误路径，说明为什么会错、怎样发现、下次在哪一步检查。
 
 ---
 
-# 第九部分：当堂训练
+# 第十部分：当堂训练
 
 按需要覆盖 Core、Advanced、Olympiad、Informatics、DIAGNOSTIC。
 
 ---
 
-# 第十部分：Mastery Challenge / Final Challenge
+# 第十一部分：Mastery / Final Challenge
 
-教完高阶方法后用于验证真正掌握与迁移。
+教完高阶方法后，用新的表面结构验证真正掌握与迁移。
 
 必须：当前知识可解、题面不泄露方法、有真实突破口、优先权威题源/结构、有 Hint 1～3、解后一般化、不依赖未提示 Extension。
 
-> 如果该题的核心方法已在前文完整教学，它是 Mastery Challenge，不能同时冒充唯一的 Ceiling Diagnostic。
+不能与 Ceiling Diagnostic / Ceiling Builder 高度同构到只是在换数字。
 
 ---
 
-# 第十一部分：掌握度、复习与知识地图
+# 第十二部分：T0 / T1 / T2 能力变化
+
+## T0｜冷启动
+
+记录 Ceiling Diagnostic：独立程度、Hint 等级、首个卡点。
+
+## T1｜教学后
+
+用不同问题检查：
+
+- 是否更早识别结构；
+- 是否能解释方法；
+- 是否能一般化；
+- 是否减少同类 H 错误。
+
+## T2｜约7天后
+
+换一个不同表面结构再次检查迁移，避免把短期记忆误当能力提高。
+
+---
+
+# 第十三部分：掌握度、复习与知识地图
 
 至少区分：
 
@@ -288,13 +276,12 @@ Advanced 不机械超前；Olympiad 强调陌生结构、分层 hints 和一般�
 - 会用；
 - 会解释；
 - 会迁移；
-- 能独立发现结构。
-
-设置24小时和7天复习；Ceiling Diagnostic 至少安排一个不同表面结构的延迟迁移检查。
+- 能独立发现；
+- 独立发现的上限是否提高。
 
 ---
 
-# 第十二部分：Release Review｜发布前强制
+# 第十四部分：Release Review｜发布前强制
 
 必须审查：
 
@@ -304,13 +291,16 @@ Advanced 不机械超前；Olympiad 强调陌生结构、分层 hints 和一般�
 - R2 课标/教材覆盖
 - R3 概念深度
 - **R3.5 最高深度与能力上限诊断**
+- **R3.6 能力上限提升设计**
 - R4 知识边界
 - R5 应用场景
 - R6 例题/训练梯度
-- R7 题源质量：实际采用 + 候选池 + Ceiling Diagnostic 来源
+- R7 题源质量：实际采用 + 候选池 + Diagnostic + Builder
 - R8 错误/习惯
 - R9 Mastery/Final Challenge
 - R10 前后衔接
 - R11 Markdown / LaTeX 渲染稳健性
 
-只有 R3.5 也通过，才能标记“最高深度覆盖完成”。
+只有 R3.5 和 R3.6 都通过，才能标记：
+
+> **最高深度 + 能力上限提升体系完成。**
