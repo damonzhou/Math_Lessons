@@ -161,35 +161,39 @@ Ceiling Builder 不以增加题量为目标，而是训练：
 
 ---
 
-# 已完成 / 已准备
+# 已完成｜v2.0
 
 ## Lesson 1
 
-- [第1讲：从“3−5”到负数——数系为什么必须继续扩展](./01-number-system/01-positive-negative-numbers.md)
+- [主课：正数和负数](./01-number-system/01-positive-negative-numbers.md)
+- [Ceiling 答案与 T0/T1/T2 记录](./01-number-system/solutions/01-positive-negative-numbers-ceiling-v2.0.md)
+- [v2.0 题源补充](./01-number-system/sources/01-positive-negative-numbers-v2.0-provenance-addendum.md)
+- [v2.0 Release Review](./01-number-system/reviews/01-positive-negative-numbers-release-review-v2.0.md)
 
 ## Lesson 2
 
-- [第2讲：有理数的分类——一个数的“写法”和“身份”为什么不是一回事？](./01-number-system/02-rational-number-classification.md)
+- [主课：有理数的意义与分类](./01-number-system/02-rational-number-classification.md)
+- [Ceiling 答案与 T0/T1/T2 记录](./01-number-system/solutions/02-rational-number-classification-ceiling-v2.0.md)
+- [v2.0 题源补充](./01-number-system/sources/02-rational-number-classification-v2.0-provenance-addendum.md)
+- [v2.0 Release Review](./01-number-system/reviews/02-rational-number-classification-release-review-v2.0.md)
 
 ## Lesson 3
 
-- [第3讲：数轴——怎样把“数”变成直线上的位置](./01-number-system/03-number-line.md)
-  - [当堂训练答案](./01-number-system/solutions/03-number-line-classroom.md)
-  - [课后练习](./01-number-system/exercises/03-number-line-homework.md)
-  - [课后练习答案](./01-number-system/solutions/03-number-line-homework.md)
-  - [题源审计](./01-number-system/sources/03-number-line-provenance.md)
-  - [做题习惯诊断](./01-number-system/diagnostics/03-number-line-habits.md)
-  - [v1.6 Release Review](./01-number-system/reviews/03-number-line-release-review-v1.6.md)
+- [主课：数轴](./01-number-system/03-number-line.md)
+- [Ceiling 答案与 T0/T1/T2 记录](./01-number-system/solutions/03-number-line-ceiling-v2.0.md)
+- [课后练习](./01-number-system/exercises/03-number-line-homework.md)
+- [课后答案](./01-number-system/solutions/03-number-line-homework.md)
+- [v2.0 题源补充](./01-number-system/sources/03-number-line-v2.0-provenance-addendum.md)
+- [v2.0 Release Review](./01-number-system/reviews/03-number-line-release-review-v2.0.md)
 
 ## Lesson 4
 
-- [第4讲：相反数——为什么数轴上的对称位置代表一对特殊的数](./01-number-system/04-opposite-numbers.md)
-  - [当堂训练答案](./01-number-system/solutions/04-opposite-numbers-classroom.md)
-  - [课后练习](./01-number-system/exercises/04-opposite-numbers-homework.md)
-  - [课后练习答案](./01-number-system/solutions/04-opposite-numbers-homework.md)
-  - [题源审计](./01-number-system/sources/04-opposite-numbers-provenance.md)
-  - [做题习惯诊断](./01-number-system/diagnostics/04-opposite-numbers-habits.md)
-  - [v1.8 Release Review](./01-number-system/reviews/04-opposite-numbers-release-review-v1.8.md)
+- [主课：相反数](./01-number-system/04-opposite-numbers.md)
+- [Ceiling 答案与 T0/T1/T2 记录](./01-number-system/solutions/04-opposite-numbers-ceiling-v2.0.md)
+- [课后练习](./01-number-system/exercises/04-opposite-numbers-homework.md)
+- [课后答案](./01-number-system/solutions/04-opposite-numbers-homework.md)
+- [v2.0 题源补充](./01-number-system/sources/04-opposite-numbers-v2.0-provenance-addendum.md)
+- [v2.0 Release Review](./01-number-system/reviews/04-opposite-numbers-release-review-v2.0.md)
 
 ## v2.0 前4课审计
 
@@ -197,7 +201,7 @@ Ceiling Builder 不以增加题量为目标，而是训练：
 
 当前状态：
 
-> **Lesson 1～4 原教学内容 PASS；需要补独立 Ceiling Diagnostic、系统 Ceiling Builder 和 T0/T1/T2 观察后，才能按 v2.0 标记“能力上限提升体系完成”。**
+> **Lesson 1～4 已完成 v2.0 迁移：教材完整、最高深度、Ceiling Diagnostic、Ceiling Builder、T0/T1/T2、题源补充与 Release Review 均已建立。**
 
 ---
 
@@ -216,3 +220,7 @@ R0   主线定位
 ```
 
 Lesson 5 起直接按 v2.0 建设，不再把上限诊断和上限提升作为事后补丁。
+
+下一正式主线：
+
+> **Lesson 5《绝对值（一）——距离的定义与几何意义》**
