@@ -45,7 +45,8 @@
 - 新闻、自媒体、商业题库转载、论坛和搜索摘要不得作为课程依据或真题认证依据；
 - 搜索工具只用于定位官方资料；
 - Markdown 标题禁止使用 `$...$`；
-- 正文中的简单数值、单位、单个变量、带正负号变量及简单与0比较优先普通文本，例如 `−5`、`0 ℃`、`a`、`−a`、`a > 0`；
+- 正文中的简单数值、单位、百分数、单个变量、带正负号变量及简单与0比较优先普通文本，例如 `−5`、`0 ℃`、`50%`、`a`、`−a`、`a > 0`；
+- 百分数不使用 LaTeX `\%` 转义；GitHub/MathJax 中简单百分数一律直接写普通文本；
 - LaTeX 只用于真正需要数学结构的表达；
 - Lesson 发布前必须通过 `tools/lint_markdown_rendering.py` 的渲染检查。
 
@@ -61,13 +62,14 @@
 → 全册综合
 ```
 
-当前前四讲：
+当前已完成前五讲：
 
 ```text
 Lesson 1  正数和负数
 Lesson 2  有理数的意义与分类
 Lesson 3  数轴
 Lesson 4  相反数
+Lesson 5  绝对值（一）
 ```
 
 原“分类/集合/余数”Lesson 3 已调整为 Extension，后续按需要提示学习；旧 Mainline 文件已删除。
@@ -80,5 +82,6 @@ Lesson 4  相反数
 4. 不以会话记忆替代仓库标准；
 5. 全局规则变化创建新版本，不覆盖旧版本；
 6. Mainline Lesson 标记“最高深度 + 能力上限提升体系完成”前必须通过 R0、R0.5、R1～R3、R3.5、R3.6、R4～R11 完整 Release Review；
-7. Lesson 1～4 原 PASS 仍保留历史意义，但需要补齐 v1.9 Ceiling Diagnostic 和 v2.0 Ceiling Builder 后才能按新标准标记完成；
-8. Lesson 5 起首次建设就必须原生包含 Ceiling Diagnostic、Ceiling Builder 和 T0/T1/T2 迁移验证设计。
+7. Lesson 1～4 已完成 v1.9 Ceiling Diagnostic、v2.0 Ceiling Builder 与 T0/T1/T2 兼容迁移，当前按 v2.0 标记完成；
+8. Lesson 5 为首个从首次建设即原生包含 Ceiling Diagnostic、Ceiling Builder、T0/T1/T2、完整 provenance 与 R0～R11 Review 的新 Lesson，当前状态 PASS；
+9. Lesson 6 及后续新 Lesson 均必须从首次建设开始执行同一最新标准；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
