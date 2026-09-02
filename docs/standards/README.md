@@ -16,43 +16,36 @@
 - [v1.5｜2026-09-01](./course-standard-v1.5.md) — Mainline / Extension 分层、需要时提示学习机制、R0 主线定位审查
 - [v1.4｜2026-08-31](./course-standard-v1.4.md) — AMC / IMO / CMO 等国内外权威奥赛题源池及适龄筛选规则
 - [v1.3｜2026-08-31](./course-standard-v1.3.md) — 完整基础标准；权威一手来源门槛 + 每讲 Release Review 强制门禁
-- **v1.2｜2026-08-31** — 过渡版本：引入“每讲发布前整体 Review”；未单独保留快照，规则已由 v1.3 继承
-- [v1.1｜2026-08-31](./course-standard-v1.1.md) — 扩展国内权威竞赛/奥赛与历年真实考试题源
-- [v1.0｜2026-08-31](./course-standard-v1.0.md) — 初始完整标准快照
+- **v1.2｜2026-08-31** — 过渡版本；未单独保留快照，规则已由 v1.3 继承
+- [v1.1｜2026-08-31](./course-standard-v1.1.md)
+- [v1.0｜2026-08-31](./course-standard-v1.0.md)
 
-> **历史完整性说明**：不事后伪造缺失的 v1.2 快照。
-
-## 版本管理原则
-
-1. 已归档版本只读，不覆盖；
-2. 细则升级创建 v1.x；
-3. 课程理念、难度体系、主线或诊断/训练体系发生实质变化时升级主版本；
-4. `CURRENT.md` 唯一指定当前生效规范；
-5. 跨会话继续课程时，以仓库标准为准；
-6. 不为补齐编号而伪造历史标准。
+> 已归档版本只读；`CURRENT.md` 唯一指定当前生效规范。全局规则变化必须新增版本，不覆盖历史版本。
 
 ---
 
-## 能力上限提升体系｜v2.0
+## v2.0｜能力上限提升体系
 
-v1.9 解决“测得准”，v2.0 进一步要求“练得高”。
+核心原则：
 
-每讲从五层升级为六层：
+> **课标和人教版决定知识边界、主线和不可遗漏内容，但不作为课程深度上限。**
+
+每个 Mainline Lesson 必须覆盖六层：
 
 1. L1 教材完整；
 2. L2 概念深度；
 3. L3 校内高阶；
 4. L4 竞赛/信息学陌生迁移；
 5. L5 Ceiling Diagnostic：测当前独立发现上限；
-6. **L6 Ceiling Builder：针对真实卡点系统训练并提高上限。**
+6. L6 Ceiling Builder：针对真实卡点系统训练并提高上限。
 
-三种高阶任务必须区分：
+三种高阶任务必须分离：
 
 - **Ceiling Diagnostic**：方法尚未完整教学时测上限；
-- **Ceiling Builder**：针对卡点训练表示转换、条件变化、反例、逆向构造、多方法、一般化、陌生迁移；
-- **Mastery / Final Challenge**：教学后测迁移和一般化。
+- **Ceiling Builder**：训练表示转换、条件变化、反例、逆向构造、多方法、一般化、陌生迁移；
+- **Mastery / Final Challenge**：教学后检验稳定迁移和一般化。
 
-能力变化建议记录：
+能力变化记录：
 
 ```text
 T0 冷启动
@@ -60,82 +53,70 @@ T0 冷启动
 → T2 约7天后不同表面结构迁移
 ```
 
-真正的提升不只看最终正确率，还看：Hint 是否减少、结构识别是否更早、能否构造反例、能否一般化、同类 H 错误是否下降。
-
-前4课 v2.0 审计：
-
-- [Lesson 1～4 能力上限提升审计](../audits/lessons-01-04-ceiling-building-audit-v2.0.md)
-
-当前结论：原教学内容仍 PASS；L5 Diagnostic 和 L6 Builder 需要系统补齐后，才能标记“最高深度 + 能力上限提升体系完成”。
+主要观察 Hint 是否减少、结构识别是否更早、是否能主动换表示/构造反例/一般化，以及 H1～H10 是否下降。
 
 ---
 
-## 最高深度与上限诊断｜v1.9
+## Lesson 1～4 v2.0 迁移状态
 
-核心原则：
+[查看完整审计](../audits/lessons-01-04-ceiling-building-audit-v2.0.md)
 
-> **课标是底线和边界，不是课程深度上限。**
+当前状态：
 
-Ceiling Diagnostic 必须在 Advanced/Olympiad 方法完整教学前冷启动，第一次不开放 Hint，并按 C5-A～F 记录学生独立发现程度。
+> **Lesson 1～4 已完成 v2.0 迁移，L1～L6、Diagnostic / Builder / Mastery、T0/T1/T2、题源补充和 v2.0 Review 均已建立。**
 
-历史兼容审计：
+四个主课更新提交的 Markdown Render Lint 均已 `success`。
 
-- [Lesson 1～4 最高深度/上限诊断审计](../audits/lessons-01-04-depth-ceiling-audit-v1.9.md)
+Lesson 5 起必须从首次建设就原生采用 v2.0，不再事后补 Ceiling 模块。
 
 ---
 
-## 题源候选池可见性｜v1.8+
+## 题源与候选池可见性
 
 每个 Lesson provenance 必须明确：
 
 - 实际采用来源；
-- 候选权威题源池审查；
-- Ceiling Diagnostic 来源与区分度；
-- 从 v2.0 起还要记录 Ceiling Builder 的训练目标/来源，以及 Mastery Challenge 与前述任务的结构差异。
+- AMC / IMO / CMO / CEMC / UKMT / 国内正式考试等候选权威题源池审查；
+- Ceiling Diagnostic 的来源与诊断区分度；
+- Ceiling Builder 的训练目标/来源；
+- Mastery Challenge 与前述任务的结构差异。
 
-即使某讲没有实际使用 AMC / IMO / CMO，也要写明已经审查以及为什么没有选用。
+赛事越高级不等于越适合当前阶段。选择按：
+
+```text
+教学匹配度
++ 权威性
++ 当前可解性
++ 结构新颖度
++ 诊断区分度
++ 训练增益价值
++ 一般化价值
+```
 
 ---
 
-## 教材映射门禁｜v1.7
+## 教材映射与 Mainline / Extension
 
 七上 Mainline 必须读取：
 
 - [36讲 ↔ 当前人教版教材映射](../textbook-mapping-grade-07-semester-1.md)
 
-每个正式 Lesson 必须记录教材章/知识节点、映射类型、Core 与 Advanced/Olympiad 边界。
+正式 Lesson 优先保持课标、人教版顺序、知识依赖和认知连续性。主要属于方法论、竞赛或信息学的专题优先进入 `extensions/`，后续需要时再显式提示学习。
 
 ---
 
-## Mainline / Extension 原则｜v1.5
-
-正式编号 Lesson 优先保持课标、人教版顺序、知识依赖和认知连续性。主要属于方法论、竞赛或信息学的专题优先进入 `extensions/`，后续需要时再显式提示学习。
-
----
-
-## Markdown / LaTeX 稳健性｜v1.6 + v1.8
+## Markdown / LaTeX 稳健性
 
 - 标题禁止 `$...$`；
-- 简单数值/单位使用普通文本；
-- 简单变量/带符号变量/与0简单比较使用普通文本；
+- 简单数值、单位、简单变量/带符号变量使用普通文本；
 - LaTeX 留给真正需要数学结构的表达；
-- 发布前运行 lint；
+- 发布前运行 `tools/lint_markdown_rendering.py`；
 - GitHub Actions 自动检查；
 - Release Review 包含 R11。
 
 ---
 
-## 权威来源原则
-
-课程设计和题源认证必须回到权威一手资料：教育部、人教社、MAA AMC、IMO、CEMC、UKMT、中国数学会 CMO / 全国高中数学联赛、正式考试原卷及可靠正式出版物。
-
-新闻、自媒体、商业题库转载、论坛和搜索摘要不得作为课程事实依据或真题认证依据。
-
----
-
-## Release Review
-
-当前完整顺序：
+## Release Review 完整顺序
 
 - R0 主线定位；
 - R0.5 教材映射；
@@ -153,6 +134,6 @@ Ceiling Diagnostic 必须在 Advanced/Olympiad 方法完整教学前冷启动，
 - R10 前后衔接；
 - R11 Markdown / LaTeX。
 
-只有 R3.5 和 R3.6 都通过，才可以标记：
+只有 R3.5 和 R3.6 都通过，才能标记：
 
 > **最高深度 + 能力上限提升体系完成。**
