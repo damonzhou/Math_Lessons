@@ -153,7 +153,7 @@ Ceiling Builder 不以增加题量为目标，而是训练：
 
 学习机制：
 
-- 当前 Lesson 1～5 Core 不需要 E1；
+- 当前 Lesson 1～6 Core 不需要 E1；Lesson 6 的正/零/负分类直接来自数轴与绝对值，不以 E1 的集合术语为前置；
 - 后续第一次明显使用时，Mainline 明确提示 `OPTIONAL / RECOMMENDED / REQUIRED-FOR-EXTENSION`；
 - 未提示 Extension 不得成为 Core、Ceiling Diagnostic、Ceiling Builder 或 Final Challenge 的隐藏前置。
 
@@ -206,13 +206,24 @@ Ceiling Builder 不以增加题量为目标，而是训练：
 - [做题习惯与能力诊断](./01-number-system/diagnostics/05-absolute-value-part1-habits.md)
 - [v2.0 Release Review](./01-number-system/reviews/05-absolute-value-part1-release-review-v2.0.md)
 
+## Lesson 6
+
+- [主课：绝对值（二）](./01-number-system/06-absolute-value-part2.md)
+- [当堂训练答案](./01-number-system/solutions/06-absolute-value-part2-classroom.md)
+- [Ceiling Diagnostic / Builder / Mastery 解答与 T0/T1/T2 记录](./01-number-system/solutions/06-absolute-value-part2-ceiling-v2.0.md)
+- [课后练习](./01-number-system/exercises/06-absolute-value-part2-homework.md)
+- [课后答案](./01-number-system/solutions/06-absolute-value-part2-homework.md)
+- [题源与候选池审计](./01-number-system/sources/06-absolute-value-part2-provenance.md)
+- [做题习惯与能力诊断](./01-number-system/diagnostics/06-absolute-value-part2-habits.md)
+- [v2.0 Release Review](./01-number-system/reviews/06-absolute-value-part2-release-review-v2.0.md)
+
 ## v2.0 前4课审计
 
 - [Lesson 1～4 能力上限提升审计](../../docs/audits/lessons-01-04-ceiling-building-audit-v2.0.md)
 
 当前状态：
 
-> **Lesson 1～5 已按 v2.0 建立完整课程包；Lesson 5 为首个从首次建设就原生包含 Ceiling Diagnostic、Ceiling Builder、T0/T1/T2 的新 Lesson。**
+> **Lesson 1～6 已按 v2.0 建立完整课程包；Lesson 5～6 均从首次建设就原生包含 Ceiling Diagnostic、Ceiling Builder、T0/T1/T2。**
 
 ---
 
@@ -234,4 +245,4 @@ Lesson 5 起直接按 v2.0 建设，不再把上限诊断和上限提升作为�
 
 下一正式主线：
 
-> **Lesson 6《绝对值（二）——含字母、分类讨论与边界理解》**
+> **Lesson 7《有理数大小比较——为什么两个负数“离0越远反而越小”？》**
