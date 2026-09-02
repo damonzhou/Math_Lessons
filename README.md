@@ -45,6 +45,7 @@ $$
 - [Lesson 2：有理数的意义与分类](./grade-07/semester-1/01-number-system/02-rational-number-classification.md)
 - [Lesson 3：数轴](./grade-07/semester-1/01-number-system/03-number-line.md)
 - [Lesson 4：相反数](./grade-07/semester-1/01-number-system/04-opposite-numbers.md)
+- [Lesson 5：绝对值（一）](./grade-07/semester-1/01-number-system/05-absolute-value-part1.md)
 - [Extensions](./grade-07/semester-1/extensions/README.md)
 
 ---
@@ -168,6 +169,7 @@ R0 主线定位
 
 - 标题不使用 `$...$`；
 - 简单数值、单位、单变量、−a 等使用普通文本；
+- 百分数直接使用普通文本，例如 `50%`，不使用 LaTeX 百分号转义；
 - 复杂数学结构再使用 LaTeX；
 - 所有变更通过 `tools/lint_markdown_rendering.py` 与 GitHub Actions。
 
@@ -175,19 +177,20 @@ R0 主线定位
 
 ## 当前进度
 
-**Lesson 1～4 已全部完成 v2.0 迁移。**
+**Lesson 1～5 均已按 v2.0 完成完整课程包。**
 
-每讲现在都有：
+每讲包含或对应：
 
 - Core / Advanced / Olympiad / Informatics；
 - Ceiling Diagnostic；
 - Ceiling Builder；
 - C5-A～F 与 T0/T1/T2 记录；
-- v2.0 provenance 补充；
-- v2.0 Release Review。
+- provenance 与候选权威题源池审查；
+- diagnostics；
+- Release Review。
 
-四个主课更新提交的 Markdown Render Lint 均已实际 `success`。
+Lesson 5 是首个从首次建设起即原生执行完整 v2.0 流程的新 Lesson，并已通过 R0～R11 Review。
 
 下一正式主线：
 
-> **Lesson 5《绝对值（一）——距离的定义与几何意义》**，从首次建设开始原生采用 v2.0。
+> **Lesson 6《绝对值（二）——含字母、分类讨论与边界理解》**。
