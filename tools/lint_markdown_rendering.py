@@ -25,6 +25,7 @@ SIMPLE_COMPARISON = re.compile(
 TEMP_LATEX = re.compile(
     r"\$[^$\n]*(?:\^\s*\\circ|\\degree)[^$\n]*(?:\\mathrm\s*\{?C\}?|C)[^$\n]*\$"
 )
+LATEX_PERCENT = re.compile(r"\\%")
 DETAILS_OPEN = re.compile(r"<details\b", re.IGNORECASE)
 
 
@@ -62,6 +63,11 @@ def check_file(path: Path) -> tuple[list[str], list[str]]:
         if TEMP_LATEX.search(visible):
             errors.append(
                 f"{path}:{lineno}: temperature uses inline LaTeX; write e.g. '0 ℃' instead"
+            )
+
+        if LATEX_PERCENT.search(visible):
+            errors.append(
+                f"{path}:{lineno}: LaTeX percent escape '\\%' is browser-fragile; write percentages as plain text, e.g. '50%'"
             )
 
         if DETAILS_OPEN.search(visible):
