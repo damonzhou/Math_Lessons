@@ -3,7 +3,7 @@
 目标：以当前人教版七年级上册与《义务教育数学课程标准（2022年版）》为主线，完成：
 
 $$
-\text{课内掌握}\rightarrow\text{概念理解}\rightarrow\text{校内拔高}\rightarrow\text{奥赛思维}\rightarrow\text{信息学迁移}
+\text{课内掌握}\rightarrow\text{概念理解}\rightarrow\text{校内拔高}\rightarrow\text{奥赛思维}\rightarrow\text{信息学迁移}\rightarrow\text{独立发现}\rightarrow\text{持续提高能力上限}
 $$
 
 所有课程编写先读取：
@@ -11,10 +11,18 @@ $$
 - [当前课程标准](../../docs/standards/CURRENT.md)
 - [课程标准总入口](../../COURSE_STANDARD.md)
 - [36讲 ↔ 当前人教版教材映射](../../docs/textbook-mapping-grade-07-semester-1.md)
+- [课程统一编写与质量审核标准](../../docs/course-authoring-standard.md)
 
-当前规范：**v1.3 + v1.4 + v1.5 + v1.6 + v1.7**。
+当前规范：**v1.3～v1.9 + v2.0**。
 
-v1.7 要求每个正式 Mainline Lesson 在发布前完成 **R0.5 教材映射**。
+核心要求：
+
+- R0：Mainline / Extension 定位；
+- R0.5：教材映射；
+- R3.5：Ceiling Diagnostic 测当前独立上限；
+- R3.6：Ceiling Builder 针对真实卡点提升上限；
+- T0 → T1 → T2：检查提升是否能迁移并保持；
+- R11：Markdown / LaTeX 自动检查。
 
 建议节奏：每周2讲新课 + 1次复盘/测试，自学进度领先学校约1～2周即可，不机械追求超前速度。
 
@@ -76,8 +84,6 @@ v1.7 要求每个正式 Mainline Lesson 在发布前完成 **R0.5 教材映射**
 
 教材映射：当前人教版整式及整式加减知识群。
 
-对于新版官方页面尚未公开展示的细小节编号，本仓库不猜编号。
-
 ---
 
 ## 模块五｜一元一次方程
@@ -103,8 +109,6 @@ v1.7 要求每个正式 Mainline Lesson 在发布前完成 **R0.5 教材映射**
 
 教材映射：当前人教版 **“几何图形初步”** 知识群。
 
-“说清理由”作为全模块能力目标持续训练，不脱离教材节点单独抽象化。
-
 ---
 
 ## 模块七｜全册综合
@@ -115,26 +119,43 @@ v1.7 要求每个正式 Mainline Lesson 在发布前完成 **R0.5 教材映射**
 
 ---
 
+# 每讲统一的能力上限提升结构｜v2.0
+
+从 Lesson 5 起，新 Lesson 原生按：
+
+```text
+Core 完整学习
+→ Ceiling Diagnostic（T0）
+→ 记录首个卡点 / H 标签
+→ Ceiling Builder
+→ Advanced / Olympiad / Informatics
+→ Mastery / Final Challenge（T1）
+→ 约7天后陌生迁移（T2）
+```
+
+Ceiling Builder 不以增加题量为目标，而是训练：
+
+- 换表示；
+- 判断条件是否足够；
+- 构造反例；
+- 逆向构造；
+- 比较方法；
+- 从具体推广到一般；
+- 在陌生表面下识别同一数学结构。
+
+---
+
 # Extensions｜按需要学习，不占正式编号
 
 ## E1｜[分类是一种数学方法——集合直觉、余数与抽屉原理](./extensions/classification-as-a-method.md)
 
-内容包括：
-
-- 分类“不重不漏”；
-- 元素与集合直觉；
-- 属于 / 包含；
-- 互斥 / 包含 / 相交；
-- 奇偶与余数分类；
-- 周期与多条件筛选；
-- 抽屉原理；
-- 程序条件分支。
+内容包括分类“不重不漏”、集合直觉、属于/包含、互斥/相交、奇偶与余数分类、周期筛选、抽屉原理、程序条件分支。
 
 学习机制：
 
 - 当前 Lesson 1～4 Core 不需要 E1；
-- 后续第一次明显使用余数分类、抽屉原理、复杂集合重叠或程序多标签时，Mainline 会明确提示 `OPTIONAL / RECOMMENDED / REQUIRED-FOR-EXTENSION`；
-- 未提示的 Extension 不得成为 Core 或 Final Challenge 的隐藏前置。
+- 后续第一次明显使用时，Mainline 明确提示 `OPTIONAL / RECOMMENDED / REQUIRED-FOR-EXTENSION`；
+- 未提示 Extension 不得成为 Core、Ceiling Diagnostic、Ceiling Builder 或 Final Challenge 的隐藏前置。
 
 [查看所有 Extensions](./extensions/README.md)
 
@@ -168,15 +189,15 @@ v1.7 要求每个正式 Mainline Lesson 在发布前完成 **R0.5 教材映射**
   - [课后练习答案](./01-number-system/solutions/04-opposite-numbers-homework.md)
   - [题源审计](./01-number-system/sources/04-opposite-numbers-provenance.md)
   - [做题习惯诊断](./01-number-system/diagnostics/04-opposite-numbers-habits.md)
-  - [v1.7 Release Review](./01-number-system/reviews/04-opposite-numbers-release-review-v1.7.md)
+  - [v1.8 Release Review](./01-number-system/reviews/04-opposite-numbers-release-review-v1.8.md)
 
-## Extension E1
+## v2.0 前4课审计
 
-- [分类是一种数学方法](./extensions/classification-as-a-method.md)
-- [专项练习](./extensions/classification-as-a-method-exercises.md)
-- [练习答案](./extensions/classification-as-a-method-solutions.md)
+- [Lesson 1～4 能力上限提升审计](../../docs/audits/lessons-01-04-ceiling-building-audit-v2.0.md)
 
-旧 Mainline `03-classification-sets-partitions.md` 已删除。
+当前状态：
+
+> **Lesson 1～4 原教学内容 PASS；需要补独立 Ceiling Diagnostic、系统 Ceiling Builder 和 T0/T1/T2 观察后，才能按 v2.0 标记“能力上限提升体系完成”。**
 
 ---
 
@@ -187,9 +208,11 @@ v1.7 要求每个正式 Mainline Lesson 在发布前完成 **R0.5 教材映射**
 ```text
 R0   主线定位
 → R0.5 教材映射
-→ R1～R10 整体 Review
-→ R11 Markdown / LaTeX 渲染检查
+→ R1～R3
+→ R3.5 Ceiling Diagnostic
+→ R3.6 Ceiling Builder
+→ R4～R11
 → PASS
 ```
 
-如果未来人教社公布更完整的新版官方目录，先更新教材映射表和标准版本，再调整后续 Lesson；不根据非官方目录擅自改动课程主线。
+Lesson 5 起直接按 v2.0 建设，不再把上限诊断和上限提升作为事后补丁。
