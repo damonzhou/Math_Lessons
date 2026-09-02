@@ -62,7 +62,7 @@
 → 全册综合
 ```
 
-当前已完成前五讲：
+当前已完成前六讲：
 
 ```text
 Lesson 1  正数和负数
@@ -70,6 +70,7 @@ Lesson 2  有理数的意义与分类
 Lesson 3  数轴
 Lesson 4  相反数
 Lesson 5  绝对值（一）
+Lesson 6  绝对值（二）
 ```
 
 原“分类/集合/余数”Lesson 3 已调整为 Extension，后续按需要提示学习；旧 Mainline 文件已删除。
@@ -83,5 +84,5 @@ Lesson 5  绝对值（一）
 5. 全局规则变化创建新版本，不覆盖旧版本；
 6. Mainline Lesson 标记“最高深度 + 能力上限提升体系完成”前必须通过 R0、R0.5、R1～R3、R3.5、R3.6、R4～R11 完整 Release Review；
 7. Lesson 1～4 已完成 v1.9 Ceiling Diagnostic、v2.0 Ceiling Builder 与 T0/T1/T2 兼容迁移，当前按 v2.0 标记完成；
-8. Lesson 5 为首个从首次建设即原生包含 Ceiling Diagnostic、Ceiling Builder、T0/T1/T2、完整 provenance 与 R0～R11 Review 的新 Lesson，当前状态 PASS；
-9. Lesson 6 及后续新 Lesson 均必须从首次建设开始执行同一最新标准；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
+8. Lesson 5～6 均从首次建设即原生包含 Ceiling Diagnostic、Ceiling Builder、T0/T1/T2、完整 provenance 与 R0～R11 Review，当前状态 PASS；
+9. Lesson 7 及后续新 Lesson 均必须从首次建设开始执行同一最新标准；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
