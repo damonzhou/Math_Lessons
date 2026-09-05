@@ -3,14 +3,14 @@
 > **年级**：七年级上学期  
 > **模块**：有理数  
 > **定位**：Mainline  
-> **课程标准**：v2.0  
+> **课程标准**：v2.2  
 > **教材映射**：当前人教版七上 · 有理数 · 绝对值  
 > **映射类型**：SPLIT  
 > **建议用时**：Core 55～65分钟；Ceiling Diagnostic 15～20分钟；Ceiling Builder 25～35分钟；Advanced / Olympiad / Informatics 25～35分钟  
 > **前置知识**：正数、负数、0；有理数；数轴；相反数  
 > **关键词**：绝对值、距离、原点、方向、大小、信息丢失
 
-> **v2.0 Release Review**：[Lesson 5 v2.0 Review](./reviews/05-absolute-value-part1-release-review-v2.0.md)  
+> **v2.2 Release Review**：[Lesson 5 v2.2 Review](./reviews/05-absolute-value-part1-release-review-v2.2.md)  
 > **Ceiling 答案与记录**：[Lesson 5 Ceiling v2.0](./solutions/05-absolute-value-part1-ceiling-v2.0.md)
 
 ---
@@ -85,7 +85,7 @@ Lesson 6 再正式处理：
 
 ---
 
-# 1. 六层学习目标｜v2.0
+# 1. 六层学习目标｜v2.2
 
 | 层级 | 本讲目标 |
 |---|---|
@@ -95,6 +95,21 @@ Lesson 6 再正式处理：
 | L4 竞赛/信息学迁移 | 最近/最远结构、信息丢失、`abs()` 与不可逆性 |
 | L5 Ceiling Diagnostic | 未教逆向模板前，发现“只保留距离会丢失方向信息” |
 | L6 Ceiling Builder | 训练反例、条件充分性、逆向构造、一般化和信息恢复 |
+
+## v2.2 思维深度地图
+
+| 深度维度 | 本讲落点 |
+|---|---|
+| D1 结构发现 | 绝对值本质是“保留距离、丢失方向”的多对一映射 |
+| D2 条件充分性 | 只给距离是否足够恢复位置？增加哪一条方向信息才足够？ |
+| D3 反例与边界 | 用相反数反驳“绝对值相等则原数相等”；0是唯一单原像边界 |
+| D4 唯一性/完整性 | 逆向问题必须列出全部可能并说明何时能唯一恢复 |
+| D5 一般化 | 正距离对应两个对称位置，0对应一个位置，从具体值推广到一般规律 |
+| D6 表示转换/迁移 | 数轴距离 ↔ 记录器 ↔ `abs()` ↔ 偏差/机器人/折叠 |
+
+本讲的高阶目标是：
+
+> **把“会求绝对值”提升为“理解信息经过绝对值以后保留了什么、丢掉了什么，以及如何判断能否逆向恢复”。**
 
 ---
 
@@ -326,6 +341,7 @@ S → 4
 4. 为什么仅凭这4个距离记录，无法恢复唯一的一组原坐标？
 5. 如果只能再询问“某个点在0左边还是右边”这种信息，请提出尽可能少的额外信息，使原坐标能够唯一恢复，并说明为什么少一条仍然不够。
 6. 你认为绝对值运算从原数中“保留了什么信息，又丢掉了什么信息”？
+7. 你如何证明第3问已经列完、没有漏掉任何合法情况？
 
 ### T0 诊断目标
 
@@ -336,7 +352,8 @@ S → 4
 - 使用“互不相同”筛掉 P、S 同侧同点的情况；
 - 完整列举所有情况而不漏解；
 - 判断信息是否足够，而不是强行给唯一答案；
-- 抽象出“保留大小、丢失方向”。
+- 抽象出“保留大小、丢失方向”；
+- 能说明为什么枚举是完整的。
 
 重点记录：H3、H5、H7、H10。
 
@@ -416,10 +433,11 @@ S → 4
 1. 一个正的距离通常对应几个数轴位置？
 2. 为什么0是唯一例外？
 3. 两个不同的数如果绝对值相同，它们在数轴上是什么关系？
+4. 为什么不会存在第三个不同位置具有同样的到0距离？
 
 先用语言说明，不提前写 Lesson 6 的含字母分类公式。
 
-**训练能力**：特殊 → 一般。
+**训练能力**：特殊 → 一般 + 完整性。
 
 ## Builder 5｜自己设计“信息丢失机器”
 
@@ -483,6 +501,10 @@ S → 4
 
 ### 例1｜ADAPTED · CEMC 2019 Gauss Grade 8 Q3
 
+> 原题：[CEMC 2019 Gauss Grade 8 Q3 官方原题](https://cemc.uwaterloo.ca/sites/default/files/documents/2019/2019Gauss8Contest.html)  
+> 官方解答：[2019 Gauss Solution](https://cemc.uwaterloo.ca/sites/default/files/documents/2019/2019GaussSolution.pdf)  
+> **改编说明**：替换候选数字，并要求显式比较到0的距离。
+
 在 −7、−2、3、5、−6 中，哪个数离0最近？
 
 突破口不是“负数小不小”，而是比较距离：7、2、3、5、6。
@@ -490,6 +512,10 @@ S → 4
 答案：−2。
 
 ### 例2｜ADAPTED · CEMC 2026 Gauss Grade 7 Q3
+
+> 原题：[CEMC 2026 Gauss Grade 7 Q3 官方原题](https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html)  
+> 官方解答：[2026 Gauss Solution](https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026GaussSolution.html)  
+> **改编说明**：替换候选数字，保留“离0最远”的结构。
 
 在 −12、−9、4、10、11 中，哪个数离0最远？
 
@@ -606,7 +632,9 @@ abs(0)  → 0
 
 # 第十三部分：Mastery Challenge｜绝对值集合能恢复原位置吗
 
-> **SYNTHESIS · Mastery Challenge**  
+> **SYNTHESIS · Mastery Challenge · 无单一原题**  
+> 结构来源：[CEMC 2019 Gauss Grade 8 Q3](https://cemc.uwaterloo.ca/sites/default/files/documents/2019/2019Gauss8Contest.html)；[CEMC 2022 Gauss Grade 8 Q7](https://cemc.uwaterloo.ca/sites/default/files/documents/2022/2022Gauss8Contest.html)；[CEMC 2026 Gauss Grade 7 Q3](https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html)  
+> 官方解答：[2019](https://cemc.uwaterloo.ca/sites/default/files/documents/2019/2019GaussSolution.pdf)；[2022](https://cemc.uwaterloo.ca/sites/default/files/documents/2022/2022GaussSolution.html)；[2026](https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026GaussSolution.html)  
 > 教完 Builder 与 Advanced 后独立完成。
 
 数轴上有5个互不相同的整数位置，从左到右依次标为 A、B、C、D、E。
@@ -629,7 +657,8 @@ abs(0)  → 0
 4. 利用“从左到右”和“C在原点右侧”，唯一确定 A、B、C、D、E 的坐标。
 5. 如果删掉“C在原点右侧”，答案还唯一吗？请给出全部情况。
 6. 这个问题中，哪条信息负责恢复“方向”？哪条信息负责恢复“顺序”？
-7. 推广：如果一组互不相同的数中，同一个正的绝对值出现两次，这两个数必然有什么关系？
+7. 为什么第4问的答案只有这一组？请说明你已经排除了哪些其他可能。
+8. 推广：如果一组互不相同的数中，同一个正的绝对值出现两次，这两个数必然有什么关系？为什么不会有第三个不同的数具有相同正绝对值？
 
 Hint 1～3、完整解答与一般化见：[Ceiling 答案与记录](./solutions/05-absolute-value-part1-ceiling-v2.0.md)。
 
@@ -655,7 +684,8 @@ Hint 1～3、完整解答与一般化见：[Ceiling 答案与记录](./solutions
 - 能否从重复绝对值主动恢复相反位置；
 - 能否把“绝对值集合”和“数轴顺序”结合；
 - 能否识别哪条条件用于确定方向；
-- 删除条件后能否构造全部答案。
+- 删除条件后能否构造全部答案；
+- 能否说明答案完整且唯一。
 
 ## T2｜约7天后陌生迁移
 
@@ -669,7 +699,8 @@ Hint 1～3、完整解答与一般化见：[Ceiling 答案与记录](./solutions
 2. 距离1和3各可能来自哪一侧？
 3. 仅凭现有信息能否唯一恢复所有原位置？
 4. 最少再知道哪些方向信息可以恢复？
-5. 解释这和绝对值“保留什么、丢失什么”有什么关系。
+5. 为什么你提出的额外信息已经足够，而且不能再少？
+6. 解释这和绝对值“保留什么、丢失什么”有什么关系。
 
 T2 不追求复杂计算，重点检查学生是否能在新表面下主动识别同一结构。
 
@@ -708,7 +739,7 @@ T2 不追求复杂计算，重点检查学生是否能在新表面下主动识�
 
 - T1/T2 比 T0 更少需要 Hint；
 - 更早检查“另一侧”；
-- 更主动检查唯一性；
+- 更主动检查唯一性和完整性；
 - H3/H10 减少。
 
 ---
@@ -721,8 +752,9 @@ T2 不追求复杂计算，重点检查学生是否能在新表面下主动识�
 2. 为什么 `|−8| = 8`？
 3. 为什么绝对值不能是负数？
 4. 为什么知道绝对值通常不能唯一确定原数？
-5. 绝对值相同的两个不同数在数轴上有什么关系？
-6. `abs()` 为什么会丢失方向信息？
+5. 为什么一个正的绝对值恰好对应两个可能位置，而0只对应一个？
+6. 绝对值相同的两个不同数在数轴上有什么关系？
+7. `abs()` 为什么会丢失方向信息？
 
 知识地图：
 
@@ -737,7 +769,7 @@ T2 不追求复杂计算，重点检查学生是否能在新表面下主动识�
    ↓
 相反位置可以得到同一绝对值
    ↓
-逆向问题必须检查唯一性
+逆向问题必须检查完整性与唯一性
 ```
 
 下一讲：
