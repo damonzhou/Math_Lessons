@@ -133,6 +133,27 @@ provenance 必须记录：
 
 说明与 Diagnostic / Builder 的结构差异和一般化价值。
 
+## 4.6 题目页直接原题链接｜v2.1
+
+凡 `SOURCE` / `ADAPTED` 题目，题目标题下面、题面之前必须直接写：
+
+```markdown
+> 原题：[官方原题｜赛事 年份 组别 Qx](官方链接)  
+> 官方解答：[官方解答](官方链接)
+```
+
+并继续注明当前题是否改动数值、问法或条件。
+
+凡 `SYNTHESIS`：
+
+- 必须明确写 **“无单一原题”**；
+- 若结构来自具体真实题目，题目旁直接列出这些官方原题链接；
+- 若只是教材概念 + 当前课程模型综合，则写“结构依据见 provenance”。
+
+`DESIGNED / TEXTBOOK-MODEL` 不伪造原题链接。
+
+provenance 不能替代题目页的直接原题链接。
+
 ---
 
 # 5. Markdown / LaTeX 渲染预检
@@ -147,6 +168,7 @@ provenance 必须记录：
 
 ```bash
 python3 tools/lint_markdown_rendering.py <本次修改的 Markdown 文件>
+python3 tools/lint_problem_source_links.py <本次修改的 Markdown 文件>
 ```
 
 ---
@@ -245,6 +267,8 @@ Builder 必须针对 Ceiling Diagnostic 或已知 H 习惯的真实卡点，不�
 
 不能与 Ceiling Diagnostic / Ceiling Builder 高度同构到只是在换数字。
 
+若标签为 `SOURCE / ADAPTED / SYNTHESIS`，必须执行上面的 v2.1 题目级原题链接规则。
+
 ---
 
 # 第十二部分：T0 / T1 / T2 能力变化
@@ -296,11 +320,12 @@ Builder 必须针对 Ceiling Diagnostic 或已知 H 习惯的真实卡点，不�
 - R5 应用场景
 - R6 例题/训练梯度
 - R7 题源质量：实际采用 + 候选池 + Diagnostic + Builder
+- **R7.5 题目级官方原题链接可追溯性**
 - R8 错误/习惯
 - R9 Mastery/Final Challenge
 - R10 前后衔接
 - R11 Markdown / LaTeX 渲染稳健性
 
-只有 R3.5 和 R3.6 都通过，才能标记：
+只有 R3.5、R3.6、R7.5 和其余门禁都通过，才能标记：
 
 > **最高深度 + 能力上限提升体系完成。**
