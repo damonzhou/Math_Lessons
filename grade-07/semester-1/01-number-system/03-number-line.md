@@ -3,14 +3,14 @@
 > **年级**：七年级上学期  
 > **模块**：有理数  
 > **定位**：Mainline  
-> **课程标准**：v2.0  
+> **课程标准**：v2.2  
 > **教材映射**：当前人教版七上 · 有理数 · 数轴  
 > **映射类型**：DIRECT  
 > **建议用时**：Core 55～65分钟；Ceiling Diagnostic 15分钟；Ceiling Builder 25～35分钟；Advanced / Olympiad / Informatics 25～35分钟  
 > **前置知识**：正数、负数、0；有理数及其多种表示  
 > **关键词**：数轴、原点、正方向、单位长度、坐标、顺序、尺度、等距、位置
 
-> **v2.0 Release Review**：[Lesson 3 v2.0 Review](./reviews/03-number-line-release-review-v2.0.md)  
+> **v2.2 Release Review**：[Lesson 3 v2.2 Review](./reviews/03-number-line-release-review-v2.2.md)  
 > **Ceiling 答案与记录**：[Lesson 3 Ceiling v2.0](./solutions/03-number-line-ceiling-v2.0.md)
 
 ---
@@ -74,7 +74,7 @@ Core 完整覆盖：
 
 ---
 
-# 1. 六层学习目标｜v2.0
+# 1. 六层学习目标｜v2.2
 
 | 层级 | 本讲目标 |
 |---|---|
@@ -84,6 +84,23 @@ Core 完整覆盖：
 | L4 竞赛/信息学迁移 | 损坏数轴、等距结构、一维坐标和 offset |
 | L5 Ceiling Diagnostic | 在未教“刻度恢复法”前自行发现顺序与尺度 |
 | L6 Ceiling Builder | 训练两锚点、删条件反例、逆向构造和一般化 |
+
+## v2.2 思维深度地图
+
+本讲不靠复杂计算增加难度，重点训练：
+
+| 深度维度 | 本讲落点 |
+|---|---|
+| D1 结构发现 | 两个锚点 + 等距 → 恢复尺度 |
+| D2 条件充分性 | 删除“等距”后判断哪些结论失效 |
+| D3 反例与边界 | 构造两条都合法但中间点不同的数轴；原点可落在刻度之间 |
+| D4 唯一性/完整性 | 判断信息能否唯一恢复整条数轴，并说明为什么只有这一种恢复 |
+| D5 一般化 | 从具体点推广到“起点 + 间隔数 × 每格变化” |
+| D6 表示转换/迁移 | 数轴 ↔ 机器人检测点 ↔ 程序 offset |
+
+本讲的高阶目标不是“算更多”，而是：
+
+> **先识别哪些条件负责顺序、哪些条件负责尺度，再判断信息是否足够唯一确定答案。**
 
 ---
 
@@ -235,6 +252,7 @@ E 表示 5
 3. 原点0在哪里？它是已标出的某个点吗？
 4. 你是先确定“顺序”还是先确定“尺度”？为什么？
 5. 如果删除“6个点等距”这个条件，只保留 B 表示 −1、E 表示5以及点的左右顺序，前4问还能唯一回答吗？请构造两个不同的合法例子证明你的判断。
+6. 原题条件下，为什么恢复结果只有这一种？请指出“等距”和两个锚点分别排除了哪些不确定性。
 
 ### T0 诊断目标
 
@@ -244,7 +262,7 @@ E 表示 5
 - 用两个锚点确定尺度；
 - 接受原点可能落在两个刻度之间；
 - 删除关键条件后主动构造反例；
-- 检查唯一性。
+- 检查唯一性，并能说明唯一性来自哪些条件。
 
 记录 C5-A～F，见 [Ceiling 答案与记录](./solutions/03-number-line-ceiling-v2.0.md)。
 
@@ -371,6 +389,10 @@ int offset = position - origin;
 
 # 第十一部分：Mastery Challenge｜脱落的标签
 
+> **SYNTHESIS · Mastery Challenge · 无单一原题**  
+> 结构来源：[CEMC 2020 Gauss Grade 7 Q8 官方原题](https://cemc.uwaterloo.ca/sites/default/files/documents/2020/2020Gauss7Contest.html)；[CEMC 2016 Gauss Grade 7 Q10 官方原题](https://cemc.uwaterloo.ca/sites/default/files/documents/2016/2016Gauss7Contest.html)  
+> 官方解答：[2020 Gauss Solution](https://cemc.uwaterloo.ca/sites/default/files/documents/2020/2020GaussSolution.html)；[2016 Gauss Solution](https://cemc.uwaterloo.ca/sites/default/files/documents/2016/2016GaussSolution.pdf)
+
 数轴上从左到右有7个等距点 A、B、C、D、E、F、G，正方向向右。
 
 B、E 原来的数字标签脱落，只找到两张标签：
@@ -388,8 +410,9 @@ B、E 原来的数字标签脱落，只找到两张标签：
 3. 恢复 A～G 的全部坐标。
 4. 原点0在哪里？是否是某个已标点？
 5. 如果删除“7个点等距”条件，哪些结论仍然能确定，哪些不能？请说明理由或给出反例。
+6. 为什么原条件足以唯一恢复全部坐标？请分别说明“左右顺序”“两个标签”“等距”各自承担什么作用。
 
-> 这道题作为**教学后的 Mastery Challenge**。它综合检查左右顺序、尺度恢复、隐藏原点和条件充分性，不承担 T0 角色。
+> 这道题作为**教学后的 Mastery Challenge**。它综合检查左右顺序、尺度恢复、隐藏原点、条件充分性和唯一性，不承担 T0 角色。
 
 对应答案：[当堂训练答案](./solutions/03-number-line-classroom.md)
 
@@ -408,7 +431,8 @@ Mastery Challenge 中观察：
 - 是否先利用左右顺序确定标签归属；
 - 是否再恢复尺度；
 - 是否主动识别等距条件；
-- 是否能处理删条件后的不唯一性。
+- 是否能处理删条件后的不唯一性；
+- 是否能解释为什么答案只有这一组。
 
 ## T2｜约7天后陌生迁移
 
@@ -419,7 +443,8 @@ Mastery Challenge 中观察：
 1. 求相邻检测点坐标变化；
 2. 恢复所有点；
 3. 判断坐标0是否恰好是检测点；
-4. 删除“等距”后说明哪些结论失效。
+4. 删除“等距”后说明哪些结论失效；
+5. 解释为什么原条件下恢复结果唯一。
 
 ---
 
@@ -432,6 +457,7 @@ Mastery Challenge 中观察：
 3. 为什么右边的数更大？
 4. 为什么不能默认每格1？
 5. 怎样证明某个数轴问题答案不唯一？
+6. 怎样证明某个数轴恢复问题答案唯一？
 
 知识地图：
 
@@ -446,7 +472,7 @@ Mastery Challenge 中观察：
   ↓
 尺度与等距
   ↓
-条件充分性 / 数形结合
+条件充分性 / 唯一性 / 数形结合
 ```
 
 下一讲：
