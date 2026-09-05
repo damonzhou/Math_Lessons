@@ -32,7 +32,7 @@
 - Review 顺序从 **R0 主线定位 → R0.5 教材映射** 开始，并包含 **R3.5 最高深度与能力上限诊断、R3.6 能力上限提升设计、R3.7 思维深度、R7.5 题目级原题链接可追溯性、R11 Markdown / LaTeX 渲染稳健性**；
 - 每讲必须覆盖六层：教材完整、概念深度、校内高阶、竞赛/信息学迁移、Ceiling Diagnostic、Ceiling Builder；
 - 从 Lesson 7 起，每讲完整课程至少覆盖 v2.2 D1～D6 中四类思维深度，并至少有一处要求证明答案的唯一性、穷尽性或分类完整性；
-- Ceiling Diagnostic 必须在 Advanced/Olympiad 方法完整讲解前冷启动，不能用刚教过的同构模板假装能力上限；
+- Ceiling Diagnostic 必须在 Advanced/Olympiad 方法完整教学前冷启动，不能用刚教过的同构模板假装能力上限；
 - 上限诊断第一次尝试不开放 Hint，之后按 Hint 1 / 2 / 3 分级，并记录 C5-A～F；
 - Ceiling Builder 必须针对上限诊断或长期做题习惯暴露的真实卡点，训练表示转换、条件变化、逆向构造、多方法比较、一般化或陌生迁移中的至少一种；
 - 课程必须区分 **Ceiling Diagnostic（测上限）/ Ceiling Builder（提上限）/ Mastery Challenge（测教学后迁移）**；
@@ -99,9 +99,18 @@ Lesson 5  绝对值（一）
 Lesson 6  绝对值（二）
 ```
 
-Lesson 3～6 不因 v2.2 机械增加题量；只在 Review 发现真实思维深度缺口时补强。
+### Lesson 3～6 v2.2 迁移状态
 
-Lesson 7《有理数大小比较》是第一个原生执行 v2.2 的新 Lesson。
+**已完成。**
+
+- Lesson 3：补强尺度恢复、条件作用、唯一性证明，并完成题目级来源链接；
+- Lesson 4：补强对称变换、唯一不动点、条件充分性，并完成 SYNTHESIS 结构来源链接；
+- Lesson 5：补强信息丢失、逆向恢复、枚举完整性，并完成 CEMC 改编题官方原题/解答链接；
+- Lesson 6：补强分类完整性、边界0、反例、参数一般化，并完成 CEMC 改编题官方原题/解答链接；
+- 四讲主课与课后练习均已按 v2.2 更新；
+- 四讲均建立 v2.2 Release Review。
+
+Lesson 7《有理数大小比较》是第一个从首次建设即原生执行 v2.2 的新 Lesson。
 
 原“分类/集合/余数”Lesson 3 已调整为 Extension，后续按需要提示学习；旧 Mainline 文件已删除。
 
@@ -113,7 +122,6 @@ Lesson 7《有理数大小比较》是第一个原生执行 v2.2 的新 Lesson�
 4. 不以会话记忆替代仓库标准；
 5. 全局规则变化创建新版本，不覆盖旧版本；
 6. Mainline Lesson 标记“最高深度 + 能力上限提升体系完成”前必须通过 R0、R0.5、R1～R3、R3.5、R3.6、R3.7、R4～R7、R7.5、R8～R11 完整 Release Review；
-7. Lesson 1～4 已完成 v1.9 Ceiling Diagnostic、v2.0 Ceiling Builder 与 T0/T1/T2 兼容迁移；现有来源题按 v2.1 逐步回填题目级官方链接；
-8. Lesson 5～6 已原生包含 Ceiling Diagnostic、Ceiling Builder、T0/T1/T2、完整 provenance 与 R0～R11 Review；按 v2.1 回填题目级官方原题链接；
-9. Lesson 3～6 按 v2.2 采用“缺口驱动补强”，不为升级版本机械增加题量；
-10. Lesson 7 及后续新 Lesson 必须从首次建设开始执行 v2.2；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
+7. Lesson 3～6 已完成 v2.2 思维深度迁移、v2.1 题目级来源链接回填和 v2.2 Release Review；
+8. Lesson 1～2 维持当前版本，后续仅在发现真实思维深度或来源追溯缺口时迁移，不机械加题；
+9. Lesson 7 及后续新 Lesson 必须从首次建设开始执行 v2.2；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
