@@ -1,10 +1,11 @@
-# 第5讲 课后练习｜绝对值（一）
+# 第5讲 课后练习｜绝对值（一）｜v2.2
 
 > 建议主课结束数小时后独立完成，不边看讲义边答。
 >
 > 对应主课：[Lesson 5《绝对值（一）》](../05-absolute-value-part1.md)  
 > 答案：[课后练习答案](../solutions/05-absolute-value-part1-homework.md)  
-> 题源：[Lesson 5 provenance](../sources/05-absolute-value-part1-provenance.md)
+> 题源：[Lesson 5 provenance](../sources/05-absolute-value-part1-provenance.md)  
+> v2.2 重点：不仅找出可能答案，还要说明为什么已经列完、为什么某个条件足以或不足以恢复方向。
 
 ---
 
@@ -68,12 +69,17 @@
 1. 这个点可能表示哪些数？
 2. 为什么不能只写6？
 3. 如果再告诉你这个点在原点左边，答案是什么？
+4. 为什么第1问只有两个可能，而不是三个或更多？
 
 ---
 
 # B组｜理解与迁移
 
 ## 6｜ADAPTED · CEMC 2019 Gauss Grade 8 Q3
+
+> 原题：[CEMC 2019 Gauss Grade 8 Q3 官方原题](https://cemc.uwaterloo.ca/sites/default/files/documents/2019/2019Gauss8Contest.html)  
+> 官方解答：[2019 Gauss Solution](https://cemc.uwaterloo.ca/sites/default/files/documents/2019/2019GaussSolution.pdf)  
+> **改编说明**：替换候选数，并要求显式写出到0的距离。
 
 在下面各数中，哪个离0最近？
 
@@ -86,6 +92,10 @@
 ---
 
 ## 7｜ADAPTED · CEMC 2022 Gauss Grade 8 Q7
+
+> 原题：[CEMC 2022 Gauss Grade 8 Q7 官方原题](https://cemc.uwaterloo.ca/sites/default/files/documents/2022/2022Gauss8Contest.html)  
+> 官方解答：[2022 Gauss Solution](https://cemc.uwaterloo.ca/sites/default/files/documents/2022/2022GaussSolution.html)  
+> **改编说明**：保留“不同表示中比较谁离0最近”的结构，替换候选值并加入负数。
 
 在下面各数中，哪个离0最近？
 
@@ -104,6 +114,7 @@
 1. 这两个数分别是什么？
 2. 它们在数轴上有什么关系？
 3. 它们是什么关系的两个数？
+4. 为什么不会有第三个不同的有理数也满足绝对值为4.2？
 
 ---
 
@@ -114,6 +125,7 @@
 1. A、B 能否唯一确定？
 2. 列出全部可能的 `(A,B)`；
 3. 增加哪一条简单的左右信息，可以使答案唯一？
+4. 你如何证明第2问已经列完？
 
 ---
 
@@ -133,6 +145,7 @@
 2. 前两个输出3对应的两个不同输入必须是什么？
 3. 输出5对应的原输入有几个可能？
 4. 一共有几组可能的原输入？
+5. 为什么你的组合已经穷尽全部情况？
 
 ---
 
@@ -163,6 +176,7 @@ y = 8
 1. x 有哪些可能？
 2. 如果程序还额外保存一位信息：“x 原来在0左边还是右边”，是否能恢复x？
 3. 如果 y = 0，还需要额外方向信息吗？为什么？
+4. 为什么当 y > 0 时，一位“左右信息”已经足够恢复，而不需要更多信息？
 
 ---
 
@@ -179,6 +193,10 @@ y = 8
 ---
 
 ## 14｜ADAPTED · CEMC 2021 Gauss Grade 7 Q5
+
+> 原题：[CEMC 2021 Gauss Grade 7 Q5 官方原题](https://cemc.uwaterloo.ca/sites/default/files/documents/2021/2021Gauss7Contest.pdf)  
+> 官方解答：[2021 Gauss Solution](https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2021GaussSolution.html)  
+> **改编说明**：在原“比较正分数离0远近”结构中加入负分数，并增加“全部取相反数”迁移问法。
 
 在下面5个数中找出离0最近的数：
 
@@ -208,6 +226,7 @@ y = 8
 2. 绝对值为5的数是5还是 −5？
 3. 唯一确定这4个整数。
 4. 如果把“恰好有2个负数”删除，答案还有几种？
+5. 为什么第3问的条件足以唯一确定，而第4问不再唯一？
 
 ---
 
@@ -219,6 +238,8 @@ y = 8
 2. 两个不同的数绝对值相等，这两个数互为相反数；
 3. 一个数绝对值为0，这个数一定是0。
 
+对第2、3条正确结论，还要说明为什么不存在其他可能。
+
 ---
 
 # E组｜24小时后快速复测
@@ -227,6 +248,6 @@ y = 8
 
 1. 绝对值到底是位置还是距离？
 2. 为什么 `|−10| = 10`？
-3. 一个正的绝对值通常对应几个原数？
+3. 一个正的绝对值通常对应几个原数？为什么只有这些？
 4. 为什么0是例外？
 5. `abs()` 保留了什么，丢失了什么？
