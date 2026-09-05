@@ -6,9 +6,10 @@
 
 先读取：[CURRENT.md](./CURRENT.md)
 
-当前规范由 **v1.3～v1.9 + v2.0** 共同组成：
+当前规范由 **v1.3～v1.9 + v2.0 + v2.1** 共同组成：
 
-- [v2.0｜2026-09-02](./course-standard-v2.0.md) — **当前增量标准**；Ceiling Builder 能力上限提升体系、T0/T1/T2 迁移验证、R3.6 门禁
+- [v2.1｜2026-09-05](./course-standard-v2.1.md) — **当前增量标准**；题目级官方原题/解答链接、SYNTHESIS 结构来源、R7.5 可追溯性门禁
+- [v2.0｜2026-09-02](./course-standard-v2.0.md) — Ceiling Builder 能力上限提升体系、T0/T1/T2 迁移验证、R3.6 门禁
 - [v1.9｜2026-09-02](./course-standard-v1.9.md) — 最高深度覆盖、Ceiling Diagnostic、R3.5 能力上限诊断门禁
 - [v1.8｜2026-09-01](./course-standard-v1.8.md) — provenance 候选权威题源池审查可见性、简单变量/符号表达文本化
 - [v1.7｜2026-09-01](./course-standard-v1.7.md) — 36讲教材映射、R0.5 教材映射门禁
@@ -21,6 +22,24 @@
 - [v1.0｜2026-08-31](./course-standard-v1.0.md)
 
 > 已归档版本只读；`CURRENT.md` 唯一指定当前生效规范。全局规则变化必须新增版本，不覆盖历史版本。
+
+---
+
+## v2.1｜题目级原题链接可追溯性
+
+provenance 记录来源不再视为足够。
+
+凡题目使用真实考试/竞赛来源：
+
+- `SOURCE`：题目旁直接给官方原题链接；
+- `ADAPTED`：题目旁直接给官方原题链接，并明确是改编；
+- 有官方解答时同时给官方解答链接；
+- `SYNTHESIS`：明确“无单一原题”，若来自具体题目结构则直接列出结构来源链接；
+- `DESIGNED / TEXTBOOK-MODEL` 不伪造原题链接。
+
+Release Review 新增 **R7.5 题目级原题链接可追溯性**。
+
+从 Lesson 7 起原生执行；Lesson 3～6 的已有来源题回填官方链接。
 
 ---
 
@@ -64,8 +83,6 @@ T0 冷启动
 当前状态：
 
 > **Lesson 1～4 已完成 v2.0 迁移，L1～L6、Diagnostic / Builder / Mastery、T0/T1/T2、题源补充和 v2.0 Review 均已建立。**
-
-四个主课更新提交的 Markdown Render Lint 均已 `success`。
 
 Lesson 5 起必须从首次建设就原生采用 v2.0，不再事后补 Ceiling 模块。
 
@@ -129,11 +146,10 @@ Lesson 5 起必须从首次建设就原生采用 v2.0，不再事后补 Ceiling 
 - R5 应用场景；
 - R6 例题梯度；
 - R7 题源及候选池；
+- **R7.5 题目级官方原题链接可追溯性**；
 - R8 错误习惯；
 - R9 Mastery / Final Challenge；
 - R10 前后衔接；
 - R11 Markdown / LaTeX。
 
-只有 R3.5 和 R3.6 都通过，才能标记：
-
-> **最高深度 + 能力上限提升体系完成。**
+只有 R3.5、R3.6、R7.5 都通过，且其余 Release Review 项通过，才能标记课程发布完成。
