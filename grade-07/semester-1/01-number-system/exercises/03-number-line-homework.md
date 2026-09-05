@@ -1,7 +1,8 @@
-# 第3讲 课后练习｜数轴｜v2.1
+# 第3讲 课后练习｜数轴｜v2.2
 
 > 对应主课：[数轴](../03-number-line.md)  
-> 建议与主课间隔数小时后独立完成。
+> 建议与主课间隔数小时后独立完成。  
+> v2.2 重点：不仅算出结果，还要判断条件是否充分、答案是否唯一，以及为什么没有其他可能。
 
 ---
 
@@ -64,6 +65,7 @@ P 的坐标是多少？为什么不能默认“第4格就是 −4”？
 1. 每个间隔代表多少？
 2. 求 B、C；
 3. 如果把“等距”删除，B、C 还能唯一确定吗？
+4. 原条件下为什么 B、C 的值只有这一组？
 
 ## 8｜DESIGNED · BUILDER · COUNTEREXAMPLE
 
@@ -81,7 +83,7 @@ P 的坐标是多少？为什么不能默认“第4格就是 −4”？
 - 原点不在任何已标点上；
 - 给出其中两个点的坐标后，别人能唯一恢复全部点。
 
-写出你设计的数据和答案。
+写出你设计的数据和答案，并解释为什么信息足够唯一恢复。
 
 ---
 
@@ -99,12 +101,13 @@ $$
 -\frac32,\quad-\frac52,\quad-1.2,\quad-0.8,\quad-\frac74
 $$
 
-必须检查全部候选。
+必须检查全部候选，并说明为什么已经检查完整。
 
 ## 11｜SYNTHESIS · MASTERY TRANSFER
 
 > **无单一原题。**  
 > 结构来源：[CEMC 2020 Gauss Grade 7 Q8｜等距数轴结构](https://cemc.uwaterloo.ca/sites/default/files/documents/2020/2020Gauss7Contest.html) 与 [CEMC 2016 Gauss Grade 7 Q10｜中间位置/等距关系](https://cemc.uwaterloo.ca/sites/default/files/documents/2016/2016Gauss7Contest.html)。  
+> 官方解答：[2020](https://cemc.uwaterloo.ca/sites/default/files/documents/2020/2020GaussSolution.html)；[2016](https://cemc.uwaterloo.ca/sites/default/files/documents/2016/2016GaussSolution.pdf)  
 > 具体综合方式见：[Lesson 3 provenance](../sources/03-number-line-provenance.md)。
 
 数轴上从左到右有5个等距点 K、L、M、N、P。
@@ -115,6 +118,7 @@ $$
 2. 恢复全部点；
 3. 原点是否恰好是某个标点？
 4. 如果只保留 L = −4、P = 8 和左右顺序，删除“等距”，哪些答案失去唯一性？
+5. 原条件下为什么全部坐标只有这一组？分别说明两个锚点与“等距”的作用。
 
 ## 12｜INFORMATICS
 
@@ -137,7 +141,8 @@ $$
 1. 相邻检测点坐标变化；
 2. 所有检测点坐标；
 3. 坐标0是否恰好是检测点；
-4. 删除“等距”后哪些结论失效，并给反例。
+4. 删除“等距”后哪些结论失效，并给反例；
+5. 原条件下为什么恢复结果唯一？
 
 ---
 
@@ -149,6 +154,7 @@ $$
 - 是否把图形外观当条件；
 - 是否先恢复尺度再算局部；
 - 条件不足时是否构造不同模型；
+- 是否主动证明答案唯一或枚举完整；
 - H3、H7、H9、H10 是否出现。
 
 答案：[课后练习答案](../solutions/03-number-line-homework.md)
