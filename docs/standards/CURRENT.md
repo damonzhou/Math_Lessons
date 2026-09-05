@@ -1,7 +1,7 @@
 # 当前课程标准
 
-> **当前版本：v2.0**  
-> **生效日期：2026-09-02**  
+> **当前版本：v2.1**  
+> **生效日期：2026-09-05**  
 > **状态：ACTIVE**
 
 所有 Lesson、专题、训练、答案、题源审计、学习诊断和 Release Review，默认遵循：
@@ -13,7 +13,8 @@
 5. [课程标准 v1.7](./course-standard-v1.7.md) — 36讲教材映射、R0.5 教材映射门禁；
 6. [课程标准 v1.8](./course-standard-v1.8.md) — provenance 候选权威题源池审查可见性、简单变量/符号表达文本化；
 7. [课程标准 v1.9](./course-standard-v1.9.md) — 最高深度覆盖、Ceiling Diagnostic 能力上限诊断、R3.5 门禁；
-8. [课程标准 v2.0](./course-standard-v2.0.md) — Ceiling Builder 能力上限提升体系、T0/T1/T2 迁移验证、R3.6 门禁。
+8. [课程标准 v2.0](./course-standard-v2.0.md) — Ceiling Builder 能力上限提升体系、T0/T1/T2 迁移验证、R3.6 门禁；
+9. [课程标准 v2.1](./course-standard-v2.1.md) — SOURCE / ADAPTED / SYNTHESIS 题目级官方原题链接、R7.5 可追溯性门禁。
 
 七上教材映射工作表：
 
@@ -26,7 +27,7 @@
 - 每个 Mainline Lesson 必须能映射到当前人教版的正式章/知识节点，或明确标记为综合课；
 - 人教社未公开完整新版细小节编号时，只写可权威核实的章名/知识节点，不猜编号；
 - 每个 Lesson 首次发布或重大更新前必须整体 Review；
-- Review 顺序从 **R0 主线定位 → R0.5 教材映射** 开始，并包含 **R3.5 最高深度与能力上限诊断、R3.6 能力上限提升设计、R11 Markdown / LaTeX 渲染稳健性**；
+- Review 顺序从 **R0 主线定位 → R0.5 教材映射** 开始，并包含 **R3.5 最高深度与能力上限诊断、R3.6 能力上限提升设计、R7.5 题目级原题链接可追溯性、R11 Markdown / LaTeX 渲染稳健性**；
 - 每讲必须覆盖六层：教材完整、概念深度、校内高阶、竞赛/信息学迁移、Ceiling Diagnostic、Ceiling Builder；
 - Ceiling Diagnostic 必须在 Advanced/Olympiad 方法完整讲解前冷启动，不能用刚教过的同构模板假装能力上限；
 - 上限诊断第一次尝试不开放 Hint，之后按 Hint 1 / 2 / 3 分级，并记录 C5-A～F；
@@ -42,13 +43,16 @@
 - 奥赛题源池包括 AMC、CEMC、UKMT、IMO、CMO / 中国数学会正式赛事等；
 - 每讲 provenance 必须区分“实际采用来源”和“候选权威题源池审查”，并说明哪些题承担 Ceiling Diagnostic、Ceiling Builder 和 Mastery/Final Challenge；
 - AMC / IMO / CMO 等没有被本讲选用时，必须说明已审查及未选理由，不能静默缺失；
+- `SOURCE` / `ADAPTED` 题目必须在题目附近直接给官方原题链接；有官方解答时同时给官方解答链接；
+- `SYNTHESIS` 必须明确“无单一原题”并在存在具体题目结构来源时直接列出官方来源链接；
+- 题目页面的原题链接不能只由 provenance 代替；provenance 与题目页必须相互一致；
 - 新闻、自媒体、商业题库转载、论坛和搜索摘要不得作为课程依据或真题认证依据；
 - 搜索工具只用于定位官方资料；
 - Markdown 标题禁止使用 `$...$`；
 - 正文中的简单数值、单位、百分数、单个变量、带正负号变量及简单与0比较优先普通文本，例如 `−5`、`0 ℃`、`50%`、`a`、`−a`、`a > 0`；
 - 百分数不使用 LaTeX `\%` 转义；GitHub/MathJax 中简单百分数一律直接写普通文本；
 - LaTeX 只用于真正需要数学结构的表达；
-- Lesson 发布前必须通过 `tools/lint_markdown_rendering.py` 的渲染检查。
+- Lesson 发布前必须通过 `tools/lint_markdown_rendering.py` 和 `tools/lint_problem_source_links.py` 的自动检查。
 
 ## 当前七上章节主线
 
@@ -78,11 +82,11 @@ Lesson 6  绝对值（二）
 ## 使用规则
 
 1. 新 Lesson 或重大修改前先读取本文件；
-2. 再读取 v1.3～v1.9 + v2.0；
+2. 再读取 v1.3～v1.9 + v2.0 + v2.1；
 3. 七上 Mainline 同时读取教材映射表；
 4. 不以会话记忆替代仓库标准；
 5. 全局规则变化创建新版本，不覆盖旧版本；
-6. Mainline Lesson 标记“最高深度 + 能力上限提升体系完成”前必须通过 R0、R0.5、R1～R3、R3.5、R3.6、R4～R11 完整 Release Review；
-7. Lesson 1～4 已完成 v1.9 Ceiling Diagnostic、v2.0 Ceiling Builder 与 T0/T1/T2 兼容迁移，当前按 v2.0 标记完成；
-8. Lesson 5～6 均从首次建设即原生包含 Ceiling Diagnostic、Ceiling Builder、T0/T1/T2、完整 provenance 与 R0～R11 Review，当前状态 PASS；
-9. Lesson 7 及后续新 Lesson 均必须从首次建设开始执行同一最新标准；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
+6. Mainline Lesson 标记“最高深度 + 能力上限提升体系完成”前必须通过 R0、R0.5、R1～R3、R3.5、R3.6、R4～R7、R7.5、R8～R11 完整 Release Review；
+7. Lesson 1～4 已完成 v1.9 Ceiling Diagnostic、v2.0 Ceiling Builder 与 T0/T1/T2 兼容迁移；现有来源题按 v2.1 逐步回填题目级官方链接；
+8. Lesson 5～6 已原生包含 Ceiling Diagnostic、Ceiling Builder、T0/T1/T2、完整 provenance 与 R0～R11 Review；本次按 v2.1 回填题目级官方原题链接；
+9. Lesson 7 及后续新 Lesson 必须从首次建设开始执行 v2.1 的题目级官方链接要求；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
