@@ -1,4 +1,4 @@
-# 第3讲 课后练习｜数轴｜v2.0
+# 第3讲 课后练习｜数轴｜v2.1
 
 > 对应主课：[数轴](../03-number-line.md)  
 > 建议与主课间隔数小时后独立完成。
@@ -47,7 +47,11 @@ P 的坐标是多少？为什么不能默认“第4格就是 −4”？
 
 # B. Ceiling Builder 迁移
 
-## 6｜ADAPTED · CEMC STRUCTURE
+## 6｜ADAPTED · CEMC 2026 Gauss Grade 7 Q3
+
+> 原题：[官方原题｜CEMC 2026 Gauss Grade 7 Q3](https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html)  
+> 官方解答：[CEMC 2026 Gauss 官方解答](https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026GaussSolution.html)  
+> 本题改写候选数，并增加“最近”这一问；不是原题复刻。
 
 在 −15、−12、8、13、14 中，哪个数对应的点离0最远？哪个最近？
 
@@ -83,7 +87,11 @@ P 的坐标是多少？为什么不能默认“第4格就是 −4”？
 
 # C. Advanced / Competition / Informatics
 
-## 10｜ADAPTED · CEMC 2018 STRUCTURE
+## 10｜ADAPTED · CEMC 2018 Gauss Grade 7 Q6
+
+> 原题：[官方原题｜CEMC 2018 Gauss Grade 7 Q6](https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2018Gauss7Contest.html)  
+> 官方解答：[CEMC 2018 Gauss 官方解答](https://cemc.uwaterloo.ca/sites/default/files/documents/2018/2018GaussSolution.pdf)  
+> 原题研究3与4之间的数；本题改为负数区间并更换候选值。
 
 判断下列哪些数位于 −2 与 −1 之间：
 
@@ -94,6 +102,10 @@ $$
 必须检查全部候选。
 
 ## 11｜SYNTHESIS · MASTERY TRANSFER
+
+> **无单一原题。**  
+> 结构来源：[CEMC 2020 Gauss Grade 7 Q8｜等距数轴结构](https://cemc.uwaterloo.ca/sites/default/files/documents/2020/2020Gauss7Contest.html) 与 [CEMC 2016 Gauss Grade 7 Q10｜中间位置/等距关系](https://cemc.uwaterloo.ca/sites/default/files/documents/2016/2016Gauss7Contest.html)。  
+> 具体综合方式见：[Lesson 3 provenance](../sources/03-number-line-provenance.md)。
 
 数轴上从左到右有5个等距点 K、L、M、N、P。
 
