@@ -88,7 +88,7 @@ D6 表示转换与陌生迁移
 → 全册综合
 ```
 
-当前已完成前六讲：
+当前已完成前七讲：
 
 ```text
 Lesson 1  正数和负数
@@ -97,20 +97,39 @@ Lesson 3  数轴
 Lesson 4  相反数
 Lesson 5  绝对值（一）
 Lesson 6  绝对值（二）
+Lesson 7  有理数大小比较
 ```
 
 ### Lesson 3～6 v2.2 迁移状态
 
 **已完成。**
 
-- Lesson 3：补强尺度恢复、条件作用、唯一性证明，并完成题目级来源链接；
-- Lesson 4：补强对称变换、唯一不动点、条件充分性，并完成 SYNTHESIS 结构来源链接；
-- Lesson 5：补强信息丢失、逆向恢复、枚举完整性，并完成 CEMC 改编题官方原题/解答链接；
-- Lesson 6：补强分类完整性、边界0、反例、参数一般化，并完成 CEMC 改编题官方原题/解答链接；
-- 四讲主课与课后练习均已按 v2.2 更新；
-- 四讲均建立 v2.2 Release Review。
+- Lesson 3：尺度恢复、条件作用、唯一性证明和题目级来源链接；
+- Lesson 4：对称变换、唯一不动点、条件充分性和 SYNTHESIS 结构来源链接；
+- Lesson 5：信息丢失、逆向恢复、枚举完整性和 CEMC 改编题官方链接；
+- Lesson 6：分类完整性、边界0、反例、参数一般化和 CEMC 改编题官方链接。
 
-Lesson 7《有理数大小比较》是第一个从首次建设即原生执行 v2.2 的新 Lesson。
+### Lesson 7 v2.2 原生状态
+
+**已完成。**
+
+Lesson 7 是第一个从首次建设即完整执行 v2.2 的 Mainline Lesson，课程包包括：主课、当堂答案、Ceiling/Final Hint与解答、课后练习、课后答案、provenance、diagnostics、Release Review。
+
+核心思维链：
+
+```text
+数轴左右顺序
+→ 正负分区
+→ 原点镜像反转顺序
+→ 原数大小与到0距离辨析
+→ 条件充分性
+→ 完整排序/唯一性
+→ 参数一般化
+```
+
+权威题源采用 CEMC 2018 Gauss G7 Q6 和 2026 Gauss G7 Q3 的官方结构，题目页直接列官方原题和官方解答链接。
+
+下一主线：Lesson 8《数轴综合》。
 
 原“分类/集合/余数”Lesson 3 已调整为 Extension，后续按需要提示学习；旧 Mainline 文件已删除。
 
@@ -124,4 +143,5 @@ Lesson 7《有理数大小比较》是第一个从首次建设即原生执行 v2
 6. Mainline Lesson 标记“最高深度 + 能力上限提升体系完成”前必须通过 R0、R0.5、R1～R3、R3.5、R3.6、R3.7、R4～R7、R7.5、R8～R11 完整 Release Review；
 7. Lesson 3～6 已完成 v2.2 思维深度迁移、v2.1 题目级来源链接回填和 v2.2 Release Review；
 8. Lesson 1～2 维持当前版本，后续仅在发现真实思维深度或来源追溯缺口时迁移，不机械加题；
-9. Lesson 7 及后续新 Lesson 必须从首次建设开始执行 v2.2；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
+9. Lesson 7 及后续新 Lesson 必须从首次建设开始执行 v2.2；
+10. Lesson 7 已完成 v2.2 原生课程包；下一建设目标为 Lesson 8 数轴综合；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
