@@ -14,6 +14,7 @@
 → 校内中高阶
 → 适龄竞赛式拔高
 → 能力上限验证
+→ 针对短板提升
 ```
 
 核心原则：
@@ -36,10 +37,11 @@ Gap Check ★
 → Concept Deepening ★★～★★★
 → School Advanced ★★★
 → Ceiling Diagnostic
-→ Ceiling Builder
+→ 首个卡点诊断
+→ Ceiling Builder分流
 → Competition Transfer ★★★～★★★★
 → Elite / Final Challenge ★★★★～★★★★★
-→ T1 / T2 迁移验证
+→ T1 / T2迁移验证
 ```
 
 Final Challenge 的目标不是“算得长”，而是要求结构突破、完整推理、条件变化、唯一性/穷尽性或一般化。
@@ -54,7 +56,7 @@ Final Challenge 的目标不是“算得长”，而是要求结构突破、完�
 2. 有理数的意义与分类：写法、对象与身份
 3. 数轴：怎样把“数”变成直线上的位置
 4. 相反数：数轴上的对称位置
-5. 绝对值（一）：距离的定义与几何意义
+5. 绝对值（一）：距离的定义、信息丢失与逆向恢复
 6. 绝对值（二）：含字母、分类讨论与边界理解
 7. 有理数大小比较：数轴、绝对值与顺序统一
 8. 数轴综合：位置、距离、中点、动点与条件综合
@@ -111,20 +113,47 @@ Final Challenge 的目标不是“算得长”，而是要求结构突破、完�
 
 Lesson 1～8 已建立课程包。
 
-但按 v2.3 新标尺：
+## Lesson 5｜v2.3 高阶升级完成
 
-> **Lesson 5～8 的 Core / Concept Deepening 基本保留；Advanced / Competition / Ceiling / Final 需要重新升级。**
+- [主课](./01-number-system/05-absolute-value-part1.md)
+- [Gap Check / 当堂答案](./01-number-system/solutions/05-absolute-value-part1-classroom.md)
+- [T0 / Builder / Final Hint与解答](./01-number-system/solutions/05-absolute-value-part1-ceiling-v2.3.md)
+- [课后练习](./01-number-system/exercises/05-absolute-value-part1-homework.md)
+- [课后答案](./01-number-system/solutions/05-absolute-value-part1-homework.md)
+- [题源与候选池审查](./01-number-system/sources/05-absolute-value-part1-provenance.md)
+- [能力与习惯诊断](./01-number-system/diagnostics/05-absolute-value-part1-habits.md)
+- [v2.3 Release Review](./01-number-system/reviews/05-absolute-value-part1-release-review-v2.3.md)
 
-当前不再把 Lesson 5～8 视为“最终高阶版”。升级重点：
+核心升级：
 
 ```text
-Lesson 5：多点信息恢复、最少附加信息、完整构型
+基础长讲 → Gap Check
+旧4对象T0 → 7标签 + 条件 + 4状态 + 最少询问
+统一Builder → 按首个卡点 A～F 分流
+简单Mastery → 8标签 + 冗余条件 + 8状态 + 最少3问 + 一般化
+同表面作业 → 无序绝对值，额外丢失标签对应关系
+```
+
+Lesson 5 现在不仅测是否做对，还能定位学生卡在：
+
+```text
+逆向建模
+条件筛选
+完整枚举
+完整性证明
+最少性证明
+一般化
+```
+
+## Lesson 6～8｜仍待 v2.3 高阶升级
+
+```text
 Lesson 6：多层绝对值、参数解数变化、边界突变
 Lesson 7：部分信息排序、全部合法顺序、充要条件、极值构造
 Lesson 8：未知尺度/原点、多点重建、复杂动点、距离和、不变量
 ```
 
-升级完成后再进入 Lesson 9。
+Lesson 6～8 完成后，再进入 Lesson 9。
 
 ---
 
