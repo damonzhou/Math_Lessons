@@ -88,7 +88,7 @@ D6 表示转换与陌生迁移
 → 全册综合
 ```
 
-当前已完成前七讲：
+当前已完成前八讲：
 
 ```text
 Lesson 1  正数和负数
@@ -98,6 +98,7 @@ Lesson 4  相反数
 Lesson 5  绝对值（一）
 Lesson 6  绝对值（二）
 Lesson 7  有理数大小比较
+Lesson 8  数轴综合
 ```
 
 ### Lesson 3～6 v2.2 迁移状态
@@ -113,7 +114,7 @@ Lesson 7  有理数大小比较
 
 **已完成。**
 
-Lesson 7 是第一个从首次建设即完整执行 v2.2 的 Mainline Lesson，课程包包括：主课、当堂答案、Ceiling/Final Hint与解答、课后练习、课后答案、provenance、diagnostics、Release Review。
+Lesson 7 是第一个从首次建设即完整执行 v2.2 的 Mainline Lesson。
 
 核心思维链：
 
@@ -127,9 +128,37 @@ Lesson 7 是第一个从首次建设即完整执行 v2.2 的 Mainline Lesson，�
 → 参数一般化
 ```
 
-权威题源采用 CEMC 2018 Gauss G7 Q6 和 2026 Gauss G7 Q3 的官方结构，题目页直接列官方原题和官方解答链接。
+### Lesson 8 v2.2 原生状态
 
-下一主线：Lesson 8《数轴综合》。
+**已完成。**
+
+Lesson 8 是“有理数”知识群的阶段综合高阶课，映射类型 `INTEGRATED`。
+
+完整课程包包括：主课、当堂答案、Ceiling/Final Hint与解答、课后练习、课后答案、provenance、diagnostics、Release Review。
+
+核心思维链：
+
+```text
+坐标 / 到0距离 / 两点距离 / 路径长度辨析
+→ 中点 = 等距关系
+→ 两锚点 + 等距恢复尺度
+→ 固定距离左右多解
+→ 同速相遇与中点条件
+→ 删除条件 / 反例
+→ 唯一性 / 一般化
+```
+
+知识边界：不正式教授 `|a-b|`、`(a+b)/2`、有理数加减法则或方程解动点；这些结构留待 Lesson 9～10 用正式运算进一步压缩。
+
+实际采用权威竞赛来源：
+
+- CEMC 2020 Gauss G7 Q4；
+- CEMC 2016 Gauss G7 Q10；
+- CEMC 2020 Gauss G7 Q8。
+
+题目页均直接给官方原题和官方解答链接；Final Challenge 标记 `SYNTHESIS · 无单一原题` 并列结构来源。
+
+下一主线：Lesson 9《有理数加法》。
 
 原“分类/集合/余数”Lesson 3 已调整为 Extension，后续按需要提示学习；旧 Mainline 文件已删除。
 
@@ -144,4 +173,4 @@ Lesson 7 是第一个从首次建设即完整执行 v2.2 的 Mainline Lesson，�
 7. Lesson 3～6 已完成 v2.2 思维深度迁移、v2.1 题目级来源链接回填和 v2.2 Release Review；
 8. Lesson 1～2 维持当前版本，后续仅在发现真实思维深度或来源追溯缺口时迁移，不机械加题；
 9. Lesson 7 及后续新 Lesson 必须从首次建设开始执行 v2.2；
-10. Lesson 7 已完成 v2.2 原生课程包；下一建设目标为 Lesson 8 数轴综合；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
+10. Lesson 7～8 已完成 v2.2 原生课程包；下一建设目标为 Lesson 9 有理数加法；若 `CURRENT.md` 后续升级，则以升级后的 CURRENT 为准。
