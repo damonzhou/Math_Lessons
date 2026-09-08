@@ -1,208 +1,149 @@
-# 七年级上册 · 自学进阶课程
+# 七年级上册 · 查漏补缺与拔高课程
 
-目标：以当前人教版七年级上册与《义务教育数学课程标准（2022年版）》为主线，完成：
+> **当前标准：v2.3**  
+> **适用对象**：已经学过七上教材基础内容，需要系统查漏补缺、深化概念理解并进一步拔高的学生。
+
+课程不是从零重复教材，而是：
 
 ```text
-课内掌握
-→ 概念理解
-→ 校内拔高
-→ 奥赛/信息学迁移
-→ 独立发现
-→ 持续提高能力上限
+教材知识点100%覆盖
+→ 基础快速诊断
+→ 定点补漏
+→ 概念深化
+→ 应用迁移
+→ 校内中高阶
+→ 适龄竞赛式拔高
+→ 能力上限验证
 ```
-
-所有课程编写先读取：
-
-- [当前课程标准](../../docs/standards/CURRENT.md)
-- [课程标准总入口](../../COURSE_STANDARD.md)
-- [36讲 ↔ 当前人教版教材映射](../../docs/textbook-mapping-grade-07-semester-1.md)
-- [课程统一编写与质量审核标准](../../docs/course-authoring-standard.md)
-
-当前规范：**v1.3～v1.9 + v2.0 + v2.1 + v2.2**。
 
 核心原则：
 
-> **增加思维深度，而不是单纯增加计算难度。**
+> **基础不漏，但不重复消耗时间；主要增量必须发生在概念理解、应用和中高阶思维。**
 
-高阶内容优先训练：结构发现、条件充分性/必要性、反例与边界、唯一性/穷尽性、一般化、表示转换与陌生迁移。
+所有课程编写前读取：
+
+- [当前课程标准](../../docs/standards/CURRENT.md)
+- [课程标准 v2.3](../../docs/standards/course-standard-v2.3.md)
+- [36讲 ↔ 当前人教版教材映射](../../docs/textbook-mapping-grade-07-semester-1.md)
+- [Lesson 5～8 v2.3 拔高难度审计](../../docs/audits/lessons-05-08-advancement-audit-v2.3.md)
 
 ---
 
-# 七上 36讲正式主线
+# 每讲默认结构｜v2.3
+
+```text
+Gap Check ★
+→ Concept Deepening ★★～★★★
+→ School Advanced ★★★
+→ Ceiling Diagnostic
+→ Ceiling Builder
+→ Competition Transfer ★★★～★★★★
+→ Elite / Final Challenge ★★★★～★★★★★
+→ T1 / T2 迁移验证
+```
+
+Final Challenge 的目标不是“算得长”，而是要求结构突破、完整推理、条件变化、唯一性/穷尽性或一般化。
+
+---
+
+# 七上 36讲主线
 
 ## 模块一｜有理数
 
-1. **正数和负数：为什么数学需要扩展数系**
-2. **有理数的意义与分类：写法、对象与身份**
-3. **数轴：怎样把“数”变成直线上的位置**
-4. **相反数：数轴上的对称位置**
-5. **绝对值（一）：距离的定义与几何意义**
-6. **绝对值（二）：含字母、分类讨论与边界理解**
-7. **有理数大小比较：为什么两个负数“离0越远反而越小”？**
-8. **数轴综合：位置、距离、中点和动点怎样统一成一个模型**
-
-教材映射：当前人教版 **“有理数”** 章/知识群。
-
-Lesson 8 为 `INTEGRATED` 综合课，不对应教材独立小节。
+1. 正数和负数：为什么数学需要扩展数系
+2. 有理数的意义与分类：写法、对象与身份
+3. 数轴：怎样把“数”变成直线上的位置
+4. 相反数：数轴上的对称位置
+5. 绝对值（一）：距离的定义与几何意义
+6. 绝对值（二）：含字母、分类讨论与边界理解
+7. 有理数大小比较：数轴、绝对值与顺序统一
+8. 数轴综合：位置、距离、中点、动点与条件综合
 
 ## 模块二｜有理数的运算
 
-9. **加法：方向、大小与运算结构**
-10. **减法：为什么可以转化成加法**
-11. **乘法与除法：符号规律的来源**
-12. **乘方：底数、指数与符号陷阱**
-13. **运算律与巧算：重组、凑整、分配律**
-14. **有理数运算综合：混合运算、应用与结构识别**
+9. 有理数加法：方向、大小与运算结构
+10. 有理数减法：为什么可以转化成加法
+11. 有理数乘法与除法：符号规律的来源
+12. 乘方：底数、指数与符号陷阱
+13. 运算律与巧算：重组、凑整、分配律
+14. 有理数运算综合：混合运算、应用与结构识别
 
 ## 模块三｜代数式
 
-15. **为什么要用字母表示数：从具体到一般**
-16. **代数式与数量关系：把文字变成数学表达**
-17. **代数式的值：代入、公式与整体代入**
-18. **整数指数幂与科学记数法：怎样压缩表示大数**
-19. **代数式综合：规律、图形、公式与建模**
-
-> Lesson 18 正式发布前仍需按最新人教社官方细目复核具体归属，不猜小节编号。
+15. 用字母表示数：从具体到一般
+16. 代数式与数量关系：把语言变成数学表达
+17. 代数式的值：代入、公式与整体代入
+18. 整数指数幂与科学记数法
+19. 代数式综合：规律、图形、公式与建模
 
 ## 模块四｜整式及整式加减
 
-20. **单项式、多项式与整式结构**
-21. **同类项与合并：为什么有些项可以合并**
-22. **去括号：符号变化的本质**
-23. **整式加减：标准化简流程**
-24. **整式综合：整体思想、条件求值与结构识别**
+20. 单项式、多项式与整式
+21. 同类项与合并
+22. 去括号
+23. 整式加减
+24. 整式综合
 
 ## 模块五｜一元一次方程
 
-25. **什么是方程：从算术答案到未知数**
-26. **等式性质：每一步变形为什么合法**
-27. **一元一次方程基本解法**
-28. **复杂方程：去括号、去分母与规范步骤**
-29. **应用题：怎样寻找等量关系**
-30. **方程综合：行程、利润、配套、分段与方案问题**
+25. 方程与一元一次方程
+26. 等式性质
+27. 一元一次方程基本解法
+28. 复杂方程：去括号、去分母
+29. 实际问题：找等量关系与建模
+30. 方程综合
 
 ## 模块六｜几何图形初步
 
-31. **几何图形与几何语言：从物体到点、线、面、体**
-32. **直线、射线、线段：表示、长度和基本事实**
-33. **线段综合：比较、和差、中点、动点与分类讨论**
-34. **角：表示、度量、比较、运算与角平分线**
-35. **余角、补角与初步几何说理**
+31. 几何图形与几何语言
+32. 直线、射线、线段
+33. 线段综合
+34. 角
+35. 余角、补角与初步几何说理
 
 ## 模块七｜全册综合
 
-36. **七上数学思想总复盘：数形结合、分类讨论、转化、整体、方程、从特殊到一般**
+36. 七上数学思想总复盘
 
 ---
 
-# 每讲统一结构｜v2.2
+# 当前状态
+
+Lesson 1～8 已建立课程包。
+
+但按 v2.3 新标尺：
+
+> **Lesson 5～8 的 Core / Concept Deepening 基本保留；Advanced / Competition / Ceiling / Final 需要重新升级。**
+
+当前不再把 Lesson 5～8 视为“最终高阶版”。升级重点：
 
 ```text
-Core 完整学习
-→ Ceiling Diagnostic（T0）
-→ 记录首个卡点 / H标签
-→ Ceiling Builder
-→ Advanced / Olympiad / Informatics
-→ Mastery / Final Challenge（T1）
-→ 约7天后陌生迁移（T2）
+Lesson 5：多点信息恢复、最少附加信息、完整构型
+Lesson 6：多层绝对值、参数解数变化、边界突变
+Lesson 7：部分信息排序、全部合法顺序、充要条件、极值构造
+Lesson 8：未知尺度/原点、多点重建、复杂动点、距离和、不变量
 ```
 
-从 Lesson 7 起，每讲完整课程至少覆盖 D1～D6 中四类，并至少有一处要求说明：
-
-> **为什么答案只有这些？**
-
-即必须训练唯一性、穷尽性或分类完整性。
-
----
-
-# Extensions｜按需要学习，不占正式编号
-
-## E1｜[分类是一种数学方法——集合直觉、余数与抽屉原理](./extensions/classification-as-a-method.md)
-
-Extension 不得成为 Mainline 的隐藏前置；第一次真正需要时必须显式提示 OPTIONAL / RECOMMENDED / REQUIRED-FOR-EXTENSION。
-
-[查看所有 Extensions](./extensions/README.md)
-
----
-
-# 已完成课程包
-
-## Lesson 1～6
-
-Lesson 1～6 已完成主课、训练、答案、Ceiling Diagnostic / Builder、T0/T1/T2、题源审计与 Release Review；Lesson 3～6 已完成 v2.2 思维深度迁移。
-
-## Lesson 7｜有理数大小比较｜v2.2 原生
-
-- [主课](./01-number-system/07-rational-number-comparison.md)
-- [当堂训练答案](./01-number-system/solutions/07-rational-number-comparison-classroom.md)
-- [Ceiling / Mastery Hint 与完整解答](./01-number-system/solutions/07-rational-number-comparison-ceiling-v2.2.md)
-- [课后练习](./01-number-system/exercises/07-rational-number-comparison-homework.md)
-- [课后答案](./01-number-system/solutions/07-rational-number-comparison-homework.md)
-- [题源与候选池审计](./01-number-system/sources/07-rational-number-comparison-provenance.md)
-- [做题习惯诊断](./01-number-system/diagnostics/07-rational-number-comparison-habits.md)
-- [v2.2 Release Review](./01-number-system/reviews/07-rational-number-comparison-release-review-v2.2.md)
-
-核心思维链：
-
-```text
-数轴左右顺序
-→ 正负分区
-→ 原点镜像反转顺序
-→ 原数大小与到0距离辨析
-→ 条件充分性
-→ 完整排序/唯一性
-→ 参数一般化
-```
-
-## Lesson 8｜数轴综合｜v2.2 原生 · 阶段高阶峰值
-
-- [主课](./01-number-system/08-number-line-integration.md)
-- [当堂训练答案](./01-number-system/solutions/08-number-line-integration-classroom.md)
-- [Ceiling / Mastery Hint 与完整解答](./01-number-system/solutions/08-number-line-integration-ceiling-v2.2.md)
-- [课后练习](./01-number-system/exercises/08-number-line-integration-homework.md)
-- [课后答案](./01-number-system/solutions/08-number-line-integration-homework.md)
-- [题源与候选池审计](./01-number-system/sources/08-number-line-integration-provenance.md)
-- [做题习惯诊断](./01-number-system/diagnostics/08-number-line-integration-habits.md)
-- [v2.2 Release Review](./01-number-system/reviews/08-number-line-integration-release-review-v2.2.md)
-
-Lesson 8 核心思维链：
-
-```text
-坐标 / 到0距离 / 两点距离 / 路径长度辨析
-→ 中点 = 等距关系
-→ 两锚点 + 等距恢复尺度
-→ 固定距离的左右多解
-→ 同速相遇与中点条件
-→ 条件删除 / 反例
-→ 唯一性与一般化
-```
-
-本讲刻意不提前正式教授 `|a-b|`、`(a+b)/2` 或有理数加减法则。目标是先理解数轴结构，Lesson 9～10 再用运算把这些结构压缩成更一般的表达。
-
-权威题源采用：
-
-- CEMC 2020 Gauss G7 Q4：跨0温度变化；
-- CEMC 2016 Gauss G7 Q10：中点反推；
-- CEMC 2020 Gauss G7 Q8：等距数轴结构。
-
-所有 ADAPTED 题在题目旁直接提供官方原题与官方解答链接。
+升级完成后再进入 Lesson 9。
 
 ---
 
 # 发布门禁
 
-任何新 Mainline Lesson 发布前必须完成：
+任何新 Mainline Lesson 或重大升级必须完成：
 
 ```text
 R0   主线定位
-→ R0.5 教材映射
-→ R1～R3
-→ R3.5 Ceiling Diagnostic
-→ R3.6 Ceiling Builder
-→ R3.7 思维深度
-→ R4～R7
-→ R7.5 题目级官方链接
-→ R8～R11
+R0.5 教材映射
+R1～R2
+R2.7 Audience / Advancement Fit
+R3
+R3.5 Ceiling Diagnostic
+R3.6 Ceiling Builder
+R3.7 思维深度
+R4～R7
+R7.5 题目级官方链接
+R8～R11
 → PASS
 ```
 
@@ -212,11 +153,3 @@ R0   主线定位
 Markdown Render Lint
 Problem Source Link Lint
 ```
-
----
-
-# 下一正式主线
-
-> **Lesson 9《有理数加法——方向和大小怎样真正变成运算？》**
-
-Lesson 9 开始进入新版教材独立的“有理数的运算”知识群。
