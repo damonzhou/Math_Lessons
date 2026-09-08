@@ -39,7 +39,7 @@
 5. **绝对值（一）：距离的定义与几何意义**
 6. **绝对值（二）：含字母、分类讨论与边界理解**
 7. **有理数大小比较：为什么两个负数“离0越远反而越小”？**
-8. **数轴综合：位置、距离、对称、中点、动点与条件综合**
+8. **数轴综合：位置、距离、中点和动点怎样统一成一个模型**
 
 教材映射：当前人教版 **“有理数”** 章/知识群。
 
@@ -142,7 +142,7 @@ Lesson 1～6 已完成主课、训练、答案、Ceiling Diagnostic / Builder、
 - [做题习惯诊断](./01-number-system/diagnostics/07-rational-number-comparison-habits.md)
 - [v2.2 Release Review](./01-number-system/reviews/07-rational-number-comparison-release-review-v2.2.md)
 
-Lesson 7 的核心思维链：
+核心思维链：
 
 ```text
 数轴左右顺序
@@ -154,7 +154,38 @@ Lesson 7 的核心思维链：
 → 参数一般化
 ```
 
-权威题源采用 CEMC 2018 Gauss G7 Q6 与 2026 Gauss G7 Q3 的官方结构，题目旁直接提供官方原题与官方解答链接。
+## Lesson 8｜数轴综合｜v2.2 原生 · 阶段高阶峰值
+
+- [主课](./01-number-system/08-number-line-integration.md)
+- [当堂训练答案](./01-number-system/solutions/08-number-line-integration-classroom.md)
+- [Ceiling / Mastery Hint 与完整解答](./01-number-system/solutions/08-number-line-integration-ceiling-v2.2.md)
+- [课后练习](./01-number-system/exercises/08-number-line-integration-homework.md)
+- [课后答案](./01-number-system/solutions/08-number-line-integration-homework.md)
+- [题源与候选池审计](./01-number-system/sources/08-number-line-integration-provenance.md)
+- [做题习惯诊断](./01-number-system/diagnostics/08-number-line-integration-habits.md)
+- [v2.2 Release Review](./01-number-system/reviews/08-number-line-integration-release-review-v2.2.md)
+
+Lesson 8 核心思维链：
+
+```text
+坐标 / 到0距离 / 两点距离 / 路径长度辨析
+→ 中点 = 等距关系
+→ 两锚点 + 等距恢复尺度
+→ 固定距离的左右多解
+→ 同速相遇与中点条件
+→ 条件删除 / 反例
+→ 唯一性与一般化
+```
+
+本讲刻意不提前正式教授 `|a-b|`、`(a+b)/2` 或有理数加减法则。目标是先理解数轴结构，Lesson 9～10 再用运算把这些结构压缩成更一般的表达。
+
+权威题源采用：
+
+- CEMC 2020 Gauss G7 Q4：跨0温度变化；
+- CEMC 2016 Gauss G7 Q10：中点反推；
+- CEMC 2020 Gauss G7 Q8：等距数轴结构。
+
+所有 ADAPTED 题在题目旁直接提供官方原题与官方解答链接。
 
 ---
 
@@ -186,6 +217,6 @@ Problem Source Link Lint
 
 # 下一正式主线
 
-> **Lesson 8《数轴综合——怎样把位置、距离、对称和变化统一起来？》**
+> **Lesson 9《有理数加法——方向和大小怎样真正变成运算？》**
 
-Lesson 8 将是“有理数”知识群的第一堂明显综合高阶课，难点主要来自结构发现、条件分析、分类与动点推理，而不是长计算。
+Lesson 9 开始进入新版教材独立的“有理数的运算”知识群。
