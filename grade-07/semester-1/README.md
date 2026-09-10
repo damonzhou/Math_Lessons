@@ -1,6 +1,6 @@
 # 七年级上册 · 查漏补缺与拔高课程
 
-> **当前标准：v2.3**  
+> **当前标准：v2.4**  
 > **适用对象**：已经学过七上教材基础内容，需要系统查漏补缺、深化概念理解并进一步拔高的学生。
 
 课程不是从零重复教材，而是：
@@ -10,41 +10,58 @@
 → 基础快速诊断
 → 定点补漏
 → 概念深化
-→ 应用迁移
+→ 灵活应用
 → 校内中高阶
-→ 适龄竞赛式拔高
-→ 能力上限验证
-→ 针对短板提升
+→ 高水平竞赛式结构突破
+→ 当前知识范围内最高思维上限
+→ T0 / T1 / T2迁移验证
 ```
 
 核心原则：
 
-> **基础不漏，但不重复消耗时间；主要增量必须发生在概念理解、应用和中高阶思维。**
+> **基础不漏，但不重复消耗时间；最高难度主要考察已学知识的灵活应用和思维深度。**
+
+> **适龄只限制可使用的知识工具，不限制最高思维上限。**
 
 所有课程编写前读取：
 
 - [当前课程标准](../../docs/standards/CURRENT.md)
-- [课程标准 v2.3](../../docs/standards/course-standard-v2.3.md)
+- [课程标准 v2.4](../../docs/standards/course-standard-v2.4.md)
 - [36讲 ↔ 当前人教版教材映射](../../docs/textbook-mapping-grade-07-semester-1.md)
-- [Lesson 5～8 v2.3 拔高难度审计](../../docs/audits/lessons-05-08-advancement-audit-v2.3.md)
 
 ---
 
-# 每讲默认结构｜v2.3
+# 每讲默认结构｜v2.4
 
 ```text
 Gap Check ★
 → Concept Deepening ★★～★★★
-→ School Advanced ★★★
+→ School Advanced ★★★～★★★★
 → Ceiling Diagnostic
 → 首个卡点诊断
 → Ceiling Builder分流
-→ Competition Transfer ★★★～★★★★
-→ Elite / Final Challenge ★★★★～★★★★★
+→ Competition Transfer ★★★★
+→ Elite / Final Challenge ★★★★★
 → T1 / T2迁移验证
 ```
 
-Final Challenge 的目标不是“算得长”，而是要求结构突破、完整推理、条件变化、唯一性/穷尽性或一般化。
+Elite / Final 的最高层标准：
+
+```text
+当前知识可解
++
+知识调用不显然
++
+至少两个非显然思维节点
++
+反推 / 构造 / 极值 / 不变量 / 分类
++
+完整证明
++
+一般化 / 陌生迁移
+```
+
+不能靠对象更多、数字更大、计算更长或未来知识制造难度。
 
 ---
 
@@ -109,64 +126,52 @@ Final Challenge 的目标不是“算得长”，而是要求结构突破、完�
 
 ---
 
-# 当前状态
+# 当前状态｜v2.4重新校准
 
-Lesson 1～8 已建立课程包。
+Lesson 1～8 已建立课程包，但最高层需要按 v2.4 的 R3.8 重新判断，旧星级不自动继承。
 
-## Lesson 5｜v2.3 高阶升级完成
+## Lesson 5｜需要重新校准最高层
 
-- [主课](./01-number-system/05-absolute-value-part1.md)
-- [Gap Check / 当堂答案](./01-number-system/solutions/05-absolute-value-part1-classroom.md)
-- [T0 / Builder / Final Hint与解答](./01-number-system/solutions/05-absolute-value-part1-ceiling-v2.3.md)
-- [课后练习](./01-number-system/exercises/05-absolute-value-part1-homework.md)
-- [课后答案](./01-number-system/solutions/05-absolute-value-part1-homework.md)
-- [题源与候选池审查](./01-number-system/sources/05-absolute-value-part1-provenance.md)
-- [能力与习惯诊断](./01-number-system/diagnostics/05-absolute-value-part1-habits.md)
-- [v2.3 Release Review](./01-number-system/reviews/05-absolute-value-part1-release-review-v2.3.md)
+当前 v2.3 已完成：信息丢失、逆向恢复、条件筛选、完整枚举和最少询问。
 
-核心升级：
+但 v2.4 不再把“更多标签 + 更多分支 + 更多询问”自动视为最高难度。
+
+下一轮重点：
 
 ```text
-基础长讲 → Gap Check
-旧4对象T0 → 7标签 + 条件 + 4状态 + 最少询问
-统一Builder → 按首个卡点 A～F 分流
-简单Mastery → 8标签 + 冗余条件 + 8状态 + 最少3问 + 一般化
-同表面作业 → 无序绝对值，额外丢失标签对应关系
+对称不可辨识
+→ 什么条件才能破坏对称
+→ 唯一恢复的必要/充分条件
+→ 最少信息：上界 + 下界
+→ 逆向设计条件
+→ 一般化
 ```
 
-## Lesson 7｜v2.3 高阶升级完成
+## Lesson 7｜已有较强 High Ceiling，仍按 R3.8复核
 
-- [主课](./01-number-system/07-rational-number-comparison.md)
-- [Gap Check / School Advanced 答案](./01-number-system/solutions/07-rational-number-comparison-classroom.md)
-- [T0 / Final Hint与完整解答](./01-number-system/solutions/07-rational-number-comparison-ceiling-v2.3.md)
-- [课后练习](./01-number-system/exercises/07-rational-number-comparison-homework.md)
-- [课后答案](./01-number-system/solutions/07-rational-number-comparison-homework.md)
-- [题源与候选池审查](./01-number-system/sources/07-rational-number-comparison-provenance.md)
-- [能力与习惯诊断](./01-number-system/diagnostics/07-rational-number-comparison-habits.md)
-- [v2.3 Release Review](./01-number-system/reviews/07-rational-number-comparison-release-review-v2.3.md)
-
-核心升级：
+当前结构包括：
 
 ```text
-普通镜像排序
-→ 绝对值严格次序 + 未知符号
-→ 最大绝对值对象只能占端点
+绝对值严格次序 + 未知符号
+→ 最大绝对值占端点
 → 递归剥离生成全部排名
 → 从排名反推符号
 → 证明某些排序不可能
-→ 识别最小绝对值符号不可恢复
-→ 最少额外信息：充分 + 必要证明
-→ 3变量 → 4变量 → 5变量一般化
+→ 最小绝对值符号不可恢复
+→ 最少额外信息证明
+→ 3/4/5变量一般化
 ```
 
-## Lesson 6 / 8｜仍待 v2.3 高阶升级
+v2.4 继续检查其迁移距离、第二突破和教学泄露后的有效难度。
+
+## Lesson 6 / 8｜待升级
 
 ```text
-Lesson 6：多层绝对值、参数解数变化、边界突变、完整分类
-Lesson 8：未知尺度/原点、多点重建、复杂动点、距离和、不变量
+Lesson 6：参数边界、解结构变化、多层绝对值、完整分类
+Lesson 8：未知尺度/原点、多点重建、复杂动点、距离和、不变量、构造
 ```
 
-Lesson 6 / 8 完成后，再进入 Lesson 9。
+Lesson 9 及后续新课从首次设计起执行 v2.4。
 
 ---
 
@@ -183,6 +188,7 @@ R3
 R3.5 Ceiling Diagnostic
 R3.6 Ceiling Builder
 R3.7 思维深度
+R3.8 Highest-Ceiling Authenticity
 R4～R7
 R7.5 题目级官方链接
 R8～R11
