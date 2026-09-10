@@ -58,7 +58,7 @@ Final Challenge 的目标不是“算得长”，而是要求结构突破、完�
 4. 相反数：数轴上的对称位置
 5. 绝对值（一）：距离的定义、信息丢失与逆向恢复
 6. 绝对值（二）：含字母、分类讨论与边界理解
-7. 有理数大小比较：数轴、绝对值与顺序统一
+7. 有理数大小比较：从“会比较”到“用顺序反推结构”
 8. 数轴综合：位置、距离、中点、动点与条件综合
 
 ## 模块二｜有理数的运算
@@ -134,26 +134,39 @@ Lesson 1～8 已建立课程包。
 同表面作业 → 无序绝对值，额外丢失标签对应关系
 ```
 
-Lesson 5 现在不仅测是否做对，还能定位学生卡在：
+## Lesson 7｜v2.3 高阶升级完成
+
+- [主课](./01-number-system/07-rational-number-comparison.md)
+- [Gap Check / School Advanced 答案](./01-number-system/solutions/07-rational-number-comparison-classroom.md)
+- [T0 / Final Hint与完整解答](./01-number-system/solutions/07-rational-number-comparison-ceiling-v2.3.md)
+- [课后练习](./01-number-system/exercises/07-rational-number-comparison-homework.md)
+- [课后答案](./01-number-system/solutions/07-rational-number-comparison-homework.md)
+- [题源与候选池审查](./01-number-system/sources/07-rational-number-comparison-provenance.md)
+- [能力与习惯诊断](./01-number-system/diagnostics/07-rational-number-comparison-habits.md)
+- [v2.3 Release Review](./01-number-system/reviews/07-rational-number-comparison-release-review-v2.3.md)
+
+核心升级：
 
 ```text
-逆向建模
-条件筛选
-完整枚举
-完整性证明
-最少性证明
-一般化
+普通镜像排序
+→ 绝对值严格次序 + 未知符号
+→ 最大绝对值对象只能占端点
+→ 递归剥离生成全部排名
+→ 从排名反推符号
+→ 证明某些排序不可能
+→ 识别最小绝对值符号不可恢复
+→ 最少额外信息：充分 + 必要证明
+→ 3变量 → 4变量 → 5变量一般化
 ```
 
-## Lesson 6～8｜仍待 v2.3 高阶升级
+## Lesson 6 / 8｜仍待 v2.3 高阶升级
 
 ```text
-Lesson 6：多层绝对值、参数解数变化、边界突变
-Lesson 7：部分信息排序、全部合法顺序、充要条件、极值构造
+Lesson 6：多层绝对值、参数解数变化、边界突变、完整分类
 Lesson 8：未知尺度/原点、多点重建、复杂动点、距离和、不变量
 ```
 
-Lesson 6～8 完成后，再进入 Lesson 9。
+Lesson 6 / 8 完成后，再进入 Lesson 9。
 
 ---
 
