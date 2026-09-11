@@ -23,6 +23,21 @@
 
 > **适龄只限制可使用的知识工具，不限制最高思维上限。**
 
+课程设计采用三层对标：
+
+```text
+课标 / 当前人教版官方资料
+→ 决定知识主线与边界
+
+公开优秀课程大纲 / 样课结构
+→ 横向检查讲解颗粒度、综合主题与拓展宽度
+
+官方竞赛真题 + 透明原创高天花板题
+→ 校准迁移强度与最高思维深度
+```
+
+商业课程只作 benchmark，不复制讲义、不替代教材权威。
+
 所有课程编写前读取：
 
 - [当前课程标准](../../docs/standards/CURRENT.md)
@@ -74,9 +89,9 @@ Gap Check ★
 3. 数轴：怎样把“数”变成直线上的位置
 4. 相反数：数轴上的对称位置
 5. 绝对值（一）：距离、方向丢失、对称与信息恢复
-6. 绝对值（二）：含字母、分类讨论与边界理解
-7. 有理数大小比较：从“会比较”到“用顺序反推结构”
-8. 数轴综合：位置、距离、中点、动点与条件综合
+6. 绝对值（二）：分类、边界、操作复合与规则压缩
+7. 有理数大小比较：从比较到绝对值分组与排序恢复
+8. 数轴综合：位置、距离、动点、重建与信息充分性
 
 ## 模块二｜有理数的运算
 
@@ -126,59 +141,68 @@ Gap Check ★
 
 ---
 
-# 当前状态｜v2.4
+# 当前状态｜Lesson 5～8 v2.4 已完成
 
-Lesson 1～8 已建立课程包。旧星级不自动继承，最高层必须单独通过 R3.8。
-
-## Lesson 5｜v2.4 最高层升级完成
+## Lesson 5｜绝对值（一）｜PASS
 
 - [主课](./01-number-system/05-absolute-value-part1.md)
-- [Gap Check / School Advanced 答案](./01-number-system/solutions/05-absolute-value-part1-classroom.md)
-- [T0 / Builder / Final Hint与完整解答](./01-number-system/solutions/05-absolute-value-part1-ceiling-v2.4.md)
-- [课后练习](./01-number-system/exercises/05-absolute-value-part1-homework.md)
-- [课后答案](./01-number-system/solutions/05-absolute-value-part1-homework.md)
-- [题源与候选池审查](./01-number-system/sources/05-absolute-value-part1-provenance.md)
-- [能力与习惯诊断](./01-number-system/diagnostics/05-absolute-value-part1-habits.md)
-- [v2.4 Release Review](./01-number-system/reviews/05-absolute-value-part1-release-review-v2.4.md)
+- [Ceiling v2.4](./01-number-system/solutions/05-absolute-value-part1-ceiling-v2.4.md)
+- [Release Review](./01-number-system/reviews/05-absolute-value-part1-release-review-v2.4.md)
 
-最高层现在从“多标签枚举”升级为：
+最高层：对称不可辨识、关系传播、最少信息上下界、k组一般化。
 
-```text
-相对方向关系
-→ 关系传播
-→ 整体镜像不可辨识
-→ 证明纯相对信息无论多少都不能破镜像
-→ 删除关系后出现多个独立翻转部分
-→ 重复绝对值压缩独立方向组
-→ 设计最少相对关系
-→ 充分性 + 下界必要性
-→ 一个绝对方向锚点
-→ k组一般化
-```
+## Lesson 6｜绝对值（二）｜PASS
 
-## Lesson 7｜已有较强 High Ceiling，仍按 R3.8 复核
+- [主课](./01-number-system/06-absolute-value-part2.md)
+- [Ceiling v2.4](./01-number-system/solutions/06-absolute-value-part2-ceiling-v2.4.md)
+- [Release Review](./01-number-system/reviews/06-absolute-value-part2-release-review-v2.4.md)
 
-当前结构包括：
+最高层：
 
 ```text
-绝对值严格次序 + 未知符号
-→ 最大绝对值占端点
-→ 递归剥离生成全部排名
-→ 从排名反推符号
-→ 证明某些排序不可能
-→ 最小绝对值符号不可恢复
-→ 最少额外信息证明
-→ 3/4/5变量一般化
+取绝对值A / 取相反数R
+→ 最后一次A抹去历史
+→ 任意操作串压缩为4类规则
+→ 黑箱识别最少2次测试
 ```
 
-## Lesson 6 / 8｜待升级
+## Lesson 7｜有理数大小比较｜PASS
+
+- [主课](./01-number-system/07-rational-number-comparison.md)
+- [Ceiling v2.4](./01-number-system/solutions/07-rational-number-comparison-ceiling-v2.4.md)
+- [Release Review](./01-number-system/reviews/07-rational-number-comparison-release-review-v2.4.md)
+
+最高层：
 
 ```text
-Lesson 6：参数边界、解结构变化、多层绝对值、完整分类
-Lesson 8：未知尺度/原点、多点重建、复杂动点、距离和、不变量、构造
+绝对值分组
+→ 最大组从外向内递归
+→ 单点组 / 相反数对
+→ 排名反推符号
+→ 最小单点符号不可见
+→ 2^(k−1) / 2^k 一般规律
 ```
 
-Lesson 9 及后续新课从首次设计起执行 v2.4。
+## Lesson 8｜数轴综合｜PASS
+
+- [主课](./01-number-system/08-number-line-integration.md)
+- [Ceiling v2.4](./01-number-system/solutions/08-number-line-integration-ceiling-v2.4.md)
+- [Release Review](./01-number-system/reviews/08-number-line-integration-release-review-v2.4.md)
+
+最高层：
+
+```text
+无标签距离重建
+→ 平移/镜像不变量
+→ 锚点最少性
+→ CEMC 2026 Gauss G8 Part C 距离重建
+→ 完整两两距离仍可能非唯一
+→ 构造非平移、非镜像反例
+```
+
+**Lesson 8 是当前 Lesson 1～8 的阶段思维峰值。**
+
+Lesson 9 及后续新课从首次设计起执行 v2.4，并继续使用“教材权威 + 优秀课程benchmark + 官方竞赛/高天花板题”的三层对标。
 
 ---
 
