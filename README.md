@@ -1,197 +1,49 @@
 # Math Lessons
 
-面向初中数学（七至九年级）的系统自学、进阶、奥数与信息学数学课程仓库。
+面向七至九年级的数学课程仓库，兼顾教材知识节点、概念深化、灵活应用、奥数证明与信息学数学思维。
 
-> **唯一标准入口**：任何 Lesson 新建、修改、复审或扩展前，先读取 [COURSE_STANDARD.md](./COURSE_STANDARD.md) 与 [docs/standards/CURRENT.md](./docs/standards/CURRENT.md)。后续课程工作一律采用 `CURRENT.md` 指定的最新标准，不以聊天记录或旧 Lesson 版本代替。
+> **唯一当前标准入口**：[CURRENT.md](./docs/standards/CURRENT.md)。当前标准v2.4，最新课程内容修订2026-09-15。  
+> [COURSE_STANDARD.md](./COURSE_STANDARD.md)及历史标准用于追溯；不能用旧课程或聊天中的旧PASS覆盖最新状态。
 
-当前规范：**v1.3～v1.9 + v2.0**。
+## 课程入口
 
-- v1.3：权威一手来源 + Release Review；
-- v1.4：AMC / IMO / CMO 等权威竞赛题源池；
-- v1.5：Mainline / Extension 分层；
-- v1.6：Markdown / LaTeX 稳健性；
-- v1.7：36讲 ↔ 当前人教版教材映射；
-- v1.8：候选权威题源池审查可见性；
-- v1.9：Ceiling Diagnostic 测能力上限；
-- **v2.0：Ceiling Builder 提升能力上限 + T0/T1/T2 迁移验证。**
+[七年级上册36讲路线与发布进度](./grade-07/semester-1/README.md) · [教材知识节点映射](./docs/textbook-mapping-grade-07-semester-1.md) · [标准v2.4](./docs/standards/course-standard-v2.4.md)
 
----
+| 已建立主课 | 入口 |
+|---|---|
+| Lesson 1～2 | [正数和负数](./grade-07/semester-1/01-number-system/01-positive-negative-numbers.md) · [有理数](./grade-07/semester-1/01-number-system/02-rational-number-classification.md) |
+| Lesson 3～4 | [数轴](./grade-07/semester-1/01-number-system/03-number-line.md) · [相反数](./grade-07/semester-1/01-number-system/04-opposite-numbers.md) |
+| Lesson 5～6 | [绝对值（一）](./grade-07/semester-1/01-number-system/05-absolute-value-part1.md) · [绝对值（二）](./grade-07/semester-1/01-number-system/06-absolute-value-part2.md) |
+| Lesson 7～8 | [大小比较](./grade-07/semester-1/01-number-system/07-rational-number-comparison.md) · [数轴综合](./grade-07/semester-1/01-number-system/08-number-line-integration.md) |
 
-## 课程总目标
+集合方法保持为[可选专题](./grade-07/semester-1/extensions/classification-as-a-method.md)，不改教材主线。年级与学期目录保留，可继续扩充初二初三。
 
-$$
-\boxed{\text{会认}\rightarrow\text{会用}\rightarrow\text{会解释}\rightarrow\text{会迁移}\rightarrow\text{能独立发现}\rightarrow\text{持续提高独立发现上限}}
-$$
+## 2026-09-15发布修订
 
-课程不以“达到课标最低要求”为完成标准。
+本次按[复审原记录](./docs/audits/lessons-05-08-v2.4-independent-review-2026-09-15.md)修订Lesson 5～8，详见[整改回执](./docs/audits/lessons-05-08-v2.4-remediation-2026-09-15.md)。修正L6执行顺序记号，补齐L7题干；增加UKMT JMO、AMC8的具体官方题，补传统绝对值最值和离散动点；Gauss真题成为L8正式Final，研究反例改可选并补出处。
 
-> **课标和人教版决定知识边界、主线和不可遗漏内容；课程在当前知识可解的前提下，把概念理解、高阶迁移、独立发现和问题解决能力持续向上推进。**
+每讲主课、当堂答案、ceiling分级提示、课后题、课后答案、题源、诊断、release review同步。下一正式新课仍是Lesson 9《有理数加法》；本次没有提前创建。
 
----
+## 长期课程目标
 
-## 快速导航
+知道概念、理解原因、正确应用、识别陌生结构、完整证明、构造与一般化。基础已会时不重复占主要课时；难度来自数学关系与知识组合，不靠长计算或隐藏未来工具。
 
-- [当前课程标准](./docs/standards/CURRENT.md)
-- [v2.0 能力上限提升标准](./docs/standards/course-standard-v2.0.md)
-- [课程标准版本库](./docs/standards/README.md)
-- [七上36讲 ↔ 当前人教版教材映射](./docs/textbook-mapping-grade-07-semester-1.md)
-- [Lesson 1～4 v2.0 完成审计](./docs/audits/lessons-01-04-ceiling-building-audit-v2.0.md)
-- [课程统一编写与质量审核标准](./docs/course-authoring-standard.md)
-- [题源与原创命题规范](./docs/problem-source-policy.md)
-- [学习诊断与做题习惯纠偏](./docs/student-learning-diagnostics.md)
-- [统一 Lesson 模板](./templates/lesson-template.md)
-- [七年级上册 · 36讲路线图](./grade-07/semester-1/README.md)
-- [Lesson 1：正数和负数](./grade-07/semester-1/01-number-system/01-positive-negative-numbers.md)
-- [Lesson 2：有理数的意义与分类](./grade-07/semester-1/01-number-system/02-rational-number-classification.md)
-- [Lesson 3：数轴](./grade-07/semester-1/01-number-system/03-number-line.md)
-- [Lesson 4：相反数](./grade-07/semester-1/01-number-system/04-opposite-numbers.md)
-- [Lesson 5：绝对值（一）](./grade-07/semester-1/01-number-system/05-absolute-value-part1.md)
-- [Lesson 6：绝对值（二）](./grade-07/semester-1/01-number-system/06-absolute-value-part2.md)
-- [Extensions](./grade-07/semester-1/extensions/README.md)
+人教版及课标决定Core节点，竞赛拓展明确分层。课堂题嵌入正文；答案与分级提示独立。官方题在题旁给原卷/解答，改编说明变化，原创不冒充真题。允许AMC、IMO、CMO、UKMT、CEMC及国内正式来源，是否实际采用和核验逐题记录。
 
----
+T0先独立尝试；Builder针对首个卡点；T1验证训练后的应用；T2约一周后检验保持与变化条件后的迁移。相同题换名字只算近迁移，不夸大为陌生迁移。
 
-## Mainline 与教材映射
+## 质量检查的范围
 
-正式编号 Lesson 优先满足：
+- Markdown Render Lint：检查改动Markdown的渲染风险。
+- Problem Source Link Lint：检查题旁来源字段，不认证外部网页当前可读。
+- Lessons 5-8 Math Regression：12组有限数学与活跃文件链接回归，不替代一般证明或学生试教。
 
-$$
-\boxed{\text{课标要求}+\text{人教版顺序}+\text{知识依赖}+\text{认知连续性}}
-$$
-
-主要属于竞赛方法、抽象语言或信息学的专题优先进入 `extensions/`；后续真正需要时由 Mainline 显式提示 `OPTIONAL / RECOMMENDED / REQUIRED-FOR-EXTENSION`。
-
----
-
-## 六层深度体系｜v2.0
-
-每个 Mainline Lesson 必须同时覆盖：
-
-1. **L1 教材完整层**：定义、性质、表示、正反例、边界、规范表达、典型应用；
-2. **L2 概念深度层**：为什么、相近概念、多表示、条件变化、特殊值和反例；
-3. **L3 校内高阶层**：逆向、参数、隐藏条件、分类、综合、压轴结构；
-4. **L4 竞赛/信息学迁移层**：权威竞赛陌生结构、一般化、算法化；
-5. **L5 Ceiling Diagnostic**：方法尚未完整教学时冷启动，测当前独立发现上限；
-6. **L6 Ceiling Builder**：针对真实卡点训练表示转换、条件变化、反例、构造、多方法、一般化和陌生迁移。
-
----
-
-## 测上限、提上限、验迁移
-
-### Ceiling Diagnostic｜测
-
-Core 学完后、Advanced/Olympiad 方法完整教学前独立尝试；第一次不开放 Hint，按 C5-A～F 记录。
-
-### Ceiling Builder｜提
-
-针对 Diagnostic 和 H1～H10 暴露的真实卡点训练，不以增加题量为目的。
-
-### Mastery / Final Challenge｜验
-
-教学后用不同问题检查是否稳定迁移、解释和一般化。
-
-同一高度同构模板不能同时冒充三种功能。
-
----
-
-## T0 / T1 / T2
+所有自动结果以具体提交的GitHub Actions为准。静态review不是独立第三方认证；知识节点覆盖不是未实际进行的2026印次逐页审核。
 
 ```text
-T0：冷启动 Ceiling Diagnostic
-↓
-T1：Builder / 高阶教学后的新题迁移
-↓
-T2：约7天后不同表面结构的延迟迁移
+python3 tools/lint_markdown_rendering.py
+python3 tools/lint_problem_source_links.py
+python3 tools/check_lessons_05_08.py
 ```
 
-主要观察：
-
-- Hint 是否减少；
-- 是否更早识别关键结构；
-- 是否主动换表示；
-- 是否会构造反例；
-- 是否能一般化；
-- 同类 H 错误是否减少。
-
----
-
-## 权威题源
-
-正式题源池包括：
-
-- 教育部、人教社；
-- MAA AMC 8 / 10 / 12、AIME、USAJMO、USAMO；
-- IMO 官方历年题 / Shortlist；
-- CEMC Gauss 等；
-- UKMT JMC / JMO；
-- 中国数学会 CMO、全国高中数学联赛、中国女子数学奥林匹克等；
-- 国内正式考试原卷；
-- CSP-J / NOI 等官方信息学题目结构。
-
-选择标准：
-
-```text
-教学匹配度
-+ 权威性
-+ 当前可解性
-+ 结构新颖度
-+ 诊断区分度
-+ 训练增益价值
-+ 一般化价值
-```
-
-每讲 provenance 必须记录：实际采用来源、候选题源池审查，以及 Diagnostic / Builder / Mastery 的来源与功能。
-
----
-
-## Release Review
-
-当前完整门禁：
-
-```text
-R0 主线定位
-→ R0.5 教材映射
-→ R1～R3
-→ R3.5 Ceiling Diagnostic
-→ R3.6 Ceiling Builder
-→ R4～R11
-→ PASS
-```
-
-只有 R3.5 和 R3.6 都通过，才能标记：
-
-> **最高深度 + 能力上限提升体系完成。**
-
----
-
-## Markdown / LaTeX
-
-课程主要在 GitHub Web / Mobile 阅读：
-
-- 标题不使用 `$...$`；
-- 简单数值、单位、单变量、−a 等使用普通文本；
-- 百分数直接使用普通文本，例如 `50%`，不使用 LaTeX 百分号转义；
-- 复杂数学结构再使用 LaTeX；
-- 所有变更通过 `tools/lint_markdown_rendering.py` 与 GitHub Actions。
-
----
-
-## 当前进度
-
-**Lesson 1～6 均已按 v2.0 完成完整课程包。**
-
-每讲包含或对应：
-
-- Core / Advanced / Olympiad / Informatics；
-- Ceiling Diagnostic；
-- Ceiling Builder；
-- C5-A～F 与 T0/T1/T2 记录；
-- provenance 与候选权威题源池审查；
-- diagnostics；
-- Release Review。
-
-Lesson 5～6 均从首次建设起原生执行完整 v2.0 流程，并通过 R0～R11 Review。
-
-下一正式主线：
-
-> **Lesson 7《有理数大小比较——为什么两个负数“离0越远反而越小”？》**。
+复杂数学仍保留LaTeX；简单数字、单位、变量及比较用普通文本；标题不放行内数学命令，完整数学答案不放HTML折叠。

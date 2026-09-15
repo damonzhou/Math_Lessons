@@ -1,0 +1,32 @@
+name: Lessons 5-8 Math Regression
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "grade-07/semester-1/**"
+      - "docs/standards/CURRENT.md"
+      - "docs/audits/**"
+      - "README.md"
+      - "tools/check_lessons_05_08.py"
+      - ".github/workflows/lesson-math-regression.yml"
+  pull_request:
+    paths:
+      - "grade-07/semester-1/**"
+      - "docs/standards/CURRENT.md"
+      - "docs/audits/**"
+      - "README.md"
+      - "tools/check_lessons_05_08.py"
+      - ".github/workflows/lesson-math-regression.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  math-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Verify finite mathematical cases and active local links
+        run: python3 tools/check_lessons_05_08.py

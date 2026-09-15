@@ -1,155 +1,29 @@
-# Lesson 7 题源、教材与课程对标｜有理数大小比较｜v2.4
+# Lesson 7 题源与核验｜2026-09-15修订
 
-> 课标/人教版决定主线；公开优秀课程只做横向benchmark；官方竞赛题做真实迁移；最高层按 R3.8 独立审核。
+## 教材定位与覆盖
 
----
+对照[教材知识节点映射](../../../../docs/textbook-mapping-grade-07-semester-1.md)和[人教社官方解读](https://www.pep.com.cn/xw/zt/hd/12/zbtjc/202410/t20241022_1996035.html)：数轴顺序、正零负、负数绝对值反序、多数排序、分数小数表示转换。节点覆盖不等于逐页核验2026印次。高阶分组生成和范围推断为拓展。
 
-# 1｜权威主线
+## 实际引用
 
-## S0｜教育部《义务教育数学课程标准（2022年版）》
+C1：ADAPTED，CEMC2018 Gauss G7 Q6。[原题](https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2018Gauss7Contest.html) / [解答](https://cemc.uwaterloo.ca/sites/default/files/documents/2018/2018GaussSolution.html)。补齐原来缺失的候选数，唯一严格区间答案−7/4。当前只是基础Bridge。
 
-https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582346895190.pdf
+C2：ADAPTED，CEMC2026 Gauss G7 Q3。[原题](https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html) / [解答](https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026GaussSolution.html)。补齐实际数字和四个所求，不再只写来源及改编说明。
 
-## S1｜人民教育出版社当前初中数学新教材介绍
+K1：SOURCE，2023 AMC8 P25。[主办方入口](https://maa.org/resource/sample-competition-2023-amc-8/) / [官方原卷PDF第9页](https://maa.org/wp-content/uploads/2024/08/2023-Problems-AMC8-PDF.pdf) / [官方解答链接](https://maa.org/wp-content/uploads/2024/08/2023_AMC8_Solutions_.pdf)。原卷读取并截图核验。解答链接由官方入口给出，本次访问403，未声称读到官方证明。课程自行用间隔16以下/18以上排除，再以范围夹定起点；有限枚举核验唯一(a₁,间隔,a₁₄)=(3,17,224)，答案8。
 
-https://www.pep.com.cn/xw/zt/hd/12/xjcjs/cz/202408/t20240826_1994351.html
+K1保持原条件，省略选项并追加解释，原始问题与课程追问分开。这个题把等距与区间推断相接，不靠未来等差数列公式；是具体官方难题，不代表所有原创Final都被AMC认证。
 
-## S2｜人教社新教材结构解读
+## 原创与难度校正
 
-https://www.pep.com.cn/xw/zt/hd/12/zbtjc/202410/t20241022_1996035.html
+T0与一般排序压轴均DESIGNED。保留已正确的分组生成结论，补命名0条目变式：有0时所有组方向选择均可见，计数为2的k次方。主文不预先给计数公式，答案给完整双向证明。Builder已经讲过的外层方法只算训练，不再算Final的独立新突破。
 
-## S3｜人教社官方七上历史教材目录
+作业10为AMC方法的近迁移，刻意保留两个合法答案以训练“范围未必唯一”；不是另外一题赛事原题。
 
-https://www.pep.com.cn/products/jc/czjks/201510/t20151026_1250813.shtml
+## 候选题池
 
-用途：确认数轴、相反数、绝对值、大小比较处于同一有理数知识链。不把旧目录当2026新版细目录。
+本次实际采用AMC2023P25；P18留Lesson8，UKMT2023B6及2024B3分别服务Lesson5、6。IMO/CMO/国内正式试题仍是允许池，本次没有具体一手匹配项，未完成的审查不写“是”。市面课程大纲不能替代实际原题核验。
 
----
+## 回归范围
 
-# 2｜公开优秀课程横向对标
-
-## B1｜猿辅导公开课程：相反数与绝对值 / 有理数与数轴 / 真题追踪
-
-https://www.yuanfudao.com/lessons/13541538.html
-
-## B2｜猿辅导公开人教版系统班：有理数综合、绝对值代数/几何意义
-
-https://www.yuanfudao.com/lessons/13307972.html
-
-## B3｜北京新东方公开初一数学课程页
-
-https://bj.xdf.cn/ucan1v1/ketang/chuyi/31368.html
-
-这些公开页面说明优质同步/进阶课程通常不会把“有理数、绝对值、数轴”完全割裂，而会安排综合和真题追踪。
-
-本课程进一步要求：
-
-```text
-会比较
-→ 能从距离结构推排序
-→ 能从排序反推符号
-→ 能证明不可能/完整
-→ 能推广到任意绝对值组
-```
-
-商业课程不作为知识真伪判据，也不复制其讲义。
-
----
-
-# 3｜实际采用的官方竞赛来源
-
-## S4｜CEMC 2018 Gauss Grade 7 Question 6
-
-**标签**：`ADAPTED`  
-**角色**：Competition Bridge
-
-官方原题：
-
-https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2018Gauss7Contest.html
-
-官方解答：
-
-https://cemc.uwaterloo.ca/sites/default/files/documents/2018/2018GaussSolution.html
-
-用途：区间定位/双重大小关系。
-
-## S5｜CEMC 2026 Gauss Grade 7 Question 3
-
-**标签**：`ADAPTED`  
-**角色**：Competition Bridge
-
-官方原题：
-
-https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html
-
-官方解答：
-
-https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026GaussSolution.html
-
-用途：区分原数大小与离0距离。
-
-两题均不作为★★★★★证据。
-
----
-
-# 4｜v2.4 T0 / Final 为什么是 DESIGNED
-
-无单一原题。
-
-设计知识核：
-
-```text
-数轴左右顺序
-+ 相反数
-+ 绝对值分层
-+ 负数区镜像反序
-```
-
-T0 新增“重复绝对值组”：
-
-```text
-0<|A|=|B|<|C|<|D|=|E|
-```
-
-迫使学生同时使用：
-
-- 固定正距离最多两个位置；
-- 互异 + 同绝对值 → 相反数对；
-- 最大绝对值控制两端；
-- 标签排序与符号恢复。
-
-Final 再推广到任意 k 个绝对值组，每组1或2个标签，要求推出合法标签排序数量与符号可恢复性的一般定理。
-
----
-
-# 5｜R3.8 难度真实性
-
-Final 至少有三个非显然节点：
-
-1. 从最大绝对值组向内递归，而不是枚举全部正负；
-2. 单点组与相反数对虽然结构不同，但在非最小层都只贡献一个“可见二选一”；
-3. 最小组若为单点，其符号不会改变标签排名，因此计数少一个因子；若为相反数对，该二选一仍可见。
-
-最高层即使把具体数字全部去掉，思维核心仍存在，所以不是计算伪难度。
-
----
-
-# 6｜知识边界
-
-不依赖：
-
-- 排列组合公式；
-- 有理数加减；
-- 不等式系统变形；
-- 函数单调性。
-
-`2^k` 只作为“k个独立可见二选一”的结果，不要求组合数学术语。
-
----
-
-# 7｜发布规则
-
-- `ADAPTED` 题旁必须有官方原题/解答链接；
-- T0 / Final 明确 `DESIGNED`；
-- 公开商业课程benchmark只进入本 provenance，不作为原题来源；
-- T0 前不得泄露“最小单点组不贡献可见二选一”的 Final 结论。
+`tools/check_lessons_05_08.py`穷举k=1～5时每组1/2标签、全部符号分配、有无0，核验计数结论；并核验AMC整数约束。有限范围用于防退化，k任意的结论由课程证明支撑。
